@@ -28,7 +28,7 @@ export interface DecodedFixture {
   frames: { t: number; hands: Hand[] }[]
 }
 
-const BASE = '/fixtures'
+const BASE = `${import.meta.env.BASE_URL}fixtures`
 const cache = new Map<string, DecodedFixture>()
 const pending = new Map<string, Promise<DecodedFixture | null>>()
 
