@@ -1,7 +1,8 @@
 # HORTUS MANUS · 指间花园 — 交付说明
 
 > 本地交付版 · 不部署云端 · 不参考/不复用用户现有 3D 网站。
-> 运行：`cd /home/huayu/Agent工作区/DSHarness/1/hortus-manus && ./start.sh` → **http://127.0.0.1:8787/**
+> 运行：`cd /home/huayu/Agent工作区/DSHarness/1/hortus-manus && ./start.sh` → **http://127.0.0.1:8787/**  
+> GitHub Pages（静态体验版）：**https://huayu-pro.github.io/hortus-manus/** · Release **v1.0.0**
 > 当前本地服务已在 8787 运行；数据在 `data/`，摄像头/照片不上传。
 
 ## 1. 一句话

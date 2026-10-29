@@ -59,6 +59,15 @@ pnpm db:reset   # 清标本/卡（保留 data/.secret）
 - 手机：[`screens/mobile/home-390.png`](screens/mobile/home-390.png) / [`touch-390.png`](screens/mobile/touch-390.png)
 - Demo：[`screens/demo/hortus-manus-demo.mp4`](screens/demo/hortus-manus-demo.mp4)（[gif](screens/demo/hortus-manus-demo.gif)）
 
+
+## GitHub
+
+- Repository: https://github.com/huayu-pro/hortus-manus
+- Release: https://github.com/huayu-pro/hortus-manus/releases/tag/v1.0.0
+- **GitHub Pages（静态体验版）**: https://huayu-pro.github.io/hortus-manus/
+
+> Pages 版使用 `HashRouter` + `public/api` 静态种子数据 + localStorage 采集；完整 SQLite/SSR/API 版本仍在本地 `./start.sh`。
+
 ## 结构
 
 ```
