@@ -27,7 +27,7 @@ jobs:
           node-version: 22
           cache: pnpm
       - name: Install
-        run: pnpm install --frozen-lockfile
+        run: pnpm install --frozen-lockfile --ignore-scripts
       - name: Build static site for Pages
         run: VITE_STATIC_MODE=true VITE_BASE=./ pnpm -F @hortus/web build
       - name: Post-process Pages artifacts
