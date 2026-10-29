@@ -1,0 +1,610 @@
+/* ==========================================================================
+   HORTUS MANUS · 指间花园 — base.css
+   --------------------------------------------------------------------------
+   Global reset, paper ground, typography primitives, focus, scrollbar,
+   texture, reduced-motion and forced-colours baselines.
+   NO page/section layout lives here — that belongs to sections.css / ui.css.
+
+   Import order (enforced in apps/web/src/index.css):
+       @import 'tailwindcss';
+       @import './styles/tokens.css';
+       @import './styles/base.css';
+       @import './styles/fonts.css';
+   tokens.css is NOT re-imported here, to keep the cascade single-sourced.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   01 · RESET
+   -------------------------------------------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  overflow-x: clip;
+  scroll-behavior: smooth;
+  accent-color: var(--hm-moss);
+  text-underline-position: from-font;
+}
+
+body {
+  min-height: 100svh;
+  overflow-x: clip;
+  background-color: var(--hm-bg);
+  color: var(--hm-fg);
+  font-family: var(--hm-font-body);
+  font-size: var(--hm-text-body);
+  font-weight: var(--hm-weight-regular);
+  line-height: var(--hm-leading-body);
+  letter-spacing: var(--hm-tracking-cn-body);
+  font-synthesis-weight: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+img,
+video {
+  height: auto;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+  letter-spacing: inherit;
+  background: none;
+  border: 0;
+  border-radius: 0;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+  text-align: inherit;
+}
+
+button:disabled,
+[aria-disabled="true"] {
+  cursor: not-allowed;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+hr {
+  height: 0;
+  border: 0;
+  border-top: 1px solid var(--hm-border);
+}
+
+::placeholder {
+  color: var(--hm-fg-faint);
+  opacity: 1;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+#root {
+  isolation: isolate;
+  min-height: 100svh;
+}
+
+/* --------------------------------------------------------------------------
+   02 · PAPER GROUND — fibre + laid lines + grain (CSS/SVG only)
+   Two fixed layers behind content; never intercept pointer events.
+   -------------------------------------------------------------------------- */
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+body::before {
+  background-image: var(--hm-texture-grain);
+  background-size: var(--hm-grain-size) var(--hm-grain-size);
+  background-repeat: repeat;
+  opacity: var(--hm-grain-opacity);
+  mix-blend-mode: var(--hm-grain-blend);
+}
+
+body::after {
+  background-image: var(--hm-texture-fiber), var(--hm-texture-laid);
+  background-size: 100% 100%, 100% 100%;
+  opacity: calc(var(--hm-fiber-opacity) * 0.55);
+}
+
+/* Pages that paint their own full-bleed ground can opt out of the second
+   layer with data-ground="flat" on <html> (grain stays for tooth). */
+[data-ground="flat"] body::after {
+  display: none;
+}
+
+[data-theme="night"] body::before {
+  opacity: var(--hm-grain-opacity);
+}
+
+/* --------------------------------------------------------------------------
+   03 · TYPE PRIMITIVES
+   Families: display = Instrument Serif / CN display = Noto Serif SC /
+   body = Noto Sans SC / label = IBM Plex Mono / hand = Ma Shan Zheng.
+   Page CSS composes these classes; do not invent new font stacks.
+   -------------------------------------------------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--hm-font-cn-display);
+  font-weight: var(--hm-weight-medium);
+  line-height: var(--hm-leading-cn-heading);
+  letter-spacing: var(--hm-tracking-cn-heading);
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: var(--hm-text-h1);
+  line-height: var(--hm-leading-h1);
+}
+
+h2 {
+  font-size: var(--hm-text-h2);
+  line-height: var(--hm-leading-h2);
+}
+
+h3 {
+  font-size: var(--hm-text-h3);
+  line-height: var(--hm-leading-h3);
+}
+
+h4 {
+  font-size: var(--hm-text-h4);
+  line-height: var(--hm-leading-h4);
+}
+
+p {
+  text-wrap: pretty;
+}
+
+/* 大写展示 · Latin led (Instrument Serif) — use for HORTUS MANUS, act numerals */
+.hm-mega {
+  font-family: var(--hm-font-display);
+  font-size: var(--hm-text-mega);
+  font-weight: var(--hm-weight-regular);
+  line-height: var(--hm-leading-mega);
+  letter-spacing: var(--hm-tracking-mega);
+  font-feature-settings: var(--hm-font-features-display);
+  text-wrap: balance;
+}
+
+/* 大写展示 · Chinese led (Noto Serif SC) — 指间花园 / act titles */
+.hm-mega-cn {
+  font-family: var(--hm-font-cn-display);
+  font-size: var(--hm-text-mega-cn);
+  font-weight: var(--hm-weight-medium);
+  line-height: var(--hm-leading-mega-cn);
+  letter-spacing: var(--hm-tracking-cn-heading);
+  text-wrap: balance;
+}
+
+.hm-display {
+  font-family: var(--hm-font-display);
+  font-size: var(--hm-text-display);
+  font-weight: var(--hm-weight-regular);
+  line-height: var(--hm-leading-display);
+  letter-spacing: var(--hm-tracking-display);
+  text-wrap: balance;
+}
+
+.hm-display-cn {
+  font-family: var(--hm-font-cn-display);
+  font-size: var(--hm-text-display);
+  font-weight: var(--hm-weight-medium);
+  line-height: var(--hm-leading-cn-heading);
+  letter-spacing: var(--hm-tracking-cn-heading);
+  text-wrap: balance;
+}
+
+.hm-h1 {
+  font-family: var(--hm-font-cn-display);
+  font-size: var(--hm-text-h1);
+  font-weight: var(--hm-weight-medium);
+  line-height: var(--hm-leading-h1);
+  letter-spacing: var(--hm-tracking-h1);
+}
+
+.hm-h2 {
+  font-family: var(--hm-font-cn-display);
+  font-size: var(--hm-text-h2);
+  font-weight: var(--hm-weight-medium);
+  line-height: var(--hm-leading-h2);
+  letter-spacing: var(--hm-tracking-h2);
+}
+
+.hm-h3 {
+  font-family: var(--hm-font-cn-display);
+  font-size: var(--hm-text-h3);
+  font-weight: var(--hm-weight-medium);
+  line-height: var(--hm-leading-h3);
+  letter-spacing: var(--hm-tracking-h3);
+}
+
+.hm-h4 {
+  font-family: var(--hm-font-cn-display);
+  font-size: var(--hm-text-h4);
+  font-weight: var(--hm-weight-medium);
+  line-height: var(--hm-leading-h4);
+}
+
+.hm-lead {
+  font-family: var(--hm-font-body);
+  font-size: var(--hm-text-lead);
+  font-weight: var(--hm-weight-regular);
+  line-height: var(--hm-leading-lead);
+  max-inline-size: var(--hm-measure-lead);
+  color: var(--hm-fg-muted);
+  text-wrap: pretty;
+}
+
+.hm-body {
+  font-family: var(--hm-font-body);
+  font-size: var(--hm-text-body);
+  line-height: var(--hm-leading-body);
+  letter-spacing: var(--hm-tracking-cn-body);
+  max-inline-size: var(--hm-measure-body);
+  text-wrap: pretty;
+}
+
+.hm-body-s {
+  font-family: var(--hm-font-body);
+  font-size: var(--hm-text-body-s);
+  line-height: var(--hm-leading-body-s);
+  max-inline-size: var(--hm-measure-body);
+  color: var(--hm-fg-muted);
+}
+
+.hm-caption {
+  font-family: var(--hm-font-body);
+  font-size: var(--hm-text-caption);
+  line-height: var(--hm-leading-caption);
+  color: var(--hm-fg-muted);
+  max-inline-size: var(--hm-measure-caption);
+}
+
+/* 标签 · labels, coordinates, readouts, plate numbers — always mono, always 11px+ */
+.hm-label {
+  font-family: var(--hm-font-mono);
+  font-size: var(--hm-text-label);
+  font-weight: var(--hm-weight-regular);
+  line-height: var(--hm-leading-label);
+  letter-spacing: var(--hm-tracking-label);
+  text-transform: uppercase;
+  color: var(--hm-fg-muted);
+  font-feature-settings: var(--hm-font-features-mono);
+}
+
+.hm-micro {
+  font-family: var(--hm-font-mono);
+  font-size: var(--hm-text-micro); /* 11px floor */
+  line-height: var(--hm-leading-micro);
+  letter-spacing: var(--hm-tracking-micro);
+  color: var(--hm-fg-muted);
+  font-feature-settings: var(--hm-font-features-mono);
+}
+
+/* 手写 · ONLY field notes, leader lines, signatures. Never buttons or errors. */
+.hm-hand {
+  font-family: var(--hm-font-hand);
+  font-size: var(--hm-text-hand);
+  line-height: var(--hm-leading-hand);
+  letter-spacing: 0.01em;
+  color: var(--hm-ink-soft);
+}
+
+/* 引文 · Cormorant italic for poetic asides; Chinese falls back to Noto Serif */
+.hm-quote {
+  font-family: var(--hm-font-italic);
+  font-style: italic;
+  font-size: var(--hm-text-quote);
+  font-weight: var(--hm-weight-regular);
+  line-height: var(--hm-leading-quote);
+  max-inline-size: var(--hm-measure-quote);
+  text-wrap: balance;
+}
+
+.hm-italic {
+  font-family: var(--hm-font-italic);
+  font-style: italic;
+}
+
+/* 竖排页边注 · vertical marginalia (A9). RTL writing mode, mono, 11px floor. */
+.hm-marginalia {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-family: var(--hm-font-mono);
+  font-size: var(--hm-text-micro);
+  line-height: var(--hm-leading-micro);
+  letter-spacing: var(--hm-tracking-vertical);
+  color: var(--hm-fg-faint);
+  font-feature-settings: var(--hm-font-features-mono);
+  max-block-size: 100%;
+}
+
+/* 发丝线 · hairline rules; the only 1px horizontal mark allowed in text */
+.hm-rule {
+  display: block;
+  inline-size: 100%;
+  block-size: 0;
+  border: 0;
+  border-top: 1px solid var(--hm-border);
+}
+
+/* Inline editorial links only. Nav/button links opt out with .hm-plain. */
+.hm-link {
+  color: var(--hm-link);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: var(--hm-link-underline);
+  text-underline-offset: 0.24em;
+  transition: color var(--hm-dur-2) var(--hm-ease-standard),
+    text-decoration-color var(--hm-dur-2) var(--hm-ease-standard);
+}
+
+.hm-link:hover {
+  color: var(--hm-link-hover);
+  text-decoration-color: currentColor;
+}
+
+.hm-plain {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* --------------------------------------------------------------------------
+   04 · SELECTION / FOCUS / CURSOR
+   -------------------------------------------------------------------------- */
+::selection {
+  background: var(--hm-selection-bg);
+  color: var(--hm-selection-fg);
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: var(--hm-selection-bg);
+  color: var(--hm-selection-fg);
+}
+
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: var(--hm-focus-ring);
+  outline-offset: var(--hm-focus-offset);
+  border-radius: var(--hm-focus-radius);
+}
+
+/* Forced colours need an explicit outline colour token (Highlight). */
+@media (forced-colors: active) {
+  :focus-visible {
+    outline: 2px solid Highlight;
+  }
+}
+
+/* 黄铜放大镜光标 (A8) — fine pointers only; text fields keep the caret. */
+@media (pointer: fine) {
+  body {
+    cursor: var(--hm-cursor-lens);
+  }
+
+  input,
+  textarea,
+  select,
+  [contenteditable="true"] {
+    cursor: text;
+  }
+
+  [disabled],
+  [aria-disabled="true"] {
+    cursor: not-allowed;
+  }
+}
+
+/* Page CSS can suppress the lens over full-screen canvas (mechanics owns it). */
+[data-cursor="none"] {
+  cursor: none;
+}
+
+/* --------------------------------------------------------------------------
+   05 · SCROLLBAR — thin, ink on paper, no rounded SaaS pill
+   -------------------------------------------------------------------------- */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--hm-scrollbar-thumb) transparent;
+}
+
+::-webkit-scrollbar {
+  width: var(--hm-scrollbar-width);
+  height: var(--hm-scrollbar-width);
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--hm-scrollbar-thumb);
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--hm-scrollbar-thumb-hover);
+}
+
+/* --------------------------------------------------------------------------
+   06 · UTILITIES
+   -------------------------------------------------------------------------- */
+.hm-visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* Skip link — first tab stop on every route. */
+.hm-skip-link {
+  position: fixed;
+  inset-block-start: var(--hm-space-4);
+  inset-inline-start: var(--hm-space-4);
+  z-index: var(--hm-z-skip);
+  padding: var(--hm-space-3) var(--hm-space-4);
+  background: var(--hm-fg);
+  color: var(--hm-fg-inverse);
+  font-family: var(--hm-font-mono);
+  font-size: var(--hm-text-label);
+  letter-spacing: var(--hm-tracking-label);
+  text-transform: uppercase;
+  text-decoration: none;
+  transform: translateY(calc(-100% - var(--hm-space-6)));
+  transition: transform var(--hm-dur-2) var(--hm-ease-out);
+}
+
+.hm-skip-link:focus-visible {
+  transform: translateY(0);
+  outline: var(--hm-focus-ring);
+  outline-offset: var(--hm-focus-offset);
+}
+
+/* --------------------------------------------------------------------------
+   07 · REDUCED MOTION — same final composition, no travel.
+   Components must author their resting state; this is the safety net.
+   -------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   08 · FORCED COLOURS — texture off, borders on, system colours win
+   -------------------------------------------------------------------------- */
+@media (forced-colors: active) {
+  body::before,
+  body::after {
+    display: none;
+  }
+
+  body {
+    background: Canvas;
+    color: CanvasText;
+  }
+
+  .hm-link,
+  a {
+    color: LinkText;
+  }
+
+  .hm-rule,
+  hr {
+    border-color: CanvasText;
+  }
+
+  .hm-skip-link {
+    border: 1px solid CanvasText;
+  }
+
+  .hm-hand,
+  .hm-caption,
+  .hm-label,
+  .hm-micro {
+    color: CanvasText;
+  }
+
+  img,
+  canvas {
+    forced-color-adjust: none;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   09 · HIGHER CONTRAST — lift secondary copy and hairlines
+   -------------------------------------------------------------------------- */
+@media (prefers-contrast: more) {
+  .hm-caption,
+  .hm-body-s,
+  .hm-label,
+  .hm-micro,
+  .hm-lead {
+    color: var(--hm-fg);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   10 · PRINT — the herbarium presses onto paper
+   -------------------------------------------------------------------------- */
+@media print {
+  body {
+    background: #fff;
+    color: #000;
+  }
+
+  body::before,
+  body::after {
+    display: none;
+  }
+}

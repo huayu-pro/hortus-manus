@@ -1,0 +1,6 @@
+rea list-browser-targets http://127.0.0.1:9223 --allowed-origins https://magma.build
+rea inspect-web-page http://127.0.0.1:9223 A780D260FD54FF9A26605233C3E88C4C --allowed-origins https://magma.build --observation-ms 3000 --include-script-sources --include-console-text --include-storage-keys
+rea analyze-web-bundle http://127.0.0.1:9223 A780D260FD54FF9A26605233C3E88C4C --allowed-origins https://magma.build --observation-ms 2500
+rea capture-browser-scenario _scenarios/magma.json
+rea export-web-scripts magma/capture-browser-scenario.json magma/scripts
+# CDP browser: /home/huayu/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome --headless=new --no-sandbox --enable-unsafe-swiftshader --remote-debugging-port=9223 --user-data-dir=/tmp/rea-batch --proxy-server=http://127.0.0.1:7897 "https://magma.build"

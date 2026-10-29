@@ -1,0 +1,40 @@
+{
+  "bv": "BV1CDjz6bE6o",
+  "fps": 24,
+  "frames": 1251,
+  "threshold": 6.48,
+  "meanDiff": 1.65,
+  "diffPeaks": [
+    {
+      "frame": 481,
+      "time": 20.04,
+      "diff": 21.03
+    },
+    {
+      "frame": 488,
+      "time": 20.33,
+      "diff": 8.43
+    },
+    {
+      "frame": 608,
+      "time": 25.33,
+      "diff": 13.77
+    },
+    {
+      "frame": 623,
+      "time": 25.96,
+      "diff": 36.0
+    },
+    {
+      "frame": 634,
+      "time": 26.42,
+      "diff": 28.97
+    },
+    {
+      "frame": 1138,
+      "time": 47.42,
+      "diff": 8.18
+    }
+  ],
+  "staticSpans": []
+}

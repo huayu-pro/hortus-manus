@@ -1,0 +1,141 @@
+{
+  "BV1WJjF67Eky": {
+    "step": 20,
+    "nCrops": 45,
+    "threshold": 7.84,
+    "changes": [
+      {
+        "fromFrame": 361,
+        "toFrame": 381,
+        "diff": 8.32
+      },
+      {
+        "fromFrame": 461,
+        "toFrame": 481,
+        "diff": 47.9
+      },
+      {
+        "fromFrame": 641,
+        "toFrame": 661,
+        "diff": 44.2
+      },
+      {
+        "fromFrame": 741,
+        "toFrame": 761,
+        "diff": 44.26
+      }
+    ],
+    "stripFrames": [
+      341,
+      361,
+      381,
+      441,
+      461,
+      481,
+      621,
+      641,
+      661,
+      721,
+      741,
+      761
+    ]
+  },
+  "BV1GKjm6aEfR": {
+    "step": 20,
+    "nCrops": 48,
+    "threshold": 11.69,
+    "changes": [
+      {
+        "fromFrame": 281,
+        "toFrame": 301,
+        "diff": 16.89
+      },
+      {
+        "fromFrame": 401,
+        "toFrame": 421,
+        "diff": 13.44
+      },
+      {
+        "fromFrame": 661,
+        "toFrame": 681,
+        "diff": 29.22
+      },
+      {
+        "fromFrame": 781,
+        "toFrame": 801,
+        "diff": 34.41
+      },
+      {
+        "fromFrame": 881,
+        "toFrame": 901,
+        "diff": 13.72
+      }
+    ],
+    "stripFrames": [
+      261,
+      281,
+      301,
+      381,
+      401,
+      421,
+      641,
+      661,
+      681,
+      761,
+      781,
+      801,
+      861,
+      881,
+      901
+    ]
+  },
+  "BV1CDjz6bE6o": {
+    "step": 20,
+    "nCrops": 63,
+    "threshold": 9.3,
+    "changes": [
+      {
+        "fromFrame": 181,
+        "toFrame": 201,
+        "diff": 9.64
+      },
+      {
+        "fromFrame": 301,
+        "toFrame": 321,
+        "diff": 11.06
+      },
+      {
+        "fromFrame": 501,
+        "toFrame": 521,
+        "diff": 9.89
+      },
+      {
+        "fromFrame": 601,
+        "toFrame": 621,
+        "diff": 10.84
+      },
+      {
+        "fromFrame": 1161,
+        "toFrame": 1181,
+        "diff": 9.56
+      }
+    ],
+    "stripFrames": [
+      161,
+      181,
+      201,
+      281,
+      301,
+      321,
+      481,
+      501,
+      521,
+      581,
+      601,
+      621,
+      1141,
+      1161,
+      1181
+    ]
+  }
+}

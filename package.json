@@ -1,0 +1,21 @@
+{
+  "name": "hortus-manus",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "packageManager": "pnpm@11.21.0",
+  "scripts": {
+    "dev": "concurrently -k -n api,web -c magenta,cyan \"pnpm -F @hortus/api dev\" \"pnpm -F @hortus/web dev\"",
+    "build": "pnpm -F @hortus/web build",
+    "start": "pnpm -F @hortus/web build && pnpm -F @hortus/api start",
+    "typecheck": "pnpm -F @hortus/web typecheck && pnpm -F @hortus/api typecheck",
+    "test": "pnpm -F @hortus/web test",
+    "db:reset": "pnpm -F @hortus/api db:reset",
+    "clean": "rm -rf apps/web/dist data/hortus.db* data/cards"
+  },
+  "devDependencies": {
+    "axe-core": "^4.14.0",
+    "concurrently": "^10.0.6",
+    "typescript": "~6.0.2"
+  }
+}

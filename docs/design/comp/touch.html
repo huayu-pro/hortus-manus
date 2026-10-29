@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>HORTUS MANUS · 指间花园 — static visual comp / touch greenhouse</title>
+<link rel="stylesheet" href="./comp.css" />
+</head>
+<body class="touch-page">
+
+<div class="touch-stage">
+  <img src="../../../apps/web/public/plates/peony-red.webp" alt="全屏牡丹舞台，深红花瓣与金色花蕊" />
+  <div class="dots"></div>
+</div>
+
+<header class="touch-top">
+  <div class="brand">
+    <span class="brand__mark">HORTUS MANUS</span>
+    <span class="brand__rule"></span>
+    <span class="brand__cn">手部温室</span>
+  </div>
+  <div class="touch-title">
+    <div class="cn">手 部 温 室</div>
+    <div class="en">MOVE HANDS · AWAKEN THE BLOOM</div>
+  </div>
+  <div class="touch-exit"><b>ESC</b><span>退出 / EXIT</span></div>
+</header>
+
+<div class="touch-vertical">PAEONIA SUFFRUTICOSA · SPECIMEN I · PLATE I</div>
+
+<div class="touch-mode-title">
+  <div class="no">I / VII</div>
+  <div class="cn">花窗</div>
+  <div class="en">Frame</div>
+  <div class="lat">Paeonia suffruticosa · 芍药科</div>
+</div>
+
+<div class="frame-hud"><span>FRAME I · 指尖花窗</span></div>
+
+<div class="touch-stage-note">
+  <div class="k">GESTURE IDLE · 光照就绪</div>
+  <div class="t">把手放进光里。</div>
+</div>
+
+<!-- right mode rail — paper, not glass -->
+<aside class="mode-rail">
+  <div class="rail-head"><span class="cn">植物学检索表</span><span class="en">BOTANICAL KEY</span></div>
+  <div class="rail-row sel"><span class="no">I</span><span class="cn">花窗</span><span class="en">FRAME</span><span class="dot"></span></div>
+  <div class="rail-row"><span class="no">II</span><span class="cn">翻绳</span><span class="en">TENDRIL</span><span class="dot" style="background:#5E7F78"></span></div>
+  <div class="rail-row"><span class="no">III</span><span class="cn">雨池</span><span class="en">RIPPLE</span><span class="dot" style="background:#D8A84E"></span></div>
+  <div class="rail-row"><span class="no">IV</span><span class="cn">孢子</span><span class="en">SPORE</span><span class="dot" style="background:#6F875F"></span></div>
+  <div class="rail-row"><span class="no">V</span><span class="cn">菌络</span><span class="en">MYCELIUM</span><span class="dot" style="background:#8A9A7B"></span></div>
+  <div class="rail-row"><span class="no">VI</span><span class="cn">晨雾</span><span class="en">MIST</span><span class="dot" style="background:#C9D8D0"></span></div>
+  <div class="rail-row"><span class="no">VII</span><span class="cn">花冠</span><span class="en">PHYLLOTAXIS</span><span class="dot" style="background:#D8A84E"></span></div>
+  <div class="rail-note">1–7 换花 · X 换季 · S 声音<br />G 幽灵手 · C 清屏 · ? 帮助</div>
+  <div class="rail-specimen">
+    <img src="../../../apps/web/public/plates/peony-botmag.webp" alt="牡丹植物学图版" />
+    <div class="cap"><span>PLATE I · PAEONIA SUFFRUTICOSA</span><span>PD · 1809</span></div>
+  </div>
+</aside>
+
+<!-- care label -->
+<aside class="care-hud">
+  <div class="care-head"><span>采集条件</span><span>CARE LABEL</span></div>
+  <div class="hud-grid">
+    <div class="hud-row"><span>帧率 FPS</span><b>60</b></div>
+    <div class="hud-row"><span>延迟 LAT</span><b>12 MS</b></div>
+    <div class="hud-row"><span>相机 CAM</span><b>未启用</b></div>
+    <div class="hud-row"><span>季节 SEASON</span><b>夏至</b></div>
+    <div class="hud-row"><span>声音 SOUND</span><b>静音</b></div>
+    <div class="hud-row"><span>输入 INPUT</span><b>指针</b></div>
+  </div>
+  <div class="hud-foot"><span>画面不离开这台设备</span><span>NO UPLOAD</span></div>
+</aside>
+
+<!-- gesture hints -->
+<div class="gesture-bar">
+  <div class="gesture is-on">
+    <svg viewBox="0 0 40 40" aria-hidden="true">
+      <path d="M8 10h10v10H8zM22 10h10v10H22zM8 24h10v10H8zM22 24h10v10H22z" />
+    </svg>
+    <span class="cn">框</span><span class="en">FRAME</span>
+  </div>
+  <div class="gesture">
+    <svg viewBox="0 0 40 40" aria-hidden="true">
+      <path d="M20 34V12M20 12l-6 6M20 12l6 6M8 30V16M8 16l-3 3M8 16l3 3M32 30V16M32 16l-3 3M32 16l3 3M14 30v-9M26 30v-9" />
+    </svg>
+    <span class="cn">开</span><span class="en">OPEN</span>
+  </div>
+  <div class="gesture">
+    <svg viewBox="0 0 40 40" aria-hidden="true">
+      <path d="M12 26c0-6 3-10 8-10s8 4 8 10M10 30h20M14 22v-6M18 20v-7M23 20v-7M28 22v-5" />
+    </svg>
+    <span class="cn">拳</span><span class="en">FIST</span>
+  </div>
+</div>
+
+<!-- collect -->
+<div class="collect-hud">
+  <div class="collect-ring" role="img" aria-label="采集这一株">
+    <svg viewBox="0 0 40 40" aria-hidden="true">
+      <path d="M20 33c0-9 3-15 9-19-2 9-4 13-9 19zM20 33c-4-6-6-10-8-16 7 3 8 8 8 16zM20 33V14M14 12c2-3 4-4 6-4s5 2 6 5" />
+    </svg>
+  </div>
+  <span class="cn">采集</span><span class="en">COLLECT · F</span>
+</div>
+
+<div class="touch-hint">1–7 换花 · Q/W/E/R 兼容 · X 换季 · C 清屏 · G 幽灵手 · S 声音 · D 视图 · ? 帮助 · ESC 退出</div>
+
+</body>
+</html>

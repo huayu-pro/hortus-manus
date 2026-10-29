@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+@import './styles/tokens.css';
+@import './styles/base.css';
+@import './styles/fonts.css';
+
+/* Lead-owned glue only. Page/section CSS belongs to the section owners. */
+.boot {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  gap: 12px;
+  text-align: center;
+  background: var(--paper);
+  color: var(--ink);
+}
+.boot__mark {
+  font-family: var(--font-display);
+  font-size: clamp(24px, 4vw, 56px);
+  letter-spacing: 0.08em;
+}
+.boot__line {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  color: var(--ink-soft);
+}

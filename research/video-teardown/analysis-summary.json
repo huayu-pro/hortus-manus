@@ -1,0 +1,26 @@
+{
+  "BV1CDjz6bE6o": {
+    "frames": 1251,
+    "staticSpans": 0,
+    "diffPeaks": 6,
+    "sheets": 3,
+    "keyframes": 6,
+    "uiCrops": 18
+  },
+  "BV1GKjm6aEfR": {
+    "frames": 958,
+    "staticSpans": 1,
+    "diffPeaks": 17,
+    "sheets": 3,
+    "keyframes": 18,
+    "uiCrops": 54
+  },
+  "BV1WJjF67Eky": {
+    "frames": 884,
+    "staticSpans": 0,
+    "diffPeaks": 14,
+    "sheets": 3,
+    "keyframes": 14,
+    "uiCrops": 42
+  }
+}

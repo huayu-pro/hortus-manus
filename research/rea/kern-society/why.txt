@@ -1,0 +1,1 @@
+gsap+ScrollTrigger+SplitText+Lenis+canvas; type-foundry kinetic type

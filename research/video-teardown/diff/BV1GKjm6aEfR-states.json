@@ -1,0 +1,103 @@
+{
+  "bv": "BV1GKjm6aEfR",
+  "fps": 24,
+  "frames": 958,
+  "threshold": 8.84,
+  "meanDiff": 3.11,
+  "diffPeaks": [
+    {
+      "frame": 106,
+      "time": 4.42,
+      "diff": 15.14
+    },
+    {
+      "frame": 118,
+      "time": 4.92,
+      "diff": 9.25
+    },
+    {
+      "frame": 172,
+      "time": 7.17,
+      "diff": 9.67
+    },
+    {
+      "frame": 289,
+      "time": 12.04,
+      "diff": 18.79
+    },
+    {
+      "frame": 311,
+      "time": 12.96,
+      "diff": 9.05
+    },
+    {
+      "frame": 350,
+      "time": 14.58,
+      "diff": 10.23
+    },
+    {
+      "frame": 468,
+      "time": 19.5,
+      "diff": 10.2
+    },
+    {
+      "frame": 514,
+      "time": 21.42,
+      "diff": 9.95
+    },
+    {
+      "frame": 526,
+      "time": 21.92,
+      "diff": 10.94
+    },
+    {
+      "frame": 537,
+      "time": 22.38,
+      "diff": 8.95
+    },
+    {
+      "frame": 557,
+      "time": 23.21,
+      "diff": 20.69
+    },
+    {
+      "frame": 669,
+      "time": 27.88,
+      "diff": 32.37
+    },
+    {
+      "frame": 723,
+      "time": 30.12,
+      "diff": 12.54
+    },
+    {
+      "frame": 761,
+      "time": 31.71,
+      "diff": 15.75
+    },
+    {
+      "frame": 792,
+      "time": 33.0,
+      "diff": 32.47
+    },
+    {
+      "frame": 832,
+      "time": 34.67,
+      "diff": 12.58
+    },
+    {
+      "frame": 852,
+      "time": 35.5,
+      "diff": 13.43
+    }
+  ],
+  "staticSpans": [
+    {
+      "startFrame": 46,
+      "endFrame": 62,
+      "repFrame": 54,
+      "seconds": 0.7,
+      "quiet": 0.67
+    }
+  ]
+}

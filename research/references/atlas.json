@@ -1,0 +1,2326 @@
+{
+  "generatedAt": "2026-10-29T18:21:02.133Z",
+  "count": 77,
+  "source": "One Page Love MCP search_inspiration, 14 queries",
+  "sites": [
+    {
+      "slug": "abdullah",
+      "name": "Abdullah",
+      "url": "https://helloabdullah.com",
+      "oplUrl": "https://onepagelove.com/abdullah/",
+      "headline": "Abdullah — Creative Designer & Digital Builder",
+      "fonts": {
+        "display": "Bricolage Grotesque",
+        "body": "Instrument Sans",
+        "mono": ""
+      },
+      "tech": "static · no canvas · Vercel · 10.7 screens",
+      "canvases": 0,
+      "screens": "10.7",
+      "look": "奶油底、巨大 Bricolage Grotesque 标题\"I'm Abdullah\"，下方两枚圆形头像徽章",
+      "why": [
+        "超大字号标题配极小正文，对比落差即气质",
+        "两枚圆形头像作为唯一图形元素，避免装饰噪声",
+        "全站只有一个 CTA，行动路径零歧义"
+      ],
+      "transfer": "单一 display 字体 + 1 CTA 的极简首屏，把预算全押在字号与留白",
+      "ids": [
+        "A3",
+        "D3"
+      ],
+      "shots": {
+        "desktop": "screens/abdullah/desktop.jpg",
+        "mobile": "screens/abdullah/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:34:55.573Z"
+    },
+    {
+      "slug": "angelo",
+      "name": "Angelo",
+      "url": "https://angelo.so/",
+      "oplUrl": "https://onepagelove.com/angelo/",
+      "headline": "Design for Tomorrow — angelo.so",
+      "fonts": {
+        "display": "sans-serif",
+        "body": "sans-serif",
+        "mono": ""
+      },
+      "tech": "Framer ab24241 · 8 canvas+WebGL · Framer/ad3cf8f · 1.0 screens",
+      "canvases": 8,
+      "screens": "1.0",
+      "look": "Framer 搭建，中心一簇 8 个彩色 3D 玻璃球/气泡，四周留白",
+      "why": [
+        "8 个 canvas 元素各自独立渲染小球，像标本陈列",
+        "球体有真实折射与高光，材质而非贴图",
+        "标题被球体遮住一部分，制造景深"
+      ],
+      "transfer": "多 canvas 分治：每个标本一个 canvas，避免单个 WebGL 上下文过载",
+      "ids": [
+        "B10",
+        "A7"
+      ],
+      "shots": {
+        "desktop": "screens/angelo/desktop.jpg",
+        "mobile": "screens/angelo/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:21:33.353Z"
+    },
+    {
+      "slug": "aniket",
+      "name": "Aniket",
+      "url": "https://unfunnyket.com",
+      "oplUrl": "https://onepagelove.com/aniket/",
+      "headline": "Aniket Chaudhary",
+      "fonts": {
+        "display": "GeistSans",
+        "body": "GeistSans",
+        "mono": ""
+      },
+      "tech": "static · 1 canvas+WebGL · Vercel · 1.8 screens",
+      "canvases": 1,
+      "screens": "1.8",
+      "look": "GeistSans、极短页（1597px）、单 canvas",
+      "why": [
+        "整页只有 1.6 屏高，信息密度极低",
+        "单一 Geist 字体贯穿，无字体混排",
+        "留白即结构，不靠分割线"
+      ],
+      "transfer": "单字体 + 极短页高，用\"页高\"作为设计约束",
+      "ids": [
+        "A3"
+      ],
+      "shots": {
+        "desktop": "screens/aniket/desktop.jpg",
+        "mobile": "screens/aniket/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:35:07.579Z"
+    },
+    {
+      "slug": "applied-imagination",
+      "name": "Applied Imagination",
+      "url": "https://applied-imagination.gpc.consulting",
+      "oplUrl": "https://onepagelove.com/applied-imagination/",
+      "headline": "Applied Imagination",
+      "fonts": {
+        "display": "fsKim",
+        "body": "gtAmerica",
+        "mono": "gtAmericaMono"
+      },
+      "tech": "static · 3 canvas+WebGL · Vercel · 22.8 screens",
+      "canvases": 3,
+      "screens": "22.8",
+      "look": "巨大衬线标题 \"Applied imagination\" 压在淡蓝天空照片上，3 canvas",
+      "why": [
+        "衬线大标题与摄影背景叠压，编辑感强",
+        "20k 页高但首屏只讲一句话",
+        "gtAmerica 与 fsKim 双字体分工（正文/展示）"
+      ],
+      "transfer": "展示衬线 + 无衬线正文双字体分工，标题叠在摄影上",
+      "ids": [
+        "A3",
+        "A2"
+      ],
+      "shots": {
+        "desktop": "screens/applied-imagination/desktop.jpg",
+        "mobile": "screens/applied-imagination/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:23:50.955Z"
+    },
+    {
+      "slug": "april-leihuanani-evangelista",
+      "name": "April Leihuanani Evangelista",
+      "url": "https://aprilleihuanani.com",
+      "oplUrl": "https://onepagelove.com/april-leihuanani-evangelista/",
+      "headline": "APRIL LEIHUANANI (eyebrow: \"Marketing & Content Creation\")",
+      "fonts": {
+        "display": "lgwy",
+        "body": "-apple-system",
+        "mono": ""
+      },
+      "tech": "Readymag · no canvas · Caddy\nnginx · 1.0 screens",
+      "canvases": 0,
+      "screens": "1.0",
+      "look": "Readymag 作品集，lgwy 自定义字体，米色底",
+      "why": [
+        "Readymag 的版式自由度带来杂志感",
+        "自定义字体 lgwy 作为个人标识",
+        "极短页高，像一张名片"
+      ],
+      "transfer": "用 Readymag 类工具的自定义字体能力做个人字标",
+      "ids": [
+        "A1"
+      ],
+      "shots": {
+        "desktop": "screens/april-leihuanani-evangelista/desktop.jpg",
+        "mobile": "screens/april-leihuanani-evangelista/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:18:11.386Z"
+    },
+    {
+      "slug": "archiv",
+      "name": "ARCHIV",
+      "url": "https://www.archiv.systems/",
+      "oplUrl": "https://onepagelove.com/archiv/",
+      "headline": "A collection system for organizing and identifying the physical world.",
+      "fonts": {
+        "display": "Helvetica Neue",
+        "body": "Helvetica Neue",
+        "mono": ""
+      },
+      "tech": "static · no canvas · Vercel · 1.0 screens",
+      "canvases": 0,
+      "screens": "1.0",
+      "look": "Helvetica Neue 全站、居中一枚银色圆盘物件，下方小字说明",
+      "why": [
+        "单一 Helvetica 的瑞士式克制",
+        "唯一物件居中，像博物馆展签",
+        "页高恰好 900px（一屏）"
+      ],
+      "transfer": "一屏一物件的\"展签\"版式：物件居中 + 说明文字在下",
+      "ids": [
+        "C7"
+      ],
+      "shots": {
+        "desktop": "screens/archiv/desktop.jpg",
+        "mobile": "screens/archiv/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:18:52.899Z"
+    },
+    {
+      "slug": "artem-taradash",
+      "name": "Artem Taradash",
+      "url": "https://taradash.me/",
+      "oplUrl": "https://onepagelove.com/artem-taradash/",
+      "headline": "Everything around us is love. Design is how it takes shape",
+      "fonts": {
+        "display": "Explorersdiatypecyrillic",
+        "body": "Arial",
+        "mono": ""
+      },
+      "tech": "Webflow + gsap 3.15.0 + Lenis + gsap.min.js · no canvas · cloudflare · 26.2 screens",
+      "canvases": 0,
+      "screens": "26.2",
+      "look": "Webflow + gsap + Lenis，大段自述文字与摄影并置，23k 页高",
+      "why": [
+        "Lenis 平滑滚动让长文阅读有\"纸感\"",
+        "gsap 段落入场与滚动绑定",
+        "照片与文字交替形成节奏"
+      ],
+      "transfer": "Lenis + ScrollTrigger 的长文滚动编排（段落错位入场）",
+      "ids": [
+        "D2"
+      ],
+      "shots": {
+        "desktop": "screens/artem-taradash/desktop.jpg",
+        "mobile": "screens/artem-taradash/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:17:42.349Z"
+    },
+    {
+      "slug": "artist-royalty-movement",
+      "name": "Artist Royalty Movement",
+      "url": "https://peggy.com/royalties",
+      "oplUrl": "https://onepagelove.com/artist-royalty-movement/",
+      "headline": "We believe artists deserve compensation on every sale of their work, not just the first one.",
+      "fonts": {
+        "display": "Reckless",
+        "body": "Inter",
+        "mono": ""
+      },
+      "tech": "static · no canvas · Fly/366e4bf88 (2026-10-27) · 6.7 screens",
+      "canvases": 0,
+      "screens": "6.7",
+      "look": "Reckless 衬线大标题，右侧黄沙发+画作摄影，Fly.io 部署",
+      "why": [
+        "衬线标题 + 高饱和黄色道具，色彩锚点明确",
+        "左右分栏：主张在左，证据在右",
+        "6k 页高，论证式长页"
+      ],
+      "transfer": "左论点右证据的双栏论证版式",
+      "ids": [
+        "C2"
+      ],
+      "shots": {
+        "desktop": "screens/artist-royalty-movement/desktop.jpg",
+        "mobile": "screens/artist-royalty-movement/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:38:15.758Z"
+    },
+    {
+      "slug": "ayush-halder-portfolio",
+      "name": "Ayush Halder Portfolio",
+      "url": "https://www.thoughtsofayush.com",
+      "oplUrl": "https://onepagelove.com/ayush-halder-portfolio/",
+      "headline": "I'm a Product Designer / Art Director",
+      "fonts": {
+        "display": "sans-serif",
+        "body": "sans-serif",
+        "mono": ""
+      },
+      "tech": "Framer 13ebf9e + Lenis · no canvas · Framer/ad3cf8f · 12.0 screens",
+      "canvases": 0,
+      "screens": "12.0",
+      "look": "Framer + Lenis，Geist 字体，米白底，10k 页高",
+      "why": [
+        "Lenis 惯性滚动贯穿全站",
+        "Geist 与 Inter 双无衬线，层级靠字号",
+        "作品以卡片横滑呈现"
+      ],
+      "transfer": "惯性滚动 + 字号层级（不用颜色区分层级）",
+      "ids": [
+        "D2"
+      ],
+      "shots": {
+        "desktop": "screens/ayush-halder-portfolio/desktop.jpg",
+        "mobile": "screens/ayush-halder-portfolio/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:31:53.500Z"
+    },
+    {
+      "slug": "bausola-banch",
+      "name": "Bausola Banch",
+      "url": "https://banch.bausola.com/",
+      "oplUrl": "https://onepagelove.com/bausola-banch/",
+      "headline": "WHAT'S IN THE FUTURE OF WORKTABLES?",
+      "fonts": {
+        "display": "industry",
+        "body": "industry",
+        "mono": ""
+      },
+      "tech": "Next.js · 3 canvas+WebGL · Vercel · 12.3 screens",
+      "canvases": 3,
+      "screens": "12.3",
+      "look": "Next.js/Vercel，industry 字体，白底网格线，3 canvas，建筑事务所",
+      "why": [
+        "网格线作为唯一\"图形\"，极简但可读",
+        "industry 窄体大写字，工业感",
+        "11k 页高，项目逐条展开"
+      ],
+      "transfer": "CSS 网格线当装饰层（1px 线 + 大量留白）",
+      "ids": [
+        "A9"
+      ],
+      "shots": {
+        "desktop": "screens/bausola-banch/desktop.jpg",
+        "mobile": "screens/bausola-banch/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:33:26.280Z"
+    },
+    {
+      "slug": "belgrade-architecture",
+      "name": "Architecture of Socialist-Era Belgrade",
+      "url": "https://belgrade.klmln.com",
+      "oplUrl": "https://onepagelove.com/belgrade-architecture/",
+      "headline": "ARCHITECTURE OF SOCIALIST-ERA BELGRADE",
+      "fonts": {
+        "display": "IntraNet",
+        "body": "Funnel Sans",
+        "mono": ""
+      },
+      "tech": "Webflow · no canvas · Vercel · 81.4 screens",
+      "canvases": 0,
+      "screens": "81.4",
+      "look": "Webflow，红色巨型 \"ARCHITECTURE OF SOCIALIST-ERA BELGRADE\" 压在灰色粗野主义建筑照，73k 页高",
+      "why": [
+        "红字 + 灰照片的单色强调，极强",
+        "73k 页高 = 图片长卷式叙事",
+        "IntraNet 窄体字与 Funnel Sans 混排"
+      ],
+      "transfer": "单色强调色（只用一种红）压在去饱和摄影上",
+      "ids": [
+        "A4",
+        "A7"
+      ],
+      "shots": {
+        "desktop": "screens/belgrade-architecture/desktop.jpg",
+        "mobile": "screens/belgrade-architecture/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:39:53.817Z"
+    },
+    {
+      "slug": "berd",
+      "name": "Berd",
+      "url": "https://berd.xyz/",
+      "oplUrl": "https://onepagelove.com/berd/",
+      "headline": "Berd — Less chatting, more building.",
+      "fonts": {
+        "display": "Inter var",
+        "body": "Cash Sans",
+        "mono": ""
+      },
+      "tech": "berd-brush-paths.js + step-brush-paths.js · 4 canvas+WebGL · cloudflare · 5.4 screens",
+      "canvases": 4,
+      "screens": "5.4",
+      "look": "白底、Cash Sans + Inter var、4 canvas、笔刷路径 JS（berd-brush-paths.js）",
+      "why": [
+        "自研笔刷路径脚本，线条像手绘",
+        "Cash Sans 的怪诞字与干净底反差",
+        "canvas 只做局部笔触，不做全屏"
+      ],
+      "transfer": "自研 SVG/Canvas 笔刷路径（berd-brush-paths.js 思路）→ 藤蔓字标",
+      "ids": [
+        "A1"
+      ],
+      "shots": {
+        "desktop": "screens/berd/desktop.jpg",
+        "mobile": "screens/berd/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:26:14.610Z"
+    },
+    {
+      "slug": "bob-moll",
+      "name": "Bob Moll",
+      "url": "https://bobmoll.tech",
+      "oplUrl": "https://onepagelove.com/bob-moll/",
+      "headline": "BOB MOLL",
+      "fonts": {
+        "display": "Arial",
+        "body": "Arial",
+        "mono": ""
+      },
+      "tech": "static · no canvas · Apache · 1.0 screens",
+      "canvases": 0,
+      "screens": "1.0",
+      "look": "BOB MOLL 巨大黑字压在白色纹理纸上，横向图片带，底部荧光绿条",
+      "why": [
+        "纸纹理背景 + 纯黑字，印刷感",
+        "横向图片带像接触表",
+        "荧光绿只出现在页脚一条，克制"
+      ],
+      "transfer": "纸纹理底 + 单条荧光色作为页脚签名",
+      "ids": [
+        "A6",
+        "D7"
+      ],
+      "shots": {
+        "desktop": "screens/bob-moll/desktop.jpg",
+        "mobile": "screens/bob-moll/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:31:32.646Z"
+    },
+    {
+      "slug": "britt-taylor",
+      "name": "Britt Taylor",
+      "url": "https://www.btay.ca",
+      "oplUrl": "https://onepagelove.com/britt-taylor/",
+      "headline": "Remember when stumbling across a new website used to be fun",
+      "fonts": {
+        "display": "Inter Display",
+        "body": "sans-serif",
+        "mono": ""
+      },
+      "tech": "Framer a56d1fd · no canvas · Framer/ad3cf8f · 11.9 screens",
+      "canvases": 0,
+      "screens": "11.9",
+      "look": "Framer，Averia Serif Libre + Homemade Apple 手写 + Inter Display，拼贴色块",
+      "why": [
+        "手写体只用于个别词，像批注",
+        "拼贴色块 + 卡通插画，童趣但不廉价",
+        "10k 页高，章节式滚动"
+      ],
+      "transfer": "手写体仅用于\"批注词\"，其余用展示衬线",
+      "ids": [
+        "A9"
+      ],
+      "shots": {
+        "desktop": "screens/britt-taylor/desktop.jpg",
+        "mobile": "screens/britt-taylor/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:18:30.503Z"
+    },
+    {
+      "slug": "bueno-fyi",
+      "name": "bueno.fyi",
+      "url": "https://bueno.fyi",
+      "oplUrl": "https://onepagelove.com/bueno-fyi/",
+      "headline": "Search the index...",
+      "fonts": {
+        "display": "Inter",
+        "body": "Inter",
+        "mono": ""
+      },
+      "tech": "static · no canvas · Apache · 4.3 screens",
+      "canvases": 0,
+      "screens": "4.3",
+      "look": "Inter 单字体，搜索框 \"Search the index...\"，列表式",
+      "why": [
+        "搜索框即首屏主体，功能即设计",
+        "Inter 单字体，无装饰",
+        "列表行高宽松，可扫读"
+      ],
+      "transfer": "把搜索框做成首屏主视觉（功能前置）",
+      "ids": [
+        "C5"
+      ],
+      "shots": {
+        "desktop": "screens/bueno-fyi/desktop.jpg",
+        "mobile": "screens/bueno-fyi/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:19:26.491Z"
+    },
+    {
+      "slug": "bymayo-2",
+      "name": "ByMayo",
+      "url": "https://bymayo.co.uk/",
+      "oplUrl": "https://onepagelove.com/bymayo-2/",
+      "headline": "Creative Developer",
+      "fonts": {
+        "display": "PP Neue Montreal",
+        "body": "PP Neue Montreal",
+        "mono": "IBM Plex Mono"
+      },
+      "tech": "static · no canvas · Vercel · 1.4 screens",
+      "canvases": 0,
+      "screens": "1.4",
+      "look": "PP Neue Montreal + IBM Plex Mono + PP Mondwest，米底，1.2k 页高",
+      "why": [
+        "三字体分工：展示/等宽/复古",
+        "页高仅 1223px，像一张海报",
+        "等宽字体用于标签，制造技术感"
+      ],
+      "transfer": "等宽字体做标签层（IBM Plex Mono 对应 contract 的标签系统）",
+      "ids": [
+        "A3"
+      ],
+      "shots": {
+        "desktop": "screens/bymayo-2/desktop.jpg",
+        "mobile": "screens/bymayo-2/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:35:34.630Z"
+    },
+    {
+      "slug": "cape-town-dam-levels-today",
+      "name": "Cape Town Dam Levels Today",
+      "url": "https://capetowndamlevels.co.za/",
+      "oplUrl": "https://onepagelove.com/cape-town-dam-levels-today/",
+      "headline": "Monday looks like the wettest day. (eyebrow: \"THE OUTLOOK\")",
+      "fonts": {
+        "display": "Barlow",
+        "body": "Barlow",
+        "mono": "IBM Plex Mono"
+      },
+      "tech": "Astro v4.16.19 + Astro · no canvas · Netlify · 9.3 screens",
+      "canvases": 0,
+      "screens": "9.3",
+      "look": "Astro，深蓝夜空底，大号 73 水位读数，折线/三角图表，Barlow + IBM Plex Mono + Playfair",
+      "why": [
+        "深蓝底 + 大号数字，数据即主角",
+        "Playfair 衬线做标题，Barlow 做数据",
+        "图表用几何色块而非库默认样式"
+      ],
+      "transfer": "大号数字读数 + 衬线标题的数据叙事版式",
+      "ids": [
+        "C3"
+      ],
+      "shots": {
+        "desktop": "screens/cape-town-dam-levels-today/desktop.jpg",
+        "mobile": "screens/cape-town-dam-levels-today/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:10:41.683Z"
+    },
+    {
+      "slug": "city-of-angels",
+      "name": "City of Angels",
+      "url": "https://cityxofxangels.com",
+      "oplUrl": "https://onepagelove.com/city-of-angels/",
+      "headline": "CITY OF ANGELS",
+      "fonts": {
+        "display": "ABC Diatype",
+        "body": "ABC Diatype",
+        "mono": "Founders Grotesk Mono"
+      },
+      "tech": "Astro v7.0.7 + Lenis · no canvas · cloudflare · 7.0 screens",
+      "canvases": 0,
+      "screens": "7.0",
+      "look": "Astro，浅蓝天空底，巨型 ABC Diatype \"CITY OF ANGELS\"，下方街拍照片",
+      "why": [
+        "标题与照片同色系，融为一体",
+        "ABC Diatype 的宽体大写有海报感",
+        "Lenis 平滑滚动"
+      ],
+      "transfer": "标题色 = 背景照片主色的同色系处理",
+      "ids": [
+        "A4"
+      ],
+      "shots": {
+        "desktop": "screens/city-of-angels/desktop.jpg",
+        "mobile": "screens/city-of-angels/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:40:02.085Z"
+    },
+    {
+      "slug": "congrue",
+      "name": "Congrue",
+      "url": "https://www.congrue.ai",
+      "oplUrl": "https://onepagelove.com/congrue/",
+      "headline": "Sell the system, not the SKU.",
+      "fonts": {
+        "display": "Perfektta",
+        "body": "Instrument Sans",
+        "mono": "DM Mono"
+      },
+      "tech": "static · 1 canvas+WebGL · Vercel · 10.3 screens",
+      "canvases": 1,
+      "screens": "10.3",
+      "look": "Vercel，Perfektta + Instrument Sans + DM Mono，深色 3D 等距盒子插画",
+      "why": [
+        "等距 3D 盒子作为产品隐喻",
+        "Perfektta 展示字 + DM Mono 标签",
+        "深色底衬托产品图"
+      ],
+      "transfer": "等距（isometric）插画代替截图，统一视角",
+      "ids": [
+        "A7"
+      ],
+      "shots": {
+        "desktop": "screens/congrue/desktop.jpg",
+        "mobile": "screens/congrue/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:29:50.224Z"
+    },
+    {
+      "slug": "dabbit",
+      "name": "Dabbit",
+      "url": "https://dabbit.app",
+      "oplUrl": "https://onepagelove.com/dabbit/",
+      "headline": "The color picker your Mac deserved.",
+      "fonts": {
+        "display": "InterVariable",
+        "body": "InterVariable",
+        "mono": ""
+      },
+      "tech": "Astro v7.3.3 + Astro · 8 canvas+WebGL · cloudflare · 7.3 screens",
+      "canvases": 8,
+      "screens": "7.3",
+      "look": "Astro，8 canvas，白底极简，中央一枚色彩方块（取色器），InterVariable",
+      "why": [
+        "8 个 canvas 各司其职（取色器/背景/粒子）",
+        "产品即页面：取色器就是首屏",
+        "InterVariable 可变字重"
+      ],
+      "transfer": "产品控件本身作为首屏主视觉（dogfooding）",
+      "ids": [
+        "B12"
+      ],
+      "shots": {
+        "desktop": "screens/dabbit/desktop.jpg",
+        "mobile": "screens/dabbit/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:39:35.211Z"
+    },
+    {
+      "slug": "davesocozy",
+      "name": "davesocozy",
+      "url": "https://davesocozy.com",
+      "oplUrl": "https://onepagelove.com/davesocozy/",
+      "headline": "PONG",
+      "fonts": {
+        "display": "Martian Mono",
+        "body": "Martian Mono",
+        "mono": "Martian Mono"
+      },
+      "tech": "static · 1 canvas+WebGL · Vercel · 1.0 screens",
+      "canvases": 1,
+      "screens": "1.0",
+      "look": "Martian Mono 全站等宽，绿底 PONG 游戏，1 canvas",
+      "why": [
+        "等宽字体 + 绿底 = 复古终端",
+        "PONG 小游戏作为首屏互动",
+        "页高 900px 一屏"
+      ],
+      "transfer": "等宽字体 + 单色底做\"终端美学\"（可转成标本馆目录）",
+      "ids": [
+        "A3"
+      ],
+      "shots": {
+        "desktop": "screens/davesocozy/desktop.jpg",
+        "mobile": "screens/davesocozy/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:19:47.188Z"
+    },
+    {
+      "slug": "deeo-studio-2",
+      "name": "Deeo Studio",
+      "url": "https://deeo.studio",
+      "oplUrl": "https://onepagelove.com/deeo-studio-2/",
+      "headline": "Creating memorable brand experiences not for attention but for impact.",
+      "fonts": {
+        "display": "PP Editorial New Ultralight",
+        "body": "sans-serif",
+        "mono": ""
+      },
+      "tech": "Framer 9801af1 + spline-viewer.js · no canvas · Framer/ad3cf8f · 13.9 screens",
+      "canvases": 0,
+      "screens": "13.9",
+      "look": "Framer + Spline 3D，PP Editorial New Ultralight 大标题，12k 页高",
+      "why": [
+        "Spline 内嵌 3D 场景（spline-viewer.js）",
+        "超细展示衬线压在大留白上",
+        "滚动时 3D 物件旋转"
+      ],
+      "transfer": "Spline 内嵌 3D 作为滚动章节的锚点物件",
+      "ids": [
+        "A2"
+      ],
+      "shots": {
+        "desktop": "screens/deeo-studio-2/desktop.jpg",
+        "mobile": "screens/deeo-studio-2/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:31:41.421Z"
+    },
+    {
+      "slug": "digital-original",
+      "name": "Digital Original™",
+      "url": "https://digitaloriginal.app/",
+      "oplUrl": "https://onepagelove.com/digital-original/",
+      "headline": "The New Era of Art is Digital",
+      "fonts": {
+        "display": "Neue Montreal",
+        "body": "Neue Montreal",
+        "mono": ""
+      },
+      "tech": "static · no canvas · cloudflare · 14.5 screens",
+      "canvases": 0,
+      "screens": "14.5",
+      "look": "Neue Montreal + PP Eiko，暖橙摄影，居中产品视频",
+      "why": [
+        "PP Eiko 的复古展示字与 Neue Montreal 分工",
+        "摄影色调统一（暖橙）",
+        "视频作为首屏而非图片"
+      ],
+      "transfer": "全站统一暖色调摄影 + 展示字（色彩纪律）",
+      "ids": [
+        "A4"
+      ],
+      "shots": {
+        "desktop": "screens/digital-original/desktop.jpg",
+        "mobile": "screens/digital-original/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:37:33.763Z"
+    },
+    {
+      "slug": "digital-original-xr",
+      "name": "Digital Original XR",
+      "url": "https://digitaloriginal.app/xr",
+      "oplUrl": "https://onepagelove.com/digital-original-xr/",
+      "headline": "Your art gallery in any space (eyebrow: \"AVAILABLE ON META QUEST 3 & PRO\")",
+      "fonts": {
+        "display": "Neue Montreal",
+        "body": "Neue Montreal",
+        "mono": ""
+      },
+      "tech": "static · no canvas · cloudflare · 13.8 screens",
+      "canvases": 0,
+      "screens": "13.8",
+      "look": "同品牌 XR 子页，Neue Montreal，白色 3D 装置居中",
+      "why": [
+        "同一品牌不同子页共用字体系统",
+        "3D 装置白模，不抢文案",
+        "首屏只有一句话 + 一个 CTA"
+      ],
+      "transfer": "品牌字体系统跨子页复用（设计 token 化）",
+      "ids": [
+        "A3"
+      ],
+      "shots": {
+        "desktop": "screens/digital-original-xr/desktop.jpg",
+        "mobile": "screens/digital-original-xr/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:32:05.346Z"
+    },
+    {
+      "slug": "duo-case",
+      "name": "Duo Case",
+      "url": "https://www.duocase.lol",
+      "oplUrl": "https://onepagelove.com/duo-case/",
+      "headline": "Two phones. One fold. (eyebrow: \"Introducing Duo Case\")",
+      "fonts": {
+        "display": "-apple-system",
+        "body": "-apple-system",
+        "mono": ""
+      },
+      "tech": "gsap 3.13.0 + ScrollTrigger + SplitText + Lenis + Lenis + gsap.min.js · no canvas · cloudflare · 10.2 screens",
+      "canvases": 0,
+      "screens": "10.2",
+      "look": "gsap+ScrollTrigger+SplitText+Lenis，深色，\"Two phones. One fold.\" 大字 + 手机产品图",
+      "why": [
+        "SplitText 逐字入场",
+        "深色底 + 产品高光，像发布会",
+        "滚动时手机翻转"
+      ],
+      "transfer": "SplitText 逐字/逐行入场（对应 D3 字体入场）",
+      "ids": [
+        "D3"
+      ],
+      "shots": {
+        "desktop": "screens/duo-case/desktop.jpg",
+        "mobile": "screens/duo-case/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:22:07.108Z"
+    },
+    {
+      "slug": "e-stewart-associates",
+      "name": "E. Stewart &amp; Associates",
+      "url": "https://estewartandassociates.com/",
+      "oplUrl": "https://onepagelove.com/e-stewart-associates/",
+      "headline": "Three generations of expertise in fire prevention. (eyebrow: \"FIRE PREVENTION SPECIALISTS\")",
+      "fonts": {
+        "display": "Saol Display",
+        "body": "Source Sans Pro",
+        "mono": ""
+      },
+      "tech": "tweenmax.min.js · no canvas · Apache · 7.9 screens",
+      "canvases": 0,
+      "screens": "7.9",
+      "look": "Saol Display 衬线大标题 \"Three generations of expertise in fire prevention.\"，暗绿摄影底",
+      "why": [
+        "暗绿摄影 + 衬线标题，老钱感",
+        "长句标题直接当主视觉",
+        "7k 页高，服务型长页"
+      ],
+      "transfer": "长句衬线标题占满首屏（文案即版式）",
+      "ids": [
+        "C2"
+      ],
+      "shots": {
+        "desktop": "screens/e-stewart-associates/desktop.jpg",
+        "mobile": "screens/e-stewart-associates/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:10:52.725Z"
+    },
+    {
+      "slug": "eight-shot",
+      "name": "Eight Shot",
+      "url": "https://www.cookedapps.com/eight-shot",
+      "oplUrl": "https://onepagelove.com/eight-shot/",
+      "headline": "cooked apps",
+      "fonts": {
+        "display": "Be Vietnam Pro",
+        "body": "Be Vietnam Pro",
+        "mono": ""
+      },
+      "tech": "static · no canvas · UploadServer · 4.7 screens",
+      "canvases": 0,
+      "screens": "4.7",
+      "look": "Be Vietnam Pro，浅色，相机产品图 + 多张样片拼贴",
+      "why": [
+        "样片拼贴证明产品能力",
+        "单一无衬线字体，靠图片层级",
+        "CTA 双按钮并列"
+      ],
+      "transfer": "样片拼贴墙作为\"证据层\"",
+      "ids": [
+        "A7"
+      ],
+      "shots": {
+        "desktop": "screens/eight-shot/desktop.jpg",
+        "mobile": "screens/eight-shot/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:39:22.401Z"
+    },
+    {
+      "slug": "estacion-venenta",
+      "name": "estacion venenta",
+      "url": "https://estacionvenenta.com",
+      "oplUrl": "https://onepagelove.com/estacion-venenta/",
+      "headline": "estacion venenta",
+      "fonts": {
+        "display": "Helvetica",
+        "body": "Times New Roman",
+        "mono": ""
+      },
+      "tech": "static · 1 canvas+WebGL · cloudflare · 1.0 screens",
+      "canvases": 1,
+      "screens": "1.0",
+      "look": "Helvetica/Times，1 canvas，白底细线装置（蛛网状）",
+      "why": [
+        "单 canvas 画极细线网，像线框雕塑",
+        "默认 Helvetica 反而克制",
+        "页高 900px"
+      ],
+      "transfer": "单 canvas 细线网（可直接对应 tendril 的线网）",
+      "ids": [
+        "B3"
+      ],
+      "shots": {
+        "desktop": "screens/estacion-venenta/desktop.jpg",
+        "mobile": "screens/estacion-venenta/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:21:23.837Z"
+    },
+    {
+      "slug": "eventually",
+      "name": "Eventually",
+      "url": "https://geteventually.com",
+      "oplUrl": "https://onepagelove.com/eventually/",
+      "headline": "Bet you have hundreds of 🔖 saved tweets. Use Eventually to actually 🧠 revisit them.",
+      "fonts": {
+        "display": "DM Sans",
+        "body": "DM Sans",
+        "mono": ""
+      },
+      "tech": "static · no canvas · Vercel · 2.8 screens",
+      "canvases": 0,
+      "screens": "2.8",
+      "look": "DM Sans + Instrument Serif，白底，大标题 \"Bet you have hundreds of saved tweets.\"",
+      "why": [
+        "Instrument Serif 斜体点缀 DM Sans",
+        "标题用口语，不像营销",
+        "2.5k 页高，短页"
+      ],
+      "transfer": "Instrument Serif + 无衬线混排（contract 已定同款字体）",
+      "ids": [
+        "A3"
+      ],
+      "shots": {
+        "desktop": "screens/eventually/desktop.jpg",
+        "mobile": "screens/eventually/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:18:43.395Z"
+    },
+    {
+      "slug": "everline-studio",
+      "name": "Everline Studio",
+      "url": "https://onepagelove.com/go/everline-studio",
+      "oplUrl": "https://onepagelove.com/everline-studio/",
+      "headline": "EVERLINE STUDIO|",
+      "fonts": {
+        "display": "BenchNine",
+        "body": "sans-serif",
+        "mono": ""
+      },
+      "tech": "gsap 3.1.1 + Typed + gsap.min.js · 2 canvas+WebGL · Squarespace · 6.3 screens",
+      "canvases": 2,
+      "screens": "6.3",
+      "look": "Squarespace，荧光黄底，BenchNine 窄体巨型 \"EVERLINE|\"，2 canvas + gsap + Typed",
+      "why": [
+        "荧光黄底 + 黑窄体字，强对比",
+        "Typed 打字机效果做副标题",
+        "工作室作品以横条滚动"
+      ],
+      "transfer": "单色高饱和底 + 窄体大写（色彩块即品牌）",
+      "ids": [
+        "A4"
+      ],
+      "shots": {
+        "desktop": "screens/everline-studio/desktop.jpg",
+        "mobile": "screens/everline-studio/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:40:43.269Z"
+    },
+    {
+      "slug": "felix-haas",
+      "name": "Felix Haas",
+      "url": "https://felixhaas.io/",
+      "oplUrl": "https://onepagelove.com/felix-haas/",
+      "headline": "A letter from Felix Haas",
+      "fonts": {
+        "display": "Geist",
+        "body": "Geist",
+        "mono": ""
+      },
+      "tech": "static · no canvas · Vercel · 17.4 screens",
+      "canvases": 0,
+      "screens": "17.4",
+      "look": "Geist，米白，居中一封\"信\"，15k 页高",
+      "why": [
+        "首屏像一封信，私密感",
+        "Geist 单字体，无装饰",
+        "滚动像读长信"
+      ],
+      "transfer": "书信体长页（第一人称叙事）",
+      "ids": [
+        "C2"
+      ],
+      "shots": {
+        "desktop": "screens/felix-haas/desktop.jpg",
+        "mobile": "screens/felix-haas/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:11:16.318Z"
+    },
+    {
+      "slug": "flashform",
+      "name": "Flashform",
+      "url": "https://flshfrm.com",
+      "oplUrl": "https://onepagelove.com/flashform/",
+      "headline": "We're just sending forms and that's all",
+      "fonts": {
+        "display": "Aeonik",
+        "body": "NeueHaas",
+        "mono": ""
+      },
+      "tech": "static · 3 canvas+WebGL · Vercel · 1.0 screens",
+      "canvases": 3,
+      "screens": "1.0",
+      "look": "Aeonik + Recife + NeueHaas，深色，3 canvas，产品表单界面",
+      "why": [
+        "产品 UI 截图直接当首屏",
+        "Aeonik 几何无衬线 + Recife 衬线点缀",
+        "深色底衬托表单"
+      ],
+      "transfer": "产品界面截图 + 极简说明（dogfooding 首屏）",
+      "ids": [
+        "B12"
+      ],
+      "shots": {
+        "desktop": "screens/flashform/desktop.jpg",
+        "mobile": "screens/flashform/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:30:16.733Z"
+    },
+    {
+      "slug": "flowjam-2",
+      "name": "Flowjam",
+      "url": "http://flowjam.com",
+      "oplUrl": "https://onepagelove.com/flowjam-2/",
+      "headline": "We make launch videos for AI startups. That go viral. (eyebrow: \"Loved By 50+ YC Startups\")",
+      "fonts": {
+        "display": "Gelica",
+        "body": "Arial",
+        "mono": ""
+      },
+      "tech": "static · no canvas · Vercel · 16.2 screens",
+      "canvases": 0,
+      "screens": "16.2",
+      "look": "Gelica 衬线 + Craftworkgrotesk，深色，视频缩略图网格",
+      "why": [
+        "Gelica 衬线标题带复古",
+        "缩略图网格像作品集索引",
+        "14k 页高"
+      ],
+      "transfer": "缩略图网格 + 衬线标题的作品索引",
+      "ids": [
+        "C5"
+      ],
+      "shots": {
+        "desktop": "screens/flowjam-2/desktop.jpg",
+        "mobile": "screens/flowjam-2/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:17:26.109Z"
+    },
+    {
+      "slug": "gardener",
+      "name": "Gardener",
+      "url": "https://www.gardener.nyc/",
+      "oplUrl": "https://onepagelove.com/gardener/",
+      "headline": "GARDENER",
+      "fonts": {
+        "display": "PP Neue Montreal",
+        "body": "PP Neue Montreal",
+        "mono": ""
+      },
+      "tech": "Next.js · no canvas · Vercel · 8.1 screens",
+      "canvases": 0,
+      "screens": "8.1",
+      "look": "Next.js/Vercel，PP Neue Montreal，米白，园艺服务，7k 页高",
+      "why": [
+        "园艺主题但用现代无衬线，不俗气",
+        "米白底与植物绿形成自然色",
+        "服务列表用大留白"
+      ],
+      "transfer": "园艺主题的现代排版（正好对应 HORTUS 的调性）",
+      "ids": [
+        "A4"
+      ],
+      "shots": {
+        "desktop": "screens/gardener/desktop.jpg",
+        "mobile": "screens/gardener/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:38:56.501Z"
+    },
+    {
+      "slug": "grilled-pixels-ecommerce",
+      "name": "Grilled Pixels Ecommerce",
+      "url": "https://www.grilledpixels.com/ecommerce",
+      "oplUrl": "https://onepagelove.com/grilled-pixels-ecommerce/",
+      "headline": "COMMERCE, ELEVATED",
+      "fonts": {
+        "display": "untitledSans",
+        "body": "Times New Roman",
+        "mono": "tronicaMono"
+      },
+      "tech": "static · 4 canvas+WebGL · Vercel · 1.0 screens",
+      "canvases": 4,
+      "screens": "1.0",
+      "look": "untitledSans + tronicaMono + atHaussMono，4 canvas，电商",
+      "why": [
+        "等宽字体做价格/规格标签",
+        "4 canvas 做局部动效",
+        "商品图统一白底"
+      ],
+      "transfer": "等宽字体承担\"规格/价格\"数据层",
+      "ids": [
+        "A3"
+      ],
+      "shots": {
+        "desktop": "screens/grilled-pixels-ecommerce/desktop.jpg",
+        "mobile": "screens/grilled-pixels-ecommerce/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:29:58.265Z"
+    },
+    {
+      "slug": "gunes-atakan-peksen",
+      "name": "Gunes Atakan Peksen",
+      "url": "https://gunespeksen.com",
+      "oplUrl": "https://onepagelove.com/gunes-atakan-peksen/",
+      "headline": "Gunes Atakan Peksen — AI Creative Director",
+      "fonts": {
+        "display": "Futura PT",
+        "body": "Futura PT",
+        "mono": ""
+      },
+      "tech": "gsap 3.15.0 + SplitText + gsap.min.js + customease.min.js · no canvas · 1.0 screens",
+      "canvases": 0,
+      "screens": "1.0",
+      "look": "Futura PT，gsap + SplitText + CustomEase，深色摄影网格",
+      "why": [
+        "Futura PT 几何字与摄影网格",
+        "SplitText 逐字入场",
+        "CustomEase 定制缓动"
+      ],
+      "transfer": "CustomEase 定制缓动曲线（不是默认 ease）",
+      "ids": [
+        "D1"
+      ],
+      "shots": {
+        "desktop": "screens/gunes-atakan-peksen/desktop.jpg",
+        "mobile": "screens/gunes-atakan-peksen/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:40:23.350Z"
+    },
+    {
+      "slug": "hedroom",
+      "name": "HEDROOM™",
+      "url": "https://www.hedroom.fm/",
+      "oplUrl": "https://onepagelove.com/hedroom/",
+      "headline": "HEDROOM™",
+      "fonts": {
+        "display": "Helvetica Now Text",
+        "body": "Helvetica Now Text",
+        "mono": ""
+      },
+      "tech": "static · 3 canvas+WebGL · Vercel · 1.0 screens",
+      "canvases": 3,
+      "screens": "1.0",
+      "look": "Helvetica Now Display/Text，3 canvas，深色，产品视频",
+      "why": [
+        "Helvetica Now 的大小光学尺寸分工",
+        "3 canvas 做局部效果",
+        "视频为主视觉"
+      ],
+      "transfer": "同一字体家族的光学尺寸（Display/Text）分工",
+      "ids": [
+        "A3"
+      ],
+      "shots": {
+        "desktop": "screens/hedroom/desktop.jpg",
+        "mobile": "screens/hedroom/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:29:01.975Z"
+    },
+    {
+      "slug": "humanoid-index",
+      "name": "Humanoid Index",
+      "url": "https://humanoid-index.com/",
+      "oplUrl": "https://onepagelove.com/humanoid-index/",
+      "headline": "Lumi",
+      "fonts": {
+        "display": "GeistSans",
+        "body": "GeistSans",
+        "mono": ""
+      },
+      "tech": "static · no canvas · Vercel · 1.0 screens",
+      "canvases": 0,
+      "screens": "1.0",
+      "look": "GeistSans，白底，人形 3D 模型居中，极简",
+      "why": [
+        "3D 人形作为唯一主体",
+        "Geist 单字体",
+        "页高 900px 一屏"
+      ],
+      "transfer": "单一 3D 主体 + 极简底（不堆粒子）",
+      "ids": [
+        "A2"
+      ],
+      "shots": {
+        "desktop": "screens/humanoid-index/desktop.jpg",
+        "mobile": "screens/humanoid-index/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:38:26.981Z"
+    },
+    {
+      "slug": "i-me-coffee",
+      "name": "I & Me Coffee",
+      "url": "https://www.iandmecoffee.com/",
+      "oplUrl": "https://onepagelove.com/i-me-coffee/",
+      "headline": "BREW THAT BREAKS THE MOULD",
+      "fonts": {
+        "display": "Moldin Condensed",
+        "body": "Saira Condensed",
+        "mono": ""
+      },
+      "tech": "static · no canvas · Vercel · 21.4 screens",
+      "canvases": 0,
+      "screens": "21.4",
+      "look": "Saira Condensed + Moldin Condensed，咖啡品牌，19k 页高",
+      "why": [
+        "窄体字 + 咖啡摄影，货架感",
+        "长页讲述产地故事",
+        "色板限定在棕/奶白"
+      ],
+      "transfer": "窄体字 + 单一色系的长页品牌叙事",
+      "ids": [
+        "C2"
+      ],
+      "shots": {
+        "desktop": "screens/i-me-coffee/desktop.jpg",
+        "mobile": "screens/i-me-coffee/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:34:38.527Z"
+    },
+    {
+      "slug": "invoicemon",
+      "name": "invoicemon",
+      "url": "https://invoicemon.com",
+      "oplUrl": "https://onepagelove.com/invoicemon/",
+      "headline": "A complete invoicing workflow in your browser",
+      "fonts": {
+        "display": "inter",
+        "body": "inter",
+        "mono": ""
+      },
+      "tech": "static · no canvas · Vercel · 1.9 screens",
+      "canvases": 0,
+      "screens": "1.9",
+      "look": "inter，白底，产品截图，1.6k 页高",
+      "why": [
+        "产品截图 + 短文案，极短页",
+        "inter 单字体",
+        "一屏讲完价值"
+      ],
+      "transfer": "一屏产品页（页高 < 2 屏）",
+      "ids": [
+        "B12"
+      ],
+      "shots": {
+        "desktop": "screens/invoicemon/desktop.jpg",
+        "mobile": "screens/invoicemon/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:32:18.427Z"
+    },
+    {
+      "slug": "is-that-pigeon-a-fed",
+      "name": "Is That Pigeon a Fed?",
+      "url": "https://readymag.website/u2492934797/isthatpigeonafed/",
+      "oplUrl": "https://onepagelove.com/is-that-pigeon-a-fed/",
+      "headline": "IS THAT PIGEON A FED?",
+      "fonts": {
+        "display": "-apple-system",
+        "body": "-apple-system",
+        "mono": ""
+      },
+      "tech": "Readymag · no canvas · nginx · 1.0 screens",
+      "canvases": 0,
+      "screens": "1.0",
+      "look": "Readymag，黑底，鸽子摄影 + 巨大白字 \"IS THAT A PIGEON A FED?\"",
+      "why": [
+        "黑底 + 单张动物摄影，剧场感",
+        "标题就是问题，制造好奇",
+        "Readymag 版式自由"
+      ],
+      "transfer": "疑问句标题 + 单张摄影（叙事钩子）",
+      "ids": [
+        "C2"
+      ],
+      "shots": {
+        "desktop": "screens/is-that-pigeon-a-fed/desktop.jpg",
+        "mobile": "screens/is-that-pigeon-a-fed/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:20:05.237Z"
+    },
+    {
+      "slug": "isa-de-burgh",
+      "name": "Isa de Burgh",
+      "url": "https://isadeburgh.com",
+      "oplUrl": "https://onepagelove.com/isa-de-burgh/",
+      "headline": "ISA DE BURGH",
+      "fonts": {
+        "display": "FoundersGroteskCondensedMedium",
+        "body": "FoundersGroteskCondensedMedium",
+        "mono": ""
+      },
+      "tech": "gsap 3.13.0 + ScrollTrigger + SplitText + Lenis + gsap.js + draggable.min.js · no canvas · Apache · 9.5 screens",
+      "canvases": 0,
+      "screens": "9.5",
+      "look": "gsap+ScrollTrigger+SplitText+Lenis，FoundersGroteskCondensed + PPNeueMontreal，艺术家作品集",
+      "why": [
+        "Condensed 大写字 + 作品全屏",
+        "Lenis 平滑滚动",
+        "8.5k 页高"
+      ],
+      "transfer": "Condensed 展示字 + 全屏作品（画廊式滚动）",
+      "ids": [
+        "D2"
+      ],
+      "shots": {
+        "desktop": "screens/isa-de-burgh/desktop.jpg",
+        "mobile": "screens/isa-de-burgh/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:32:59.715Z"
+    },
+    {
+      "slug": "jeff-wall",
+      "name": "Jeff Wall",
+      "url": "https://www.jeffwall.me/",
+      "oplUrl": "https://onepagelove.com/jeff-wall/",
+      "headline": "Creative Director Performance Marketing",
+      "fonts": {
+        "display": "Times New Roman",
+        "body": "Times New Roman",
+        "mono": ""
+      },
+      "tech": "static · 1 canvas+WebGL · Vercel · 1.0 screens",
+      "canvases": 1,
+      "screens": "1.0",
+      "look": "Times New Roman，1 canvas，暗绿夜景摄影，Vercel",
+      "why": [
+        "Times 默认衬线反而像艺术书",
+        "暗绿夜景作为唯一图像",
+        "页高 900px"
+      ],
+      "transfer": "默认衬线 + 单张夜景（低成本高气质）",
+      "ids": [
+        "A4"
+      ],
+      "shots": {
+        "desktop": "screens/jeff-wall/desktop.jpg",
+        "mobile": "screens/jeff-wall/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:34:08.503Z"
+    },
+    {
+      "slug": "jopecuro",
+      "name": "Jopecuro",
+      "url": "https://jopecuro.com",
+      "oplUrl": "https://onepagelove.com/jopecuro/",
+      "headline": "Jopecuro,",
+      "fonts": {
+        "display": "Satoshi",
+        "body": "Satoshi",
+        "mono": ""
+      },
+      "tech": "gsap 3.12.5 + ScrollTrigger + Lenis + gsap.min.js · no canvas · nginx · 13.2 screens",
+      "canvases": 0,
+      "screens": "13.2",
+      "look": "gsap+ScrollTrigger+Lenis，Clash Display + Satoshi + Questa，橙色雕塑摄影",
+      "why": [
+        "Clash Display 的怪诞展示字",
+        "橙色单一强调色",
+        "11k 页高滚动叙事"
+      ],
+      "transfer": "Clash Display 类怪诞展示字做标题（对应 A3）",
+      "ids": [
+        "A3"
+      ],
+      "shots": {
+        "desktop": "screens/jopecuro/desktop.jpg",
+        "mobile": "screens/jopecuro/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:33:14.511Z"
+    },
+    {
+      "slug": "josh-puckett",
+      "name": "Josh Puckett",
+      "url": "https://joshpuckett.me/",
+      "oplUrl": "https://onepagelove.com/josh-puckett/",
+      "headline": "@joshpuckett",
+      "fonts": {
+        "display": "Signifier",
+        "body": "system-ui",
+        "mono": ""
+      },
+      "tech": "static · 1 canvas+WebGL · Vercel · 28.3 screens",
+      "canvases": 1,
+      "screens": "28.3",
+      "look": "Signifier 衬线，白底长文，1 canvas，25k 页高",
+      "why": [
+        "Signifier 衬线长文阅读体验",
+        "1 canvas 做轻微噪点/纸纹",
+        "25k 页高，纯文字为主"
+      ],
+      "transfer": "长文衬线排版 + canvas 纸纹叠加（A6 咬墨）",
+      "ids": [
+        "A6"
+      ],
+      "shots": {
+        "desktop": "screens/josh-puckett/desktop.jpg",
+        "mobile": "screens/josh-puckett/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:21:54.043Z"
+    },
+    {
+      "slug": "kern-society",
+      "name": "Kern Society",
+      "url": "https://shockingmike.github.io/kern-society",
+      "oplUrl": "https://onepagelove.com/kern-society/",
+      "headline": "Variable type for restless brands. Letters with a pulse.",
+      "fonts": {
+        "display": "Roboto Flex",
+        "body": "Roboto Flex",
+        "mono": ""
+      },
+      "tech": "gsap 3.15.0 + ScrollTrigger + SplitText + Lenis + Lenis + gsap.min.js · 1 canvas+WebGL · GitHub.com · 9.0 screens",
+      "canvases": 1,
+      "screens": "9.0",
+      "look": "gsap+ScrollTrigger+SplitText+Lenis，1 canvas，Fraunces + Recursive + Roboto Flex，巨字 \"KERN SOCIETY\" + 红条 \"SOCIETY · INDEPENDENT TYPE\"",
+      "why": [
+        "可变字体 Roboto Flex 做字重动画",
+        "红条像印刷色标",
+        "SplitText 逐字入场"
+      ],
+      "transfer": "可变字体字重/字宽动画（variable font animation）",
+      "ids": [
+        "A3",
+        "D3"
+      ],
+      "shots": {
+        "desktop": "screens/kern-society/desktop.jpg",
+        "mobile": "screens/kern-society/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:31:22.281Z"
+    },
+    {
+      "slug": "lorenzo-bocchi-photography",
+      "name": "Lorenzo Bocchi - Shot on iPhone",
+      "url": "https://shotoniphone.lorenzobocchi.com",
+      "oplUrl": "https://onepagelove.com/lorenzo-bocchi-photography/",
+      "headline": "Shot on iPhone",
+      "fonts": {
+        "display": "GeistSans",
+        "body": "GeistSans",
+        "mono": ""
+      },
+      "tech": "Next.js · 1 canvas+WebGL · Vercel · 1.0 screens",
+      "canvases": 1,
+      "screens": "1.0",
+      "look": "Next.js，GeistSans，黑底 iPhone 摄影网格",
+      "why": [
+        "全黑底让照片发光",
+        "等宽网格排列，像接触表",
+        "Geist 单字体"
+      ],
+      "transfer": "黑底 + 等尺寸网格的摄影接触表版式",
+      "ids": [
+        "A7"
+      ],
+      "shots": {
+        "desktop": "screens/lorenzo-bocchi-photography/desktop.jpg",
+        "mobile": "screens/lorenzo-bocchi-photography/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:40:11.717Z"
+    },
+    {
+      "slug": "magma",
+      "name": "Magma",
+      "url": "https://magma.build",
+      "oplUrl": "https://onepagelove.com/magma/",
+      "headline": "Own your intelligence (eyebrow: \"✦ Expert-trained AI Agents Coming Soon!\")",
+      "fonts": {
+        "display": "Feature deck light",
+        "body": "Ppneuemontreal",
+        "mono": ""
+      },
+      "tech": "gsap 3.12.5 + ScrollTrigger + SplitText + Lenis + Lenis + gsap.min.js · no canvas · cloudflare · 7.8 screens",
+      "canvases": 0,
+      "screens": "7.8",
+      "look": "gsap+ScrollTrigger+SplitText+Lenis，Feature deck light + PPNeueMontreal，深色 AI 产品",
+      "why": [
+        "深色 + 渐变光效但克制",
+        "gsap 滚动编排",
+        "7k 页高"
+      ],
+      "transfer": "深色底 + 单点光效（不用霓虹渐变）",
+      "ids": [
+        "D1"
+      ],
+      "shots": {
+        "desktop": "screens/magma/desktop.jpg",
+        "mobile": "screens/magma/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:32:32.288Z"
+    },
+    {
+      "slug": "make-garden",
+      "name": "Make Garden",
+      "url": "https://www.makegarden.uk/",
+      "oplUrl": "https://onepagelove.com/make-garden/",
+      "headline": "Make Garden",
+      "fonts": {
+        "display": "East Sea Dokdo:Regular",
+        "body": "ui-sans-serif",
+        "mono": ""
+      },
+      "tech": "static · no canvas · cloudflare · 3.2 screens",
+      "canvases": 0,
+      "screens": "3.2",
+      "look": "East Sea Dokdo 手写 + Cormorant Garamond + EB Garamond，米白，园艺",
+      "why": [
+        "手写体标题 + Garamond 正文，植物学气质",
+        "米白底 + 小花照片",
+        "2.9k 页高短页"
+      ],
+      "transfer": "手写标题 + Garamond 正文的植物学气质（直接可复用）",
+      "ids": [
+        "A3",
+        "A2"
+      ],
+      "shots": {
+        "desktop": "screens/make-garden/desktop.jpg",
+        "mobile": "screens/make-garden/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:38:44.547Z"
+    },
+    {
+      "slug": "mappy",
+      "name": "mappy",
+      "url": "https://meetmappy.com",
+      "oplUrl": "https://onepagelove.com/mappy/",
+      "headline": "Hi, I'm Dima. I built mappy for my own messy head.",
+      "fonts": {
+        "display": "-apple-system",
+        "body": "-apple-system",
+        "mono": ""
+      },
+      "tech": "static · no canvas · Netlify · 58.2 screens",
+      "canvases": 0,
+      "screens": "58.2",
+      "look": "白底，橙黄大色块 \"Hi, I'm Dima. I built mappy...\"，52k 页高",
+      "why": [
+        "橙色大色块 + 手写感排版",
+        "第一人称自述",
+        "极长页高但节奏清晰"
+      ],
+      "transfer": "第一人称自述 + 大色块分区（章节化长页）",
+      "ids": [
+        "C2"
+      ],
+      "shots": {
+        "desktop": "screens/mappy/desktop.jpg",
+        "mobile": "screens/mappy/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:30:31.009Z"
+    },
+    {
+      "slug": "melike-turgut",
+      "name": "Melike Turgut",
+      "url": "https://meliketurgut.com/",
+      "oplUrl": "https://onepagelove.com/melike-turgut/",
+      "headline": "me like",
+      "fonts": {
+        "display": "PPEditorialNew",
+        "body": "Agrandir",
+        "mono": ""
+      },
+      "tech": "static · 8 canvas+WebGL · cloudflare · 1.0 screens",
+      "canvases": 8,
+      "screens": "1.0",
+      "look": "PPEditorialNew + Agrandir，8 canvas，米白，作品网格",
+      "why": [
+        "8 canvas 做作品缩略动效",
+        "PP Editorial New 超细衬线",
+        "Agrandir 做正文"
+      ],
+      "transfer": "超细衬线展示字 + 无衬线正文（编辑感）",
+      "ids": [
+        "A3"
+      ],
+      "shots": {
+        "desktop": "screens/melike-turgut/desktop.jpg",
+        "mobile": "screens/melike-turgut/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:29:14.614Z"
+    },
+    {
+      "slug": "miso",
+      "name": "Miso",
+      "url": "https://miso.com/",
+      "oplUrl": "https://onepagelove.com/miso/",
+      "headline": "Miso - Personal AI Travel Agent",
+      "fonts": {
+        "display": "Inter",
+        "body": "Inter",
+        "mono": ""
+      },
+      "tech": "static · 1 canvas+WebGL · cloudflare · 2.0 screens",
+      "canvases": 1,
+      "screens": "2.0",
+      "look": "Inter，1 canvas，白底产品页，1.8k 页高",
+      "why": [
+        "产品页极短",
+        "Inter 单字体",
+        "一屏一个价值点"
+      ],
+      "transfer": "短页产品叙事（页高即信息预算）",
+      "ids": [
+        "B12"
+      ],
+      "shots": {
+        "desktop": "screens/miso/desktop.jpg",
+        "mobile": "screens/miso/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:17:56.137Z"
+    },
+    {
+      "slug": "monocle",
+      "name": "Monocle",
+      "url": "https://trymonocle.app/",
+      "oplUrl": "https://onepagelove.com/monocle/",
+      "headline": "Monocle · noise-cancelling for your screen",
+      "fonts": {
+        "display": "system-ui",
+        "body": "system-ui",
+        "mono": ""
+      },
+      "tech": "static · no canvas · openresty · 6.4 screens",
+      "canvases": 0,
+      "screens": "6.4",
+      "look": "system-ui，5.7k 页高，杂志式栏目",
+      "why": [
+        "系统字体反而像严肃杂志",
+        "栏目化长页",
+        "信息密度高"
+      ],
+      "transfer": "系统字体 + 栏目化长页（杂志排版）",
+      "ids": [
+        "C2"
+      ],
+      "shots": {
+        "desktop": "screens/monocle/desktop.jpg",
+        "mobile": "screens/monocle/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:30:39.076Z"
+    },
+    {
+      "slug": "new-material",
+      "name": "New Material",
+      "url": "https://newmaterial.ai/",
+      "oplUrl": "https://onepagelove.com/new-material/",
+      "headline": "New Material delivers AI-native health care, by design.",
+      "fonts": {
+        "display": "ABC Favorit",
+        "body": "ABC Favorit",
+        "mono": ""
+      },
+      "tech": "static · no canvas · cloudflare · 3.4 screens",
+      "canvases": 0,
+      "screens": "3.4",
+      "look": "ABC Favorit，白底，产品图居中，3k 页高",
+      "why": [
+        "ABC Favorit 的几何无衬线",
+        "产品白底图统一",
+        "短页"
+      ],
+      "transfer": "几何无衬线 + 白底产品图（克制）",
+      "ids": [
+        "A3"
+      ],
+      "shots": {
+        "desktop": "screens/new-material/desktop.jpg",
+        "mobile": "screens/new-material/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:29:34.111Z"
+    },
+    {
+      "slug": "nodeck",
+      "name": "Nodeck",
+      "url": "https://www.nodeck.online",
+      "oplUrl": "https://onepagelove.com/nodeck/",
+      "headline": "Nodeck | A Presentation Website That Hates Presentations",
+      "fonts": {
+        "display": "BN Dime Display",
+        "body": "DM Sans",
+        "mono": "BN Dime Display"
+      },
+      "tech": "static · no canvas · Vercel · 1.0 screens",
+      "canvases": 0,
+      "screens": "1.0",
+      "look": "DM Sans + BN Dime Display，粉色底 + 黑色涂鸦字 \"NODECK\"，便签纸图形",
+      "why": [
+        "粉色底 + 涂鸦字，俏皮",
+        "便签纸/胶带图形语言",
+        "单屏"
+      ],
+      "transfer": "纸胶带/便签图形语言（可转成标本卡）",
+      "ids": [
+        "A7"
+      ],
+      "shots": {
+        "desktop": "screens/nodeck/desktop.jpg",
+        "mobile": "screens/nodeck/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:19:39.431Z"
+    },
+    {
+      "slug": "pairio",
+      "name": "Pairio",
+      "url": "https://pairio.app",
+      "oplUrl": "https://onepagelove.com/pairio/",
+      "headline": "Video calling with remote control",
+      "fonts": {
+        "display": "Crimson Pro",
+        "body": "Crimson Pro",
+        "mono": ""
+      },
+      "tech": "static · 1 canvas+WebGL · cloudflare · 10.4 screens",
+      "canvases": 1,
+      "screens": "10.4",
+      "look": "Crimson Pro + Poppins，白底，视频通话 UI 截图 + confetti",
+      "why": [
+        "衬线 + 无衬线混排",
+        "产品 UI 截图",
+        "confetti 动效做喜悦感"
+      ],
+      "transfer": "confetti 类一次性庆祝动效（D7 微反馈）",
+      "ids": [
+        "D7"
+      ],
+      "shots": {
+        "desktop": "screens/pairio/desktop.jpg",
+        "mobile": "screens/pairio/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:13:19.472Z"
+    },
+    {
+      "slug": "park",
+      "name": "Park",
+      "url": "https://www.park.photos/",
+      "oplUrl": "https://onepagelove.com/park/",
+      "headline": "Discover America's Natural Wonders",
+      "fonts": {
+        "display": "Instrument Serif",
+        "body": "sans-serif",
+        "mono": ""
+      },
+      "tech": "Framer c0d7099 · no canvas · Framer/ad3cf8f · 15.7 screens",
+      "canvases": 0,
+      "screens": "15.7",
+      "look": "Framer，Instrument Serif + Inter，白底，风景照片轮播，14k 页高",
+      "why": [
+        "Instrument Serif 大标题压风景照",
+        "照片轮播像幻灯片",
+        "Framer 动效"
+      ],
+      "transfer": "Instrument Serif 标题 + 全出血风景照",
+      "ids": [
+        "A3",
+        "A2"
+      ],
+      "shots": {
+        "desktop": "screens/park/desktop.jpg",
+        "mobile": "screens/park/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:11:03.091Z"
+    },
+    {
+      "slug": "peggy",
+      "name": "Peggy",
+      "url": "https://peggy.com/",
+      "oplUrl": "https://onepagelove.com/peggy/",
+      "headline": "A world with art in every home",
+      "fonts": {
+        "display": "Reckless",
+        "body": "Inter",
+        "mono": ""
+      },
+      "tech": "Alpine · no canvas · Fly/366e4bf88 (2026-10-27) · 9.7 screens",
+      "canvases": 0,
+      "screens": "9.7",
+      "look": "Reckless 衬线 + Monument Grotesk，Alpine.js，白底，艺术品电商",
+      "why": [
+        "衬线 + Grotesk 的经典艺术电商组合",
+        "作品图居中，留白大",
+        "Alpine.js 轻量交互"
+      ],
+      "transfer": "艺术品电商的衬线/Grotesk 组合（C7 标本卡分类）",
+      "ids": [
+        "C7"
+      ],
+      "shots": {
+        "desktop": "screens/peggy/desktop.jpg",
+        "mobile": "screens/peggy/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:38:03.179Z"
+    },
+    {
+      "slug": "poetry-camera",
+      "name": "Poetry Camera",
+      "url": "https://poetry.camera/",
+      "oplUrl": "https://onepagelove.com/poetry-camera/",
+      "headline": "poetry camera",
+      "fonts": {
+        "display": "Exposure",
+        "body": "DM Sans",
+        "mono": "Bitmatrix A2"
+      },
+      "tech": "static · no canvas · cloudflare · 7.5 screens",
+      "canvases": 0,
+      "screens": "7.5",
+      "look": "Bitmatrix A2 + Exposure + DM Sans，模糊摄影底 + 大字 \"poetry camera\"",
+      "why": [
+        "模糊摄影 + 大字，诗意",
+        "Bitmatrix A2 像素字做标签",
+        "Exposure 展示字"
+      ],
+      "transfer": "模糊摄影底 + 大字（景深即版式）",
+      "ids": [
+        "A2"
+      ],
+      "shots": {
+        "desktop": "screens/poetry-camera/desktop.jpg",
+        "mobile": "screens/poetry-camera/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:36:40.143Z"
+    },
+    {
+      "slug": "possible-monuments",
+      "name": "Possible Monuments",
+      "url": "https://possiblemonuments.se/",
+      "oplUrl": "https://onepagelove.com/possible-monuments/",
+      "headline": "POSSIBLE MONUMENTS?",
+      "fonts": {
+        "display": "sans-serif",
+        "body": "sans-serif",
+        "mono": ""
+      },
+      "tech": "Matter · 1 canvas+WebGL · nginx/1.18.0 (Ubuntu) · 3.5 screens",
+      "canvases": 1,
+      "screens": "3.5",
+      "look": "Matter.js 物理 canvas，白底，纪念碑项目，3k 页高",
+      "why": [
+        "Matter.js 物理引擎做物件掉落",
+        "白底 + 单物件",
+        "交互即叙事"
+      ],
+      "transfer": "Matter.js 物理掉落（可转成花瓣/孢子物理）",
+      "ids": [
+        "B5"
+      ],
+      "shots": {
+        "desktop": "screens/possible-monuments/desktop.jpg",
+        "mobile": "screens/possible-monuments/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:37:46.209Z"
+    },
+    {
+      "slug": "proooof",
+      "name": "PROOOOF",
+      "url": "https://proooof.app",
+      "oplUrl": "https://onepagelove.com/proooof/",
+      "headline": "PROOOOF",
+      "fonts": {
+        "display": "Wintyr VF",
+        "body": "Times New Roman",
+        "mono": ""
+      },
+      "tech": "static · no canvas · Netlify · 3.0 screens",
+      "canvases": 0,
+      "screens": "3.0",
+      "look": "Wintyr VF + Anybody，白底，校样/字体测试页",
+      "why": [
+        "可变字体 Wintyr 做展示",
+        "Anybody 做正文",
+        "像字体样本页"
+      ],
+      "transfer": "字体样本页式版式（A3 字体系统展示）",
+      "ids": [
+        "A3"
+      ],
+      "shots": {
+        "desktop": "screens/proooof/desktop.jpg",
+        "mobile": "screens/proooof/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:40:32.142Z"
+    },
+    {
+      "slug": "resurf",
+      "name": "Resurf",
+      "url": "https://resurf.so",
+      "oplUrl": "https://onepagelove.com/resurf/",
+      "headline": "A Personal Context Library. (eyebrow: \"#1 Product of the Day\")",
+      "fonts": {
+        "display": "Times New Roman",
+        "body": "Times New Roman",
+        "mono": ""
+      },
+      "tech": "static · no canvas · Vercel · 52.8 screens",
+      "canvases": 0,
+      "screens": "52.8",
+      "look": "Vercel，Times，蓝白几何图形（大蓝色圆角块），47k 页高",
+      "why": [
+        "单一蓝色几何块作为品牌图形",
+        "Times 衬线做正文，反差",
+        "长页但图形重复"
+      ],
+      "transfer": "单一几何图形做品牌锚点（不用插画）",
+      "ids": [
+        "A1"
+      ],
+      "shots": {
+        "desktop": "screens/resurf/desktop.jpg",
+        "mobile": "screens/resurf/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:13:08.894Z"
+    },
+    {
+      "slug": "rows",
+      "name": "Rows",
+      "url": "https://rows.gg/",
+      "oplUrl": "https://onepagelove.com/rows/",
+      "headline": "Rows is an unapologetically simple way to track anything.",
+      "fonts": {
+        "display": "Suisse Intl",
+        "body": "Suisse Intl",
+        "mono": ""
+      },
+      "tech": "static · 6 canvas+WebGL · Vercel · 7.3 screens",
+      "canvases": 6,
+      "screens": "7.3",
+      "look": "Suisse Intl，6 canvas，白底，表格产品页",
+      "why": [
+        "Suisse Intl 的中性",
+        "表格 UI 直接当首屏",
+        "6 canvas 做局部"
+      ],
+      "transfer": "表格 UI 作为首屏（产品即页面）",
+      "ids": [
+        "B12"
+      ],
+      "shots": {
+        "desktop": "screens/rows/desktop.jpg",
+        "mobile": "screens/rows/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:19:02.625Z"
+    },
+    {
+      "slug": "sam-peitz",
+      "name": "Sam Peitz",
+      "url": "https://www.sam-peitz.com/",
+      "oplUrl": "https://onepagelove.com/sam-peitz/",
+      "headline": "hey i'm Sam",
+      "fonts": {
+        "display": "Times New Roman",
+        "body": "Times New Roman",
+        "mono": ""
+      },
+      "tech": "static · 1 canvas+WebGL · GitHub.com · 1.0 screens",
+      "canvases": 1,
+      "screens": "1.0",
+      "look": "Times，1 canvas，深色百叶窗摄影",
+      "why": [
+        "百叶窗光影作为唯一图像",
+        "Times 衬线",
+        "单屏"
+      ],
+      "transfer": "光影摄影作为首屏（低成本氛围）",
+      "ids": [
+        "A6"
+      ],
+      "shots": {
+        "desktop": "screens/sam-peitz/desktop.jpg",
+        "mobile": "screens/sam-peitz/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:36:11.956Z"
+    },
+    {
+      "slug": "scout-graphics",
+      "name": "Scout Graphics",
+      "url": "https://scoutgraphics.com",
+      "oplUrl": "https://onepagelove.com/scout-graphics/",
+      "headline": "Scout Graphics & Sign Co. is an independent design studio creating hand-crafted visuals for brands in hospitality, wellness and boutique retail.",
+      "fonts": {
+        "display": "trade-gothic-next",
+        "body": "trade-gothic-next",
+        "mono": ""
+      },
+      "tech": "static · no canvas · cloudflare · 5.6 screens",
+      "canvases": 0,
+      "screens": "5.6",
+      "look": "trade-gothic-next 窄体，白底，工作室作品列表",
+      "why": [
+        "窄体大写字贯穿",
+        "作品列表化",
+        "5k 页高"
+      ],
+      "transfer": "窄体大写作为全站唯一字体（工业感）",
+      "ids": [
+        "A3"
+      ],
+      "shots": {
+        "desktop": "screens/scout-graphics/desktop.jpg",
+        "mobile": "screens/scout-graphics/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:35:20.434Z"
+    },
+    {
+      "slug": "secret-garden-stresa",
+      "name": "Secret Garden Stresa",
+      "url": "https://secretgardenstresa.com",
+      "oplUrl": "https://onepagelove.com/secret-garden-stresa/",
+      "headline": "SECRET GARDEN (eyebrow: \"BOUTIQUE HOTEL\")",
+      "fonts": {
+        "display": "Cormorant Garamond",
+        "body": "Inter",
+        "mono": ""
+      },
+      "tech": "static · no canvas · Apache · 11.3 screens",
+      "canvases": 0,
+      "screens": "11.3",
+      "look": "Cormorant Garamond + Pinyon Script + Inter，暗绿花园摄影，衬线标题 \"SECRET GARDEN\"",
+      "why": [
+        "暗绿花园摄影 + 衬线标题，正是植物学气质",
+        "Pinyon Script 手写做点缀",
+        "Cormorant 做展示"
+      ],
+      "transfer": "暗绿摄影 + Cormorant 衬线 + 手写点缀（HORTUS 的直接参考）",
+      "ids": [
+        "A2",
+        "A3"
+      ],
+      "shots": {
+        "desktop": "screens/secret-garden-stresa/desktop.jpg",
+        "mobile": "screens/secret-garden-stresa/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:38:34.654Z"
+    },
+    {
+      "slug": "shelf",
+      "name": "Shelf",
+      "url": "https://www.savetoshelf.com",
+      "oplUrl": "https://onepagelove.com/shelf/",
+      "headline": "Everything you saved finally findable (eyebrow: \"Bookmarks with a Brain\")",
+      "fonts": {
+        "display": "General Sans",
+        "body": "Switzer",
+        "mono": ""
+      },
+      "tech": "Lenis · no canvas · Vercel · 6.0 screens",
+      "canvases": 0,
+      "screens": "6.0",
+      "look": "General Sans + Switzer，Lenis，白底，书签产品",
+      "why": [
+        "Lenis 平滑滚动",
+        "General Sans 展示 + Switzer 正文",
+        "产品卡片"
+      ],
+      "transfer": "双无衬线分工（展示/正文）",
+      "ids": [
+        "A3"
+      ],
+      "shots": {
+        "desktop": "screens/shelf/desktop.jpg",
+        "mobile": "screens/shelf/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:39:45.777Z"
+    },
+    {
+      "slug": "stolaze",
+      "name": "Stolaze",
+      "url": "https://stolaze.com/",
+      "oplUrl": "https://onepagelove.com/stolaze/",
+      "headline": "Studio Stolaze—An initiative by Amaury Eckern",
+      "fonts": {
+        "display": "Diatype Variable",
+        "body": "-apple-system",
+        "mono": "Monument Grotesk Semi-Mono Variable"
+      },
+      "tech": "Cargo (https://cargo.site) · no canvas · Cargo · 8.0 screens",
+      "canvases": 0,
+      "screens": "8.0",
+      "look": "Cargo 建站，Diatype Variable + Monument Grotesk Semi-Mono，白底，雕塑/字体实验",
+      "why": [
+        "Cargo 的版式自由度",
+        "Diatype Variable 可变字",
+        "7k 页高"
+      ],
+      "transfer": "Cargo 式自由版式 + 可变字体（可做田野笔记版式）",
+      "ids": [
+        "A9"
+      ],
+      "shots": {
+        "desktop": "screens/stolaze/desktop.jpg",
+        "mobile": "screens/stolaze/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:31:10.372Z"
+    },
+    {
+      "slug": "superlocal-2026",
+      "name": "Superlocal 2026",
+      "url": "https://www.superlocaldesign.com/",
+      "oplUrl": "https://onepagelove.com/superlocal-2026/",
+      "headline": "Superlocal",
+      "fonts": {
+        "display": "fontSans",
+        "body": "fontSans",
+        "mono": ""
+      },
+      "tech": "Lenis · 3 canvas+WebGL · Vercel · 17.6 screens",
+      "canvases": 3,
+      "screens": "17.6",
+      "look": "Vercel，lenis，3 canvas，渐变橙/灰天空，大字 \"SUPERLOCAL 2026 07.12 SEPTEMBER\"",
+      "why": [
+        "渐变天空底 + 大字日期，海报感",
+        "3 canvas 做天空/云",
+        "Lenis 滚动"
+      ],
+      "transfer": "日期/地点大字排版（活动海报式首屏）",
+      "ids": [
+        "C12"
+      ],
+      "shots": {
+        "desktop": "screens/superlocal-2026/desktop.jpg",
+        "mobile": "screens/superlocal-2026/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:36:52.449Z"
+    },
+    {
+      "slug": "svg-doodles",
+      "name": "SVG Doodles",
+      "url": "https://svgdoodles.com",
+      "oplUrl": "https://onepagelove.com/svg-doodles/",
+      "headline": "Kobbe (eyebrow: \"Lexington Themes\")",
+      "fonts": {
+        "display": "Geist Variable",
+        "body": "Geist Variable",
+        "mono": ""
+      },
+      "tech": "Astro · 1 canvas+WebGL · cloudflare · 1.0 screens",
+      "canvases": 1,
+      "screens": "1.0",
+      "look": "Astro，Geist Variable，1 canvas，黑底白线涂鸦",
+      "why": [
+        "SVG/Canvas 手绘线条，涂鸦感",
+        "黑底白线，极简",
+        "单屏"
+      ],
+      "transfer": "黑底白线涂鸦（可直接对应藤蔓/手绘字标）",
+      "ids": [
+        "A1"
+      ],
+      "shots": {
+        "desktop": "screens/svg-doodles/desktop.jpg",
+        "mobile": "screens/svg-doodles/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:19:13.588Z"
+    },
+    {
+      "slug": "swash",
+      "name": "Swash",
+      "url": "https://swashmotion.com/?utm_source=onepagelove&utm_medium=gallery&utm_campaign=launch-2026-09",
+      "oplUrl": "https://onepagelove.com/swash/",
+      "headline": "Type that moves",
+      "fonts": {
+        "display": "Stack Sans Headline",
+        "body": "Stack Sans Headline",
+        "mono": ""
+      },
+      "tech": "Lenis · 1 canvas+WebGL · Vercel · 12.3 screens",
+      "canvases": 1,
+      "screens": "12.3",
+      "look": "Vercel，lenis，Stack Sans Headline + Instrument Serif + Instrument Sans，深色字体工作室，彩色字体样本卡片",
+      "why": [
+        "字体样本卡片彩色排列，像标本",
+        "Stack Sans Headline 展示字",
+        "深色底衬托彩色卡片"
+      ],
+      "transfer": "彩色字体样本卡片网格（像标本卡陈列）",
+      "ids": [
+        "A7"
+      ],
+      "shots": {
+        "desktop": "screens/swash/desktop.jpg",
+        "mobile": "screens/swash/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:28:42.894Z"
+    },
+    {
+      "slug": "textmode-overlay",
+      "name": "Textmode Overlay",
+      "url": "https://extension.textmode.art",
+      "oplUrl": "https://onepagelove.com/textmode-overlay/",
+      "headline": "TURN THE WEB INTO TEXTMODE (eyebrow: \"TEXTMODE OVERLAY / FREE + OPEN SOURCE\")",
+      "fonts": {
+        "display": "Monogram Extended",
+        "body": "Monogram Extended",
+        "mono": "Monogram Extended"
+      },
+      "tech": "static · 4 canvas+WebGL · cloudflare · 9.4 screens",
+      "canvases": 4,
+      "screens": "9.4",
+      "look": "Monogram Extended，4 canvas，黑底绿字终端风格 \"TURN THE WEB INTO TEXTMODE\"",
+      "why": [
+        "等宽/像素字 + 终端绿，复古",
+        "4 canvas 做扫描线",
+        "黑底绿字高对比"
+      ],
+      "transfer": "终端绿 + 像素字的复古文本美学（可做 colophon）",
+      "ids": [
+        "A3"
+      ],
+      "shots": {
+        "desktop": "screens/textmode-overlay/desktop.jpg",
+        "mobile": "screens/textmode-overlay/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:37:16.494Z"
+    },
+    {
+      "slug": "the-equator-company",
+      "name": "The Equator Company",
+      "url": "https://equatorcompany.com",
+      "oplUrl": "https://onepagelove.com/the-equator-company/",
+      "headline": "The Equator Company",
+      "fonts": {
+        "display": "National",
+        "body": "National",
+        "mono": ""
+      },
+      "tech": "static · 7 canvas+WebGL · cloudflare · 16.1 screens",
+      "canvases": 7,
+      "screens": "16.1",
+      "look": "National 字体，7 canvas，橙色调，大字 \"The Equator Company\"",
+      "why": [
+        "National 的宽体展示字",
+        "7 canvas 做渐变/光",
+        "橙色单色系"
+      ],
+      "transfer": "宽体展示字 + 单色系渐变（A4 色板）",
+      "ids": [
+        "A4"
+      ],
+      "shots": {
+        "desktop": "screens/the-equator-company/desktop.jpg",
+        "mobile": "screens/the-equator-company/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:32:47.437Z"
+    },
+    {
+      "slug": "tim-van-damme-max-voltar",
+      "name": "Tim Van Damme (Max Voltar)",
+      "url": "https://timvandamme.com/",
+      "oplUrl": "https://onepagelove.com/tim-van-damme-max-voltar/",
+      "headline": "Tim Van Damme (Max Voltar) — Product Designer at Figma",
+      "fonts": {
+        "display": "proxima-soft-extra-condensed",
+        "body": "proxima-soft-condensed",
+        "mono": ""
+      },
+      "tech": "static · no canvas · cloudflare · 4.9 screens",
+      "canvases": 0,
+      "screens": "4.9",
+      "look": "proxima-soft-extra-condensed + felt-tip-roman，白底，涂鸦插画人物",
+      "why": [
+        "felt-tip 手写感字体做涂鸦",
+        "超窄体做标题",
+        "单屏"
+      ],
+      "transfer": "手写感字体（felt-tip）+ 插画（可做手写落款）",
+      "ids": [
+        "A1"
+      ],
+      "shots": {
+        "desktop": "screens/tim-van-damme-max-voltar/desktop.jpg",
+        "mobile": "screens/tim-van-damme-max-voltar/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:13:29.281Z"
+    },
+    {
+      "slug": "tristan-haquenne-x-anthony-bayet",
+      "name": "Tristan Haquenne X Anthony Bayet",
+      "url": "https://rain-drops.justabayet.com",
+      "oplUrl": "https://onepagelove.com/tristan-haquenne-x-anthony-bayet/",
+      "headline": "1/7 FISH BALLS",
+      "fonts": {
+        "display": "sans-serif",
+        "body": "Times New Roman",
+        "mono": ""
+      },
+      "tech": "static · 1 canvas+WebGL · Vercel · 1.0 screens",
+      "canvases": 1,
+      "screens": "1.0",
+      "look": "Vercel，1 canvas，暗红底，中央发光圆环/水滴，大字 \"TRISTAN HAQUENNE\"",
+      "why": [
+        "暗红底 + 单点发光，剧场感",
+        "1 canvas 做光晕",
+        "极简一屏"
+      ],
+      "transfer": "暗底单点发光（B7 晨雾/水汽光晕）",
+      "ids": [
+        "B7"
+      ],
+      "shots": {
+        "desktop": "screens/tristan-haquenne-x-anthony-bayet/desktop.jpg",
+        "mobile": "screens/tristan-haquenne-x-anthony-bayet/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:37:24.080Z"
+    },
+    {
+      "slug": "txt-text-editor",
+      "name": "Txt Text Editor",
+      "url": "https://adrien.website/txt/",
+      "oplUrl": "https://onepagelove.com/txt-text-editor/",
+      "headline": "Txt is a simple, minimalist text editor built natively for macOS.",
+      "fonts": {
+        "display": "Inter",
+        "body": "-apple-system",
+        "mono": ""
+      },
+      "tech": "static · no canvas · Apache · 3.7 screens",
+      "canvases": 0,
+      "screens": "3.7",
+      "look": "Inter + 系统字体，浅灰，macOS 窗口截图，天空照片背景",
+      "why": [
+        "产品截图 + 天空底，轻松",
+        "Inter 做标题",
+        "3.3k 页高"
+      ],
+      "transfer": "产品窗口截图 + 自然背景（轻量产品页）",
+      "ids": [
+        "B12"
+      ],
+      "shots": {
+        "desktop": "screens/txt-text-editor/desktop.jpg",
+        "mobile": "screens/txt-text-editor/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:10:21.745Z"
+    },
+    {
+      "slug": "voice-tag-gods",
+      "name": "Voice Tag Gods",
+      "url": "https://voicetaggods.com",
+      "oplUrl": "https://onepagelove.com/voice-tag-gods/",
+      "headline": "Mitaya (eyebrow: \"Featured vocalist\")",
+      "fonts": {
+        "display": "ObviouslyVariable",
+        "body": "ObviouslyVariable",
+        "mono": ""
+      },
+      "tech": "gsap 3.15.0 + ScrollTrigger + SplitText + gsap-3.15.0.min.js · 2 canvas+WebGL · LiteSpeed · 7.3 screens",
+      "canvases": 2,
+      "screens": "7.3",
+      "look": "LiteSpeed，gsap+ScrollTrigger+SplitText，ObviouslyVariable，2 canvas，深色 + 人像卡片网格，大字 \"VITO / PROMOTE SOUND\"",
+      "why": [
+        "人像卡片网格 + 大字标题",
+        "ObviouslyVariable 可变展示字",
+        "SplitText 逐字入场"
+      ],
+      "transfer": "人像卡片网格（像标本卡阵列）",
+      "ids": [
+        "A7"
+      ],
+      "shots": {
+        "desktop": "screens/voice-tag-gods/desktop.jpg",
+        "mobile": "screens/voice-tag-gods/mobile.jpg"
+      },
+      "measuredAt": "2026-10-29T17:39:06.605Z"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "peony-red": {
+    "file": "/plates/peony-red.webp",
+    "width": 1600,
+    "height": 1066,
+    "license": "Public domain",
+    "author": "池田正樹 (Masaki Ikeda)",
+    "source": "https://commons.wikimedia.org/wiki/File:Paeonia_suffruticosa_red070503B.jpg",
+    "note": "Paeonia suffruticosa, macro, crimson petals + golden stamens",
+    "use": [
+      "hero",
+      "frame",
+      "herbarium"
+    ]
+  },
+  "peony-white": {
+    "file": "/plates/peony-white.webp",
+    "width": 1600,
+    "height": 1130,
+    "license": "Public domain",
+    "author": "池田正樹 (Masaki Ikeda)",
+    "source": "https://commons.wikimedia.org/wiki/File:Paeonia_suffruticosa_white070503.jpg",
+    "note": "Paeonia suffruticosa, white macro, high-key",
+    "use": [
+      "hero-alt",
+      "mist",
+      "plate"
+    ]
+  },
+  "monet-waterlilies": {
+    "file": "/plates/monet-waterlilies.webp",
+    "width": 1800,
+    "height": 1334,
+    "license": "Public domain",
+    "author": "Claude Monet",
+    "source": "https://commons.wikimedia.org/wiki/File:Claude_Monet_-_Seerosen.jpg",
+    "note": "Water Lilies (Seerosen), Monet — ripple/pond plate",
+    "use": [
+      "ripple",
+      "editorial",
+      "colophon"
+    ]
+  },
+  "peony-botmag": {
+    "file": "/plates/peony-botmag.webp",
+    "width": 1200,
+    "height": 1036,
+    "license": "Public domain",
+    "author": "Syd. Edwards ad. / F. Sansom sculp., Curtis's Botanical Magazine 1809",
+    "source": "https://commons.wikimedia.org/wiki/File:Paeonia_suffruticosa_Bot._Mag._29.1154.1809.jpg",
+    "note": "Paeonia suffruticosa botanical plate, 1809",
+    "use": [
+      "field-guide",
+      "plate",
+      "herbarium"
+    ]
+  },
+  "peony-andrews": {
+    "file": "/plates/peony-andrews.webp",
+    "width": 1600,
+    "height": 1044,
+    "license": "Public domain",
+    "author": "Henry Cranke Andrews (1770–1830)",
+    "source": "https://commons.wikimedia.org/wiki/File:Paeonia_suffruticosa_illustration_Henry_Andrews.jpg",
+    "note": "Paeonia suffruticosa illustration, Henry Andrews",
+    "use": [
+      "field-guide",
+      "plate"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+# dependencies / builds
+node_modules/
+dist/
+.wrangler/
+data/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+
+# local research media (large / third-party; stays local)
+research/videos/
+research/video-teardown/*.jpg
+research/video-teardown/**/*.jpg
+research/video-teardown/**/*.png
+research/assets/*.jpg
+research/botanica-gif/f_*.png
+research/references/screens/
+research/references/html/
+research/references/fingerprint/
+research/references/headers/
+research/references/contact/
+research/references/raw/
+research/assets/raw/
+research/rea/*/*.json
+research/rea/*/scripts/
+docs/design/comp/shots/
+screens/demo/raw/
+
+# keep product assets: fonts / models / wasm / plates / static api / final screenshots

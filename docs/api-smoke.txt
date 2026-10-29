@@ -1,0 +1,102 @@
+HORTUS MANUS · 指间花园 — API smoke run
+date: 2026-10-30T02:15:30+08:00
+base: http://127.0.0.1:8787
+result: 93 passed, 0 failed
+
+  PASS  GET /api/health [200]
+  PASS  health.ok = true
+  PASS  health.counts.specimens present
+  PASS  health cache-control: no-store
+  PASS  health is no-store
+  PASS  health has no ETag
+  PASS  POST /api/specimens [201]
+  PASS  id is 12 chars (x89scz5hbr69)
+  PASS  deleteToken returned (43 chars)
+  PASS  create is no-store
+  PASS  shareUrl points at /s/:id
+  PASS  cardUrl present
+  PASS  token is returned, hash is not leaked
+  PASS  GET /api/specimens [200]
+  PASS  list respects limit
+  PASS  list cache-control 15s
+  PASS  list If-None-Match -> 304 [304]
+  PASS  list with mode/season/sort [200]
+  PASS  list limit=0 rejected [422]
+  PASS  list bad mode rejected [422]
+  PASS  list bad sort rejected [422]
+  PASS  GET /api/specimens/:id [200]
+  PASS  detail cache-control 60s
+  PASS  detail If-None-Match -> 304 [304]
+  PASS  detail unknown id -> 404 [404]
+  PASS  404 body {error,message}
+  PASS  detail malformed id -> 422 [422]
+  PASS  card.png [200]
+  PASS  card content-type image/png
+  PASS  card is a real PNG (870193B)
+  PASS  card cache immutable
+  PASS  card If-None-Match -> 304 [304]
+  PASS  card ETag stable across requests
+  PASS  card bytes deterministic
+  PASS  card cached on disk (/home/huayu/Agent工作区/DSHarness/1/hortus-manus/data/cards/x89scz5hbr69.png)
+  PASS  og.png [200]
+  PASS  og is a real PNG (242830B)
+  PASS  og cache immutable
+  PASS  qr.png?size=320 [200]
+  PASS  qr content-type image/png
+  PASS  qr cache immutable
+  PASS  qr size out of range -> 422 [422]
+  PASS  card for unknown id -> 404 [404]
+  PASS  GET /s/:id [200]
+  PASS  share HTML is substantial (11481B)
+  PASS  share has og:title
+  PASS  share has og:image
+  PASS  share has twitter:card
+  PASS  share has application/ld+json
+  PASS  share has canonical
+  PASS  share has /card.png
+  PASS  share has /qr.png
+  PASS  share Cache-Control: no-cache
+  PASS  share page links its own absolute URL
+  PASS  share unknown id -> 404 [404]
+  PASS  404 page uses the contract copy
+  PASS  POST thanks [200]
+  PASS  thanks counted (now 1)
+  PASS  thanks is idempotent per visitor/day [200]
+  PASS  second thanks marked duplicate
+  PASS  thanks is no-store
+  PASS  thanks unknown id -> 404 [404]
+  PASS  bad mode -> 422 [422]
+  PASS  seed > uint32 -> 422 [422]
+  PASS  negative seed -> 422 [422]
+  PASS  caption > 80 chars -> 422 [422]
+  PASS  control char in caption -> 422 [422]
+  PASS  bad lang -> 422 [422]
+  PASS  malformed JSON -> 400 [400]
+  PASS  bad JSON body is readable
+  PASS  payload > 8KB -> 413 [413]
+  PASS  collect over the hourly budget -> 429 [429]
+  PASS  429 body is {error,message}
+  PASS  429 carries Retry-After
+  PASS  specimen exists before delete [200]
+  PASS  DELETE without token -> 401 [401]
+  PASS  401 body is {error,message}
+  PASS  DELETE with wrong token -> 403 [403]
+  PASS  DELETE with token -> 200 [200]
+  PASS  delete returns {ok:true}
+  PASS  specimen gone after delete [404]
+  PASS  share page gone after delete [404]
+  PASS  card gone after delete [404]
+  PASS  GET /api/stats [200]
+  PASS  stats has total/byMode/bySeason
+  PASS  stats cache 60s
+  PASS  GET /api/edition/today [200]
+  PASS  edition has date/seed/mode/season/notes
+  PASS  GET / (SPA shell) [200]
+  PASS  SPA returns HTML
+  PASS  unknown API path -> JSON 404 [404]
+  PASS  unknown API path is JSON
+  PASS  font path answers (200)
+
+edition: 2026-10-30
+sample specimen id: x89scz5hbr69
+card cache: /home/huayu/Agent工作区/DSHarness/1/hortus-manus/data/cards/x89scz5hbr69.png

@@ -1,0 +1,19 @@
+{
+  "total": 8,
+  "byMode": {
+    "frame": 2,
+    "tendril": 1,
+    "ripple": 1,
+    "spore": 1,
+    "mycelium": 1,
+    "mist": 1,
+    "phyllotaxis": 1
+  },
+  "bySeason": {
+    "spring": 1,
+    "summer": 2,
+    "autumn": 3,
+    "winter": 2
+  },
+  "thanks": 0
+}

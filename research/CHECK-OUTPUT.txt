@@ -1,0 +1,16 @@
+PASS  3 downloaded videos — 3
+PASS  all frames decoded (>=3000) — 3093 frames
+PASS  video teardown doc — video-teardown/finger-doodle.md
+PASS  gif 154 frames — 154
+PASS  gif teardown doc — botanica-gif/teardown.md
+PASS  cats-cradle source extracted — cats-cradle source
+PASS  cats-cradle teardown doc — cats-cradle/teardown.md
+PASS  ONE PAGE LOVE atlas >=50 — 78 rows
+PASS  site screenshots >=50 — 77 sites
+PASS  REA evidence >=10 — 11 site dirs
+PASS  techniques >=50 — 62 table rows
+PASS  research assets >=12 — assets/assets.json count
+PASS  ASSET-LICENSES exists — ASSET-LICENSES.md
+PASS  research README exists — research/README.md
+
+14/14 checks passed

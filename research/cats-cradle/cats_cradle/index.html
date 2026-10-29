@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>翻绳 - Cat's Cradle 手影模拟</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-deep: #0a0a0f;
+            --bg-card: rgba(20, 20, 31, 0.7);
+            --accent-warm: #e8a87c;
+            --accent-cool: #c38d9e;
+            --text-primary: #e8e4e1;
+            --text-muted: #8a8580;
+            --neon-cyan: #00f5ff;
+            --neon-pink: #ff00ff;
+            --neon-green: #00ff88;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-deep);
+            color: var(--text-primary);
+            overflow: hidden;
+            height: 100vh;
+            position: relative;
+        }
+        
+        .serif { font-family: 'Noto Serif SC', serif; }
+        
+        /* Video container */
+        #videoContainer {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+        
+        #webcam {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: scaleX(-1);
+        }
+        
+        #canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            pointer-events: none;
+        }
+        
+        /* Hide webcam mode */
+        body.hide-cam #webcam {
+            opacity: 0;
+        }
+        
+        /* Glassmorphic UI */
+        .glass-panel {
+            background: var(--bg-card);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.4),
+                inset 0 1px 0 rgba(255, 255, 255, 0.05);
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 0.4; }
+            50% { opacity: 0.8; }
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+        
+        /* Control buttons */
+        .control-btn {
+            padding: 8px 16px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-primary);
+        }
+        
+        .control-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+        
+        .control-btn.active {
+            background: rgba(232, 168, 124, 0.2);
+            border-color: var(--accent-warm);
+            color: var(--accent-warm);
+        }
+        
+        /* Sliders */
+        .slider {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 4px;
+            border-radius: 2px;
+            background: rgba(255, 255, 255, 0.1);
+            outline: none;
+        }
+        
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: var(--accent-warm);
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(232, 168, 124, 0.5);
+        }
+        
+        /* Console */
+        .console {
+            font-family: 'Courier New', monospace;
+            font-size: 11px;
+            line-height: 1.6;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        
+        .console::-webkit-scrollbar { width: 3px; }
+        .console::-webkit-scrollbar-thumb { 
+            background: rgba(232, 168, 124, 0.3); 
+            border-radius: 2px; 
+        }
+        
+        .console-line {
+            opacity: 0;
+            animation: fadeIn 0.3s ease-out forwards;
+        }
+        
+        /* Color picker */
+        .color-option {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .color-option:hover {
+            transform: scale(1.2);
+        }
+        
+        .color-option.active {
+            border-color: white;
+            box-shadow: 0 0 15px currentColor;
+        }
+        
+        /* Pattern grid */
+        .pattern-btn {
+            padding: 10px 16px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-muted);
+            text-align: center;
+        }
+        
+        .pattern-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--text-primary);
+        }
+        
+        .pattern-btn.active {
+            background: rgba(232, 168, 124, 0.2);
+            border-color: var(--accent-warm);
+            color: var(--accent-warm);
+        }
+        
+        /* Stats display */
+        .stat-value {
+            font-family: 'Courier New', monospace;
+            font-size: 18px;
+            font-weight: 600;
+            background: linear-gradient(135deg, var(--accent-warm), var(--accent-cool));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        /* Loading overlay */
+        .loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--bg-deep);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            transition: opacity 0.5s ease;
+        }
+        
+        .loading-overlay.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+        
+        .loading-spinner {
+            width: 50px;
+            height: 50px;
+            border: 3px solid rgba(255, 255, 255, 0.1);
+            border-top-color: var(--accent-warm);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="text-center">
+            <div class="loading-spinner mx-auto mb-4"></div>
+            <p class="text-sm text-gray-400">正在初始化手部追踪...</p>
+        </div>
+    </div>
+
+    <!-- Video & Canvas -->
+    <div id="videoContainer">
+        <video id="webcam" autoplay playsinline muted></video>
+        <canvas id="canvas"></canvas>
+    </div>
+
+    <!-- Top Control Panel -->
+    <div class="fixed top-4 left-4 right-4 z-10 fade-in" style="animation-delay: 0.3s;">
+        <div class="glass-panel rounded-2xl p-4">
+            <div class="flex items-center justify-between mb-4">
+                <div>
+                    <h1 class="serif text-xl font-light">翻绳</h1>
+                    <p class="text-xs text-gray-500 mt-1">Cat's Cradle · 手影模拟</p>
+                </div>
+                <div class="flex items-center gap-2">
+                    <button class="control-btn" id="toggleCam">隐藏摄像头</button>
+                    <button class="control-btn" id="toggleAudio">开启音效</button>
+                </div>
+            </div>
+            
+            <!-- Pattern Selection -->
+            <div class="mb-4">
+                <div class="text-xs text-gray-500 mb-2">图案模式</div>
+                <div class="grid grid-cols-5 gap-2">
+                    <button class="pattern-btn active" data-pattern="star">星星阵</button>
+                    <button class="pattern-btn" data-pattern="starry">满天星</button>
+                    <button class="pattern-btn" data-pattern="cradle">古老翻绳</button>
+                    <button class="pattern-btn" data-pattern="well">金井翻绳</button>
+                    <button class="pattern-btn" data-pattern="flower">花局</button>
+                </div>
+            </div>
+            
+            <!-- Controls Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <!-- Color -->
+                <div>
+                    <div class="text-xs text-gray-500 mb-2">霓虹颜色</div>
+                    <div class="flex gap-2">
+                        <div class="color-option active" data-color="#00f5ff" style="background: #00f5ff; color: #00f5ff;"></div>
+                        <div class="color-option" data-color="#ff00ff" style="background: #ff00ff; color: #ff00ff;"></div>
+                        <div class="color-option" data-color="#00ff88" style="background: #00ff88; color: #00ff88;"></div>
+                        <div class="color-option" data-color="#ffaa00" style="background: #ffaa00; color: #ffaa00;"></div>
+                        <div class="color-option" data-color="#ff0088" style="background: #ff0088; color: #ff0088;"></div>
+                    </div>
+                </div>
+                
+                <!-- Glow Strength -->
+                <div>
+                    <div class="text-xs text-gray-500 mb-2">发光强度</div>
+                    <input type="range" min="5" max="50" value="20" class="slider" id="glowSlider">
+                </div>
+                
+                <!-- Physics -->
+                <div>
+                    <div class="text-xs text-gray-500 mb-2">物理弹性</div>
+                    <input type="range" min="0" max="100" value="70" class="slider" id="physicsSlider">
+                </div>
+                
+                <!-- String Count -->
+                <div>
+                    <div class="text-xs text-gray-500 mb-2">线条数量</div>
+                    <input type="range" min="1" max="10" value="5" class="slider" id="stringSlider">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Stats -->
+    <div class="fixed bottom-4 left-4 z-10 fade-in" style="animation-delay: 0.6s;">
+        <div class="glass-panel rounded-2xl p-4">
+            <div class="grid grid-cols-3 gap-4 mb-3">
+                <div class="text-center">
+                    <div class="stat-value" id="fps">60</div>
+                    <div class="text-xs text-gray-500">FPS</div>
+                </div>
+                <div class="text-center">
+                    <div class="stat-value" id="hands">0</div>
+                    <div class="text-xs text-gray-500">手部</div>
+                </div>
+                <div class="text-center">
+                    <div class="stat-value" id="points">0</div>
+                    <div class="text-xs text-gray-500">节点</div>
+                </div>
+            </div>
+            
+            <!-- Console -->
+            <div class="console text-gray-400" id="console">
+                <div class="console-line">[系统] 等待手部追踪初始化...</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Instructions -->
+    <div class="fixed bottom-4 right-4 z-10 fade-in hidden md:block" style="animation-delay: 0.9s;">
+        <div class="glass-panel rounded-2xl p-4 max-w-xs">
+            <div class="text-xs text-gray-500 mb-2">操作说明</div>
+            <div class="text-xs text-gray-400 space-y-1">
+                <p>• 举起双手，系统会自动追踪</p>
+                <p>• 选择不同图案查看翻绳效果</p>
+                <p>• 调整颜色、发光和物理参数</p>
+                <p>• 点击"隐藏摄像头"只看光效</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- MediaPipe Hands -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands@0.4.1675469240/hands.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils@0.3.1675466862/camera_utils.js"></script>
+    
+    <script>
+        // ==================== Configuration ====================
+        const CONFIG = {
+            neonColor: '#00f5ff',
+            glowStrength: 20,
+            physicsStiffness: 0.7,
+            stringCount: 5,
+            pattern: 'star',
+            audioEnabled: false,
+            hideCam: false,
+            gravity: 0.5,
+            damping: 0.98
+        };
+        
+        // ==================== Audio Synthesizer ====================
+        class AudioSynth {
+            constructor() {
+                this.ctx = null;
+                this.enabled = false;
+            }
+            
+            init() {
+                if (this.ctx) return;
+                this.ctx = new (window.AudioContext || window.webkitAudioContext)();
+            }
+            
+            playTone(frequency, duration = 0.5, type = 'sine') {
+                if (!this.enabled || !this.ctx) return;
+                
+                const oscillator = this.ctx.createOscillator();
+                const gainNode = this.ctx.createGain();
+                
+                oscillator.connect(gainNode);
+                gainNode.connect(this.ctx.destination);
+                
+                oscillator.frequency.value = frequency;
+                oscillator.type = type;
+                
+                gainNode.gain.setValueAtTime(0.1, this.ctx.currentTime);
+                gainNode.gain.exponentialRampToValueAtTime(0.001, this.ctx.currentTime + duration);
+                
+                oscillator.start(this.ctx.currentTime);
+                oscillator.stop(this.ctx.currentTime + duration);
+            }
+            
+            playChord(frequencies) {
+                frequencies.forEach((freq, i) => {
+                    setTimeout(() => this.playTone(freq, 0.8, 'triangle'), i * 50);
+                });
+            }
+            
+            playStringTouching() {
+                this.playChord([261.63, 329.63, 392.00]); // C major
+            }
+            
+            playPatternChange() {
+                this.playChord([523.25, 659.25, 783.99]); // C major high
+            }
+        }
+        
+        // ==================== Verlet Physics ====================
+        class Point {
+            constructor(x, y, pinned = false) {
+                this.x = x;
+                this.y = y;
+                this.oldX = x;
+                this.oldY = y;
+                this.pinned = pinned;
+            }
+            
+            update(gravity, damping) {
+                if (this.pinned) return;
+                
+                const vx = (this.x - this.oldX) * damping;
+                const vy = (this.y - this.oldY) * damping;
+                
+                this.oldX = this.x;
+                this.oldY = this.y;
+                
+                this.x += vx;
+                this.y += vy + gravity;
+            }
+            
+            constrain(width, height) {
+                if (this.pinned) return;
+                
+                const margin = 10;
+                if (this.x < margin) this.x = margin;
+                if (this.x > width - margin) this.x = width - margin;
+                if (this.y < margin) this.y = margin;
+                if (this.y > height - margin) this.y = height - margin;
+            }
+        }
+        
+        class Stick {
+            constructor(p1, p2, length) {
+                this.p1 = p1;
+                this.p2 = p2;
+                this.length = length;
+            }
+            
+            update(stiffness) {
+                const dx = this.p2.x - this.p1.x;
+                const dy = this.p2.y - this.p1.y;
+                const distance = Math.sqrt(dx * dx + dy * dy);
+                
+                if (distance === 0) return;
+                
+                const diff = this.length - distance;
+                const percent = (diff / distance) * stiffness;
+                
+                const offsetX = dx * percent * 0.5;
+                const offsetY = dy * percent * 0.5;
+                
+                if (!this.p1.pinned) {
+                    this.p1.x -= offsetX;
+                    this.p1.y -= offsetY;
+                }
+                if (!this.p2.pinned) {
+                    this.p2.x += offsetX;
+                    this.p2.y += offsetY;
+                }
+            }
+        }
+        
+        class StringSimulation {
+            constructor() {
+                this.points = [];
+                this.sticks = [];
+            }
+            
+            createString(startX, startY, endX, endY, segments = 20) {
+                this.points = [];
+                this.sticks = [];
+                
+                for (let i = 0; i <= segments; i++) {
+                    const t = i / segments;
+                    const x = startX + (endX - startX) * t;
+                    const y = startY + (endY - startY) * t;
+                    const pinned = i === 0 || i === segments;
+                    this.points.push(new Point(x, y, pinned));
+                }
+                
+                for (let i = 0; i < this.points.length - 1; i++) {
+                    const dx = this.points[i + 1].x - this.points[i].x;
+                    const dy = this.points[i + 1].y - this.points[i].y;
+                    const length = Math.sqrt(dx * dx + dy * dy);
+                    this.sticks.push(new Stick(this.points[i], this.points[i + 1], length));
+                }
+            }
+            
+            update(width, height, gravity, damping, stiffness) {
+                // Update points
+                this.points.forEach(point => {
+                    point.update(gravity, damping);
+                    point.constrain(width, height);
+                });
+                
+                // Update sticks multiple times for stability
+                for (let i = 0; i < 3; i++) {
+                    this.sticks.forEach(stick => {
+                        stick.update(stiffness);
+                    });
+                }
+            }
+            
+            draw(ctx, color, glowStrength) {
+                if (this.points.length < 2) return;
+                
+                // Draw glow
+                ctx.shadowBlur = glowStrength;
+                ctx.shadowColor = color;
+                
+                ctx.beginPath();
+                ctx.moveTo(this.points[0].x, this.points[0].y);
+                
+                // Draw smooth curve through points
+                for (let i = 1; i < this.points.length - 1; i++) {
+                    const xc = (this.points[i].x + this.points[i + 1].x) / 2;
+                    const yc = (this.points[i].y + this.points[i + 1].y) / 2;
+                    ctx.quadraticCurveTo(this.points[i].x, this.points[i].y, xc, yc);
+                }
+                
+                const last = this.points[this.points.length - 1];
+                ctx.lineTo(last.x, last.y);
+                
+                ctx.strokeStyle = color;
+                ctx.lineWidth = 3;
+                ctx.lineCap = 'round';
+                ctx.stroke();
+                
+                ctx.shadowBlur = 0;
+            }
+        }
+        
+        // ==================== Pattern Generator ====================
+        class PatternGenerator {
+            static getPattern(type, hands, width, height) {
+                const strings = [];
+                const cx = width / 2;
+                const cy = height / 2;
+                
+                if (hands.length === 0) return strings;
+                
+                const hand1 = hands[0];
+                const hand2 = hands[1] || hand1;
+                
+                // Get key landmarks
+                const wrist1 = hand1[0];
+                const wrist2 = hand2[0];
+                const middle1 = hand1[9];
+                const middle2 = hand2[9];
+                
+                switch (type) {
+                    case 'star':
+                        return this.starPattern(wrist1, wrist2, middle1, middle2, cx, cy);
+                    case 'starry':
+                        return this.starryPattern(hand1, hand2, width, height);
+                    case 'cradle':
+                        return this.cradlePattern(wrist1, wrist2, middle1, middle2);
+                    case 'well':
+                        return this.wellPattern(wrist1, wrist2, cx, cy);
+                    case 'flower':
+                        return this.flowerPattern(wrist1, wrist2, middle1, middle2);
+                    default:
+                        return this.starPattern(wrist1, wrist2, middle1, middle2, cx, cy);
+                }
+            }
+            
+            static starPattern(w1, w2, m1, m2, cx, cy) {
+                const strings = [];
+                const connections = [
+                    [w1, m2],
+                    [w2, m1],
+                    [m1, m2],
+                    [w1, w2],
+                    [m1, { x: cx, y: cy }],
+                    [m2, { x: cx, y: cy }]
+                ];
+                
+                connections.forEach(([start, end]) => {
+                    strings.push({
+                        startX: start.x,
+                        startY: start.y,
+                        endX: end.x,
+                        endY: end.y
+                    });
+                });
+                
+                return strings;
+            }
+            
+            static starryPattern(hand1, hand2, width, height) {
+                const strings = [];
+                const tips = [4, 8, 12, 16, 20]; // Fingertips
+                
+                // Connect fingertips between hands
+                for (let i = 0; i < tips.length; i++) {
+                    const p1 = hand1[tips[i]];
+                    const p2 = hand2[tips[i]] || hand1[tips[(i + 2) % tips.length]];
+                    strings.push({
+                        startX: p1.x,
+                        startY: p1.y,
+                        endX: p2.x,
+                        endY: p2.y
+                    });
+                }
+                
+                // Add star connections
+                const center = { x: width / 2, y: height / 2 };
+                tips.forEach(tip => {
+                    const p = hand1[tip];
+                    strings.push({
+                        startX: p.x,
+                        startY: p.y,
+                        endX: center.x,
+                        endY: center.y
+                    });
+                });
+                
+                return strings;
+            }
+            
+            static cradlePattern(w1, w2, m1, m2) {
+                const strings = [];
+                const mid = { x: (w1.x + w2.x) / 2, y: (w1.y + w2.y) / 2 };
+                
+                // Classic cat's cradle loops
+                strings.push({ startX: w1.x, startY: w1.y, endX: m1.x, endY: m1.y });
+                strings.push({ startX: w2.x, startY: w2.y, endX: m2.x, endY: m2.y });
+                strings.push({ startX: m1.x, startY: m1.y, endX: mid.x, endY: mid.y });
+                strings.push({ startX: m2.x, startY: m2.y, endX: mid.x, endY: mid.y });
+                strings.push({ startX: mid.x, startY: mid.y, endX: m1.x, endY: m1.y + 100 });
+                strings.push({ startX: mid.x, startY: mid.y, endX: m2.x, endY: m2.y - 100 });
+                
+                return strings;
+            }
+            
+            static wellPattern(w1, w2, cx, cy) {
+                const strings = [];
+                const size = 80;
+                
+                // Vertical lines
+                strings.push({ startX: cx - size, startY: cy - size, endX: cx - size, endY: cy + size });
+                strings.push({ startX: cx + size, startY: cy - size, endX: cx + size, endY: cy + size });
+                strings.push({ startX: cx, startY: cy - size, endX: cx, endY: cy + size });
+                
+                // Horizontal lines
+                strings.push({ startX: cx - size, startY: cy - size, endX: cx + size, endY: cy - size });
+                strings.push({ startX: cx - size, startY: cy, endX: cx + size, endY: cy });
+                strings.push({ startX: cx - size, startY: cy + size, endX: cx + size, endY: cy + size });
+                
+                // Connect to hands
+                strings.push({ startX: w1.x, startY: w1.y, endX: cx - size, endY: cy });
+                strings.push({ startX: w2.x, startY: w2.y, endX: cx + size, endY: cy });
+                
+                return strings;
+            }
+            
+            static flowerPattern(w1, w2, m1, m2) {
+                const strings = [];
+                const cx = (m1.x + m2.x) / 2;
+                const cy = (m1.y + m2.y) / 2;
+                const petals = 6;
+                const radius = 100;
+                
+                // Center to petal tips
+                for (let i = 0; i < petals; i++) {
+                    const angle = (i / petals) * Math.PI * 2;
+                    const tx = cx + Math.cos(angle) * radius;
+                    const ty = cy + Math.sin(angle) * radius;
+                    
+                    strings.push({
+                        startX: cx,
+                        startY: cy,
+                        endX: tx,
+                        endY: ty,
+                        controlX: cx + Math.cos(angle + 0.5) * (radius * 0.6),
+                        controlY: cy + Math.sin(angle + 0.5) * (radius * 0.6)
+                    });
+                }
+                
+                // Connect hands to center
+                strings.push({ startX: w1.x, startY: w1.y, endX: cx, endY: cy });
+                strings.push({ startX: w2.x, startY: w2.y, endX: cx, endY: cy });
+                
+                return strings;
+            }
+        }
+        
+        // ==================== Main Application ====================
+        class CatCradleApp {
+            constructor() {
+                this.video = document.getElementById('webcam');
+                this.canvas = document.getElementById('canvas');
+                this.ctx = this.canvas.getContext('2d');
+                this.hands = null;
+                this.camera = null;
+                this.simulations = [];
+                this.audio = new AudioSynth();
+                this.lastFrameTime = performance.now();
+                this.frameCount = 0;
+                this.fps = 60;
+                this.lastHands = [];
+                
+                this.init();
+            }
+            
+            async init() {
+                this.setupCanvas();
+                this.setupUI();
+                
+                try {
+                    await this.initHandTracking();
+                    this.hideLoading();
+                    this.log('系统', '手部追踪初始化成功');
+                    this.startAnimation();
+                } catch (error) {
+                    this.log('错误', '无法访问摄像头: ' + error.message);
+                    this.hideLoading();
+                }
+            }
+            
+            setupCanvas() {
+                const resize = () => {
+                    this.canvas.width = window.innerWidth;
+                    this.canvas.height = window.innerHeight;
+                };
+                resize();
+                window.addEventListener('resize', resize);
+            }
+            
+            setupUI() {
+                // Pattern buttons
+                document.querySelectorAll('.pattern-btn').forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        document.querySelectorAll('.pattern-btn').forEach(b => b.classList.remove('active'));
+                        btn.classList.add('active');
+                        CONFIG.pattern = btn.dataset.pattern;
+                        this.simulations = [];
+                        this.audio.playPatternChange();
+                        this.log('图案', `切换到: ${btn.textContent}`);
+                    });
+                });
+                
+                // Color options
+                document.querySelectorAll('.color-option').forEach(opt => {
+                    opt.addEventListener('click', () => {
+                        document.querySelectorAll('.color-option').forEach(o => o.classList.remove('active'));
+                        opt.classList.add('active');
+                        CONFIG.neonColor = opt.dataset.color;
+                        this.log('颜色', `切换颜色: ${CONFIG.neonColor}`);
+                    });
+                });
+                
+                // Sliders
+                document.getElementById('glowSlider').addEventListener('input', (e) => {
+                    CONFIG.glowStrength = parseInt(e.target.value);
+                });
+                
+                document.getElementById('physicsSlider').addEventListener('input', (e) => {
+                    CONFIG.physicsStiffness = parseInt(e.target.value) / 100;
+                });
+                
+                document.getElementById('stringSlider').addEventListener('input', (e) => {
+                    CONFIG.stringCount = parseInt(e.target.value);
+                });
+                
+                // Toggle buttons
+                document.getElementById('toggleCam').addEventListener('click', (e) => {
+                    CONFIG.hideCam = !CONFIG.hideCam;
+                    document.body.classList.toggle('hide-cam', CONFIG.hideCam);
+                    e.target.textContent = CONFIG.hideCam ? '显示摄像头' : '隐藏摄像头';
+                });
+                
+                document.getElementById('toggleAudio').addEventListener('click', (e) => {
+                    CONFIG.audioEnabled = !CONFIG.audioEnabled;
+                    this.audio.enabled = CONFIG.audioEnabled;
+                    if (CONFIG.audioEnabled) {
+                        this.audio.init();
+                    }
+                    e.target.classList.toggle('active', CONFIG.audioEnabled);
+                    e.target.textContent = CONFIG.audioEnabled ? '关闭音效' : '开启音效';
+                    this.log('音效', CONFIG.audioEnabled ? '已开启' : '已关闭');
+                });
+            }
+            
+            async initHandTracking() {
+                this.hands = new Hands({
+                    locateFile: (file) => `https://cdn.jsdelivr.net/npm/@mediapipe/hands@0.4.1675469240/${file}`
+                });
+                
+                this.hands.setOptions({
+                    maxNumHands: 2,
+                    modelComplexity: 1,
+                    minDetectionConfidence: 0.7,
+                    minTrackingConfidence: 0.7
+                });
+                
+                this.hands.onResults((results) => this.onResults(results));
+                
+                this.camera = new Camera(this.video, {
+                    onFrame: async () => {
+                        await this.hands.send({ image: this.video });
+                    },
+                    width: 1280,
+                    height: 720
+                });
+                
+                await this.camera.start();
+            }
+            
+            onResults(results) {
+                const hands = [];
+                
+                if (results.multiHandLandmarks) {
+                    for (const landmarks of results.multiHandLandmarks) {
+                        const hand = landmarks.map(point => ({
+                            x: point.x * this.canvas.width,
+                            y: point.y * this.canvas.height
+                        }));
+                        hands.push(hand);
+                    }
+                }
+                
+                this.lastHands = hands;
+                this.updateSimulations(hands);
+                this.updateStats(hands);
+            }
+            
+            updateSimulations(hands) {
+                // Get pattern strings
+                const patternStrings = PatternGenerator.getPattern(
+                    CONFIG.pattern,
+                    hands,
+                    this.canvas.width,
+                    this.canvas.height
+                );
+                
+                // Match or create simulations
+                while (this.simulations.length < patternStrings.length) {
+                    this.simulations.push(new StringSimulation());
+                }
+                
+                // Update each simulation
+                patternStrings.forEach((str, i) => {
+                    const sim = this.simulations[i];
+                    
+                    // Recreate string if endpoints changed significantly
+                    if (sim.points.length === 0) {
+                        sim.createString(str.startX, str.startY, str.endX, str.endY, 20);
+                    } else {
+                        // Update endpoints
+                        sim.points[0].x = str.startX;
+                        sim.points[0].y = str.startY;
+                        sim.points[sim.points.length - 1].x = str.endX;
+                        sim.points[sim.points.length - 1].y = str.endY;
+                        
+                        // Update control point for flower pattern
+                        if (str.controlX && sim.points.length > 10) {
+                            const mid = Math.floor(sim.points.length / 2);
+                            sim.points[mid].x = str.controlX;
+                            sim.points[mid].y = str.controlY;
+                        }
+                    }
+                    
+                    sim.update(
+                        this.canvas.width,
+                        this.canvas.height,
+                        CONFIG.gravity,
+                        CONFIG.damping,
+                        CONFIG.physicsStiffness
+                    );
+                });
+                
+                // Remove extra simulations
+                if (this.simulations.length > patternStrings.length) {
+                    this.simulations = this.simulations.slice(0, patternStrings.length);
+                }
+            }
+            
+            updateStats(hands) {
+                this.frameCount++;
+                const now = performance.now();
+                
+                if (now - this.lastFrameTime >= 1000) {
+                    this.fps = this.frameCount;
+                    this.frameCount = 0;
+                    this.lastFrameTime = now;
+                }
+                
+                document.getElementById('fps').textContent = this.fps;
+                document.getElementById('hands').textContent = hands.length;
+                document.getElementById('points').textContent = 
+                    hands.reduce((sum, hand) => sum + hand.length, 0);
+            }
+            
+            draw(hands) {
+                const ctx = this.ctx;
+                const w = this.canvas.width;
+                const h = this.canvas.height;
+                
+                // Clear
+                ctx.clearRect(0, 0, w, h);
+                
+                // Draw dark overlay if hiding cam
+                if (CONFIG.hideCam) {
+                    ctx.fillStyle = 'rgba(10, 10, 15, 0.95)';
+                    ctx.fillRect(0, 0, w, h);
+                }
+                
+                // Draw hand skeleton
+                hands.forEach(hand => {
+                    this.drawHandSkeleton(ctx, hand);
+                });
+                
+                // Draw strings
+                this.simulations.forEach(sim => {
+                    sim.draw(ctx, CONFIG.neonColor, CONFIG.glowStrength);
+                });
+            }
+            
+            drawHandSkeleton(ctx, landmarks) {
+                const connections = [
+                    [0, 1], [1, 2], [2, 3], [3, 4],
+                    [0, 5], [5, 6], [6, 7], [7, 8],
+                    [0, 9], [9, 10], [10, 11], [11, 12],
+                    [0, 13], [13, 14], [14, 15], [15, 16],
+                    [0, 17], [17, 18], [18, 19], [19, 20],
+                    [5, 9], [9, 13], [13, 17]
+                ];
+                
+                // Draw connections
+                ctx.shadowBlur = 10;
+                ctx.shadowColor = 'rgba(255, 255, 255, 0.5)';
+                ctx.strokeStyle = 'rgba(255, 255, 255, 0.3)';
+                ctx.lineWidth = 1;
+                
+                connections.forEach(([i, j]) => {
+                    const p1 = landmarks[i];
+                    const p2 = landmarks[j];
+                    ctx.beginPath();
+                    ctx.moveTo(p1.x, p1.y);
+                    ctx.lineTo(p2.x, p2.y);
+                    ctx.stroke();
+                });
+                
+                // Draw joints
+                landmarks.forEach((point, i) => {
+                    ctx.beginPath();
+                    ctx.arc(point.x, point.y, [4, 8, 12, 16, 20].includes(i) ? 6 : 3, 0, Math.PI * 2);
+                    ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+                    ctx.fill();
+                });
+                
+                ctx.shadowBlur = 0;
+            }
+            
+            startAnimation() {
+                const animate = () => {
+                    this.draw(this.lastHands || []);
+                    requestAnimationFrame(animate);
+                };
+                animate();
+            }
+            
+            log(category, message) {
+                const consoleEl = document.getElementById('console');
+                const time = new Date().toLocaleTimeString('zh-CN', { hour12: false });
+                const line = document.createElement('div');
+                line.className = 'console-line';
+                line.innerHTML = `<span class="text-gray-500">[${time}]</span> <span class="text-amber-400">[${category}]</span> ${message}`;
+                consoleEl.appendChild(line);
+                consoleEl.scrollTop = consoleEl.scrollHeight;
+                
+                // Limit console lines
+                while (consoleEl.children.length > 50) {
+                    consoleEl.removeChild(consoleEl.firstChild);
+                }
+            }
+            
+            hideLoading() {
+                document.getElementById('loadingOverlay').classList.add('hidden');
+            }
+        }
+        
+        // Override onResults to store hands for animation loop
+        const originalOnResults = CatCradleApp.prototype.onResults;
+        CatCradleApp.prototype.onResults = function(results) {
+            const hands = [];
+            
+            if (results.multiHandLandmarks) {
+                for (const landmarks of results.multiHandLandmarks) {
+                    const hand = landmarks.map(point => ({
+                        x: point.x * this.canvas.width,
+                        y: point.y * this.canvas.height
+                    }));
+                    hands.push(hand);
+                }
+            }
+            
+            this.lastHands = hands;
+            originalOnResults.call(this, results);
+        };
+        
+        // Override animate to use stored hands
+        const originalStartAnimation = CatCradleApp.prototype.startAnimation;
+        CatCradleApp.prototype.startAnimation = function() {
+            const animate = () => {
+                this.draw(this.lastHands || []);
+                requestAnimationFrame(animate);
+            };
+            animate();
+        };
+        
+        // ==================== Initialize ====================
+        window.addEventListener('load', () => {
+            new CatCradleApp();
+        });
+    </script>
+</body>
+</html>

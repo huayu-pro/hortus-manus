@@ -1,0 +1,6 @@
+rea list-browser-targets http://127.0.0.1:9223 --allowed-origins https://banch.bausola.com
+rea inspect-web-page http://127.0.0.1:9223 A780D260FD54FF9A26605233C3E88C4C --allowed-origins https://banch.bausola.com --observation-ms 3000 --include-script-sources --include-console-text --include-storage-keys
+rea analyze-web-bundle http://127.0.0.1:9223 A780D260FD54FF9A26605233C3E88C4C --allowed-origins https://banch.bausola.com --observation-ms 2500
+rea capture-browser-scenario _scenarios/bausola-banch.json
+rea export-web-scripts bausola-banch/capture-browser-scenario.json bausola-banch/scripts
+# CDP browser: /home/huayu/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome --headless=new --no-sandbox --enable-unsafe-swiftshader --remote-debugging-port=9223 --user-data-dir=/tmp/rea-batch --proxy-server=http://127.0.0.1:7897 "https://banch.bausola.com/"

@@ -1,0 +1,697 @@
+/* ==========================================================================
+   HORTUS MANUS — ui.css
+   Owner: stage. Primitive styles only (buttons, dialogs, inputs, readouts,
+   switches, sliders, tabs, stamps, skeletons). Page/section layout lives in
+   sections.css. Every value comes from tokens.css — no new hex, no radii > 2px,
+   no glass blur, no shimmer.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   01 · BUTTON
+   -------------------------------------------------------------------------- */
+.hm-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--hm-space-4);
+  min-height: 44px;
+  padding: var(--hm-space-3) var(--hm-space-5);
+  border: 1px solid transparent;
+  border-radius: var(--hm-radius-input);
+  font-family: var(--hm-font-mono);
+  font-size: var(--hm-text-label);
+  line-height: var(--hm-leading-label);
+  letter-spacing: var(--hm-tracking-label);
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    background-color var(--hm-dur-2) var(--hm-ease-standard),
+    color var(--hm-dur-2) var(--hm-ease-standard),
+    border-color var(--hm-dur-2) var(--hm-ease-standard),
+    transform var(--hm-dur-3) var(--hm-ease-out);
+  transform: translate(var(--hm-magnet-x, 0), var(--hm-magnet-y, 0));
+}
+
+.hm-btn__label {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--hm-space-2);
+}
+
+.hm-btn__glyph {
+  display: inline-flex;
+  align-items: center;
+  color: inherit;
+  transition: transform var(--hm-dur-3) var(--hm-ease-out);
+}
+
+.hm-btn:hover .hm-btn__glyph {
+  transform: translateX(3px);
+}
+
+.hm-btn--sm {
+  min-height: 36px;
+  padding: var(--hm-space-2) var(--hm-space-4);
+  font-size: var(--hm-text-micro);
+  letter-spacing: var(--hm-tracking-micro);
+}
+
+.hm-btn--lg {
+  min-height: 56px;
+  padding: var(--hm-space-4) var(--hm-space-6);
+  font-size: var(--hm-text-caption);
+}
+
+/* solid — moss ground, paper type. The primary act CTA. */
+.hm-btn--solid {
+  background: var(--hm-moss);
+  color: var(--hm-paper);
+  border-color: var(--hm-moss);
+}
+.hm-btn--solid:hover {
+  background: var(--hm-ink);
+  border-color: var(--hm-ink);
+}
+.hm-btn--solid:active {
+  transform: translate(var(--hm-magnet-x, 0), var(--hm-magnet-y, 0)) translateY(1px);
+}
+
+/* outline — hairline frame on paper, ink type */
+.hm-btn--outline {
+  background: transparent;
+  color: var(--hm-fg);
+  border-color: var(--hm-border-strong);
+}
+.hm-btn--outline:hover {
+  background: var(--hm-fg);
+  color: var(--hm-fg-inverse);
+  border-color: var(--hm-fg);
+}
+
+/* quiet — text-only inline control */
+.hm-btn--quiet {
+  min-height: 44px;
+  padding: var(--hm-space-2) 0;
+  background: transparent;
+  color: var(--hm-fg-muted);
+  border-color: transparent;
+}
+.hm-btn--quiet:hover {
+  color: var(--hm-fg);
+}
+
+/* stamp — pressed seal look, pollen fill, ink type */
+.hm-btn--stamp {
+  background: var(--hm-pollen);
+  color: var(--hm-ink);
+  border-color: color-mix(in oklab, var(--hm-ink) 22%, transparent);
+  box-shadow: var(--hm-shadow-lift);
+}
+.hm-btn--stamp:hover {
+  background: color-mix(in oklab, var(--hm-pollen) 82%, var(--hm-ink));
+}
+.hm-btn--stamp:active {
+  transform: translate(var(--hm-magnet-x, 0), var(--hm-magnet-y, 0)) translateY(2px);
+  box-shadow: none;
+}
+
+/* danger — removal only, always paired with a word */
+.hm-btn--danger {
+  background: var(--hm-danger-soft);
+  color: var(--hm-danger);
+  border-color: color-mix(in oklab, var(--hm-danger) 40%, transparent);
+}
+.hm-btn--danger:hover {
+  background: var(--hm-danger);
+  color: var(--hm-paper);
+}
+
+.hm-btn:disabled,
+.hm-btn[aria-disabled='true'] {
+  opacity: var(--hm-disabled-opacity);
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* 44px minimum touch target on coarse pointers, even for small buttons */
+@media (pointer: coarse) {
+  .hm-btn--sm {
+    min-height: 44px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   02 · TEXT LINK
+   -------------------------------------------------------------------------- */
+.hm-textlink {
+  color: var(--hm-link);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: var(--hm-link-underline);
+  text-underline-offset: 0.24em;
+  transition: color var(--hm-dur-2) var(--hm-ease-standard);
+}
+.hm-textlink:hover {
+  color: var(--hm-link-hover);
+  text-decoration-color: currentColor;
+}
+.hm-textlink--quiet {
+  color: inherit;
+  text-decoration: none;
+}
+.hm-textlink--quiet:hover {
+  color: var(--hm-link);
+}
+
+/* --------------------------------------------------------------------------
+   03 · CARD
+   -------------------------------------------------------------------------- */
+.hm-card {
+  position: relative;
+  padding: var(--hm-space-5);
+  background: var(--hm-bg);
+  border: 1px solid var(--hm-border);
+  border-radius: var(--hm-radius-hairline);
+}
+.hm-card--deep {
+  background: var(--hm-surface-plate);
+}
+.hm-card--ink {
+  background: var(--hm-ink);
+  color: var(--hm-paper);
+  border-color: var(--hm-ink);
+}
+.hm-card--frame {
+  box-shadow: var(--hm-shadow-plate);
+}
+.hm-card--tilt-a {
+  transform: rotate(var(--hm-plate-rotate-a));
+}
+.hm-card--tilt-b {
+  transform: rotate(var(--hm-plate-rotate-b));
+}
+.hm-card--tilt-c {
+  transform: rotate(var(--hm-plate-rotate-c));
+}
+
+/* --------------------------------------------------------------------------
+   04 · READOUT — brass/glass instrument, not a black HUD
+   -------------------------------------------------------------------------- */
+.hm-readout {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+.hm-readout__label {
+  font-family: var(--hm-font-mono);
+  font-size: var(--hm-text-micro);
+  line-height: var(--hm-leading-micro);
+  letter-spacing: var(--hm-tracking-micro);
+  text-transform: uppercase;
+  color: var(--hm-fg-muted);
+  white-space: nowrap;
+}
+.hm-readout__value {
+  font-family: var(--hm-font-mono);
+  font-size: var(--hm-text-caption);
+  line-height: var(--hm-leading-caption);
+  font-feature-settings: var(--hm-font-features-mono);
+  color: var(--hm-fg);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  transition: color var(--hm-dur-2) var(--hm-ease-standard);
+}
+.hm-readout__value[data-live='true'] {
+  color: var(--hm-signal);
+}
+.hm-readout__unit {
+  margin-left: 3px;
+  font-size: var(--hm-text-micro);
+  color: var(--hm-fg-muted);
+}
+
+/* --------------------------------------------------------------------------
+   05 · DIALOG
+   -------------------------------------------------------------------------- */
+.hm-dialog__overlay {
+  position: fixed;
+  inset: 0;
+  z-index: var(--hm-z-overlay);
+  background: var(--hm-overlay);
+  animation: hm-fade-in var(--hm-dur-4) var(--hm-ease-out) both;
+}
+
+.hm-dialog__content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: var(--hm-z-dialog);
+  display: flex;
+  flex-direction: column;
+  width: min(560px, calc(100vw - 32px));
+  max-height: min(86svh, 880px);
+  overflow: auto;
+  padding: var(--hm-space-6) var(--hm-space-6) var(--hm-space-5);
+  background: var(--hm-bg);
+  border: 1px solid var(--hm-border-strong);
+  border-radius: var(--hm-radius-hairline);
+  box-shadow: var(--hm-shadow-sheet);
+  transform: translate(-50%, -50%);
+  animation: hm-dialog-in var(--hm-dur-4) var(--hm-ease-out) both;
+  overscroll-behavior: contain;
+}
+
+.hm-dialog__content--night {
+  background: var(--hm-night);
+  color: var(--hm-moon);
+  border-color: var(--hm-hairline-light);
+}
+
+.hm-dialog__content--wide {
+  width: min(880px, calc(100vw - 32px));
+}
+
+.hm-dialog__content--full {
+  width: calc(100vw - 24px);
+  max-height: calc(100svh - 24px);
+}
+
+.hm-dialog__close {
+  position: absolute;
+  top: var(--hm-space-3);
+  right: var(--hm-space-3);
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  font-family: var(--hm-font-mono);
+  font-size: 20px;
+  line-height: 1;
+  color: var(--hm-fg-muted);
+  border-radius: var(--hm-radius-input);
+  transition: color var(--hm-dur-2) var(--hm-ease-standard);
+}
+.hm-dialog__close:hover {
+  color: var(--hm-fg);
+}
+
+@keyframes hm-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes hm-dialog-in {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -48%) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   06 · TOOLTIP
+   -------------------------------------------------------------------------- */
+.hm-tooltip {
+  z-index: var(--hm-z-hud);
+  max-width: 280px;
+  padding: var(--hm-space-2) var(--hm-space-3);
+  background: var(--hm-ink);
+  color: var(--hm-paper);
+  font-family: var(--hm-font-mono);
+  font-size: var(--hm-text-micro);
+  line-height: var(--hm-leading-micro);
+  letter-spacing: 0.04em;
+  border-radius: var(--hm-radius-hairline);
+  box-shadow: var(--hm-shadow-toast);
+  animation: hm-fade-in var(--hm-dur-2) var(--hm-ease-out) both;
+}
+.hm-tooltip__arrow {
+  fill: var(--hm-ink);
+}
+
+/* --------------------------------------------------------------------------
+   07 · SWITCH
+   -------------------------------------------------------------------------- */
+.hm-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--hm-space-3);
+  min-height: 44px;
+  cursor: pointer;
+}
+.hm-switch__track {
+  position: relative;
+  flex: none;
+  width: 40px;
+  height: 22px;
+  background: var(--hm-bg-sunken);
+  border: 1px solid var(--hm-border-strong);
+  border-radius: var(--hm-radius-round);
+  transition: background-color var(--hm-dur-3) var(--hm-ease-standard);
+}
+.hm-switch__track[data-state='checked'] {
+  background: var(--hm-moss);
+  border-color: var(--hm-moss);
+}
+.hm-switch__thumb {
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin-left: 2px;
+  background: var(--hm-paper);
+  border: 1px solid color-mix(in oklab, var(--hm-ink) 30%, transparent);
+  border-radius: var(--hm-radius-round);
+  transition: transform var(--hm-dur-3) var(--hm-ease-out);
+}
+.hm-switch__thumb[data-state='checked'] {
+  transform: translateX(18px);
+  background: var(--hm-paper);
+}
+.hm-switch__text {
+  font-family: var(--hm-font-mono);
+  font-size: var(--hm-text-micro);
+  letter-spacing: var(--hm-tracking-micro);
+  text-transform: uppercase;
+  color: var(--hm-fg-muted);
+}
+
+/* --------------------------------------------------------------------------
+   08 · SLIDER
+   -------------------------------------------------------------------------- */
+.hm-slider {
+  display: flex;
+  align-items: center;
+  gap: var(--hm-space-3);
+  min-height: 44px;
+}
+.hm-slider__root {
+  position: relative;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  height: 20px;
+  touch-action: none;
+  user-select: none;
+}
+.hm-slider__track {
+  position: relative;
+  flex: 1;
+  height: 2px;
+  background: var(--hm-border-strong);
+}
+.hm-slider__range {
+  position: absolute;
+  height: 2px;
+  background: var(--hm-moss);
+}
+.hm-slider__thumb {
+  display: block;
+  width: 14px;
+  height: 14px;
+  background: var(--hm-paper);
+  border: 1px solid var(--hm-brass);
+  border-radius: var(--hm-radius-round);
+  box-shadow: var(--hm-shadow-lift);
+  cursor: grab;
+}
+.hm-slider__thumb:focus-visible {
+  outline: var(--hm-focus-ring);
+  outline-offset: 3px;
+}
+.hm-slider__value {
+  min-width: 32px;
+  font-family: var(--hm-font-mono);
+  font-size: var(--hm-text-micro);
+  text-align: right;
+  color: var(--hm-fg-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+/* --------------------------------------------------------------------------
+   09 · TABS — botanical key strip
+   -------------------------------------------------------------------------- */
+.hm-tabs__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  border-bottom: 1px solid var(--hm-border);
+}
+.hm-tabs__trigger {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--hm-space-2);
+  min-height: 44px;
+  padding: var(--hm-space-2) var(--hm-space-4);
+  font-family: var(--hm-font-mono);
+  font-size: var(--hm-text-micro);
+  letter-spacing: var(--hm-tracking-micro);
+  text-transform: uppercase;
+  color: var(--hm-fg-muted);
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  transition: color var(--hm-dur-2) var(--hm-ease-standard), border-color var(--hm-dur-2) var(--hm-ease-standard);
+}
+.hm-tabs__trigger:hover {
+  color: var(--hm-fg);
+}
+.hm-tabs__trigger[data-state='active'] {
+  color: var(--hm-fg);
+  border-bottom-color: var(--hm-fg);
+}
+.hm-tabs__badge {
+  font-size: var(--hm-text-micro);
+  color: var(--hm-fg-faint);
+}
+
+/* --------------------------------------------------------------------------
+   10 · POPOVER
+   -------------------------------------------------------------------------- */
+.hm-popover {
+  z-index: var(--hm-z-hud);
+  width: min(320px, calc(100vw - 32px));
+  padding: var(--hm-space-4);
+  background: var(--hm-bg);
+  border: 1px solid var(--hm-border-strong);
+  border-radius: var(--hm-radius-hairline);
+  box-shadow: var(--hm-shadow-plate);
+  animation: hm-fade-in var(--hm-dur-2) var(--hm-ease-out) both;
+}
+
+/* --------------------------------------------------------------------------
+   11 · FIELD / INPUT / TEXTAREA
+   -------------------------------------------------------------------------- */
+.hm-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--hm-space-2);
+}
+.hm-field__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--hm-space-3);
+}
+.hm-field__label {
+  font-family: var(--hm-font-mono);
+  font-size: var(--hm-text-micro);
+  letter-spacing: var(--hm-tracking-micro);
+  text-transform: uppercase;
+  color: var(--hm-fg-muted);
+}
+.hm-field__count {
+  font-family: var(--hm-font-mono);
+  font-size: var(--hm-text-micro);
+  color: var(--hm-fg-faint);
+  font-variant-numeric: tabular-nums;
+}
+.hm-field__hint {
+  font-family: var(--hm-font-body);
+  font-size: var(--hm-text-caption);
+  color: var(--hm-fg-muted);
+}
+.hm-field__error {
+  font-family: var(--hm-font-mono);
+  font-size: var(--hm-text-micro);
+  letter-spacing: 0.02em;
+  color: var(--hm-danger);
+}
+
+.hm-input,
+.hm-textarea {
+  width: 100%;
+  padding: var(--hm-space-3) var(--hm-space-3);
+  background: transparent;
+  color: var(--hm-fg);
+  border: 1px solid var(--hm-border-strong);
+  border-radius: var(--hm-radius-input);
+  font-family: var(--hm-font-body);
+  font-size: var(--hm-text-body-s);
+  line-height: var(--hm-leading-body-s);
+  transition: border-color var(--hm-dur-2) var(--hm-ease-standard);
+}
+.hm-input::placeholder,
+.hm-textarea::placeholder {
+  color: var(--hm-fg-faint);
+}
+.hm-input:hover,
+.hm-textarea:hover {
+  border-color: var(--hm-fg-muted);
+}
+.hm-input:focus-visible,
+.hm-textarea:focus-visible {
+  outline: var(--hm-focus-ring);
+  outline-offset: 1px;
+  border-color: var(--hm-fg);
+}
+.hm-textarea {
+  min-height: 88px;
+  resize: vertical;
+}
+.hm-field[data-invalid='true'] .hm-input,
+.hm-field[data-invalid='true'] .hm-textarea {
+  border-color: var(--hm-danger);
+}
+
+/* --------------------------------------------------------------------------
+   12 · SKELETON — a sheet waiting for ink, no shimmer
+   -------------------------------------------------------------------------- */
+.hm-skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: var(--hm-space-3);
+}
+.hm-skeleton__line {
+  height: 12px;
+  background: var(--hm-bg-sunken);
+  border: 1px solid var(--hm-border);
+  animation: hm-sheet-breathe var(--hm-dur-12) var(--hm-ease-standard) both;
+}
+.hm-skeleton__line:nth-child(2) {
+  width: 78%;
+}
+.hm-skeleton__line:nth-child(3) {
+  width: 56%;
+}
+
+@keyframes hm-sheet-breathe {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   13 · STAMP — pressed seal, brass rim
+   -------------------------------------------------------------------------- */
+.hm-stamp {
+  display: inline-grid;
+  place-items: center;
+  padding: 3px;
+  border: 1px solid var(--hm-brass);
+  border-radius: var(--hm-radius-round);
+}
+.hm-stamp__inner {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  padding: var(--hm-space-2) var(--hm-space-4);
+  border: 1px dashed color-mix(in oklab, var(--hm-brass) 60%, transparent);
+  border-radius: var(--hm-radius-round);
+  font-family: var(--hm-font-mono);
+  font-size: var(--hm-text-micro);
+  letter-spacing: var(--hm-tracking-micro);
+  text-transform: uppercase;
+  color: var(--hm-ink);
+}
+.hm-stamp--moss .hm-stamp__inner {
+  color: var(--hm-moss);
+}
+.hm-stamp--pollen .hm-stamp__inner {
+  background: var(--hm-pollen);
+}
+.hm-stamp--pond .hm-stamp__inner {
+  color: var(--hm-pond);
+}
+
+/* --------------------------------------------------------------------------
+   14 · SONNER TOAST (App owns the Toaster; this styles its contents)
+   -------------------------------------------------------------------------- */
+.hm-toast {
+  display: flex;
+  align-items: baseline;
+  gap: var(--hm-space-3);
+  font-family: var(--hm-font-mono);
+  font-size: var(--hm-text-micro);
+  letter-spacing: 0.06em;
+}
+
+/* --------------------------------------------------------------------------
+   15 · REDUCED MOTION — final states only
+   -------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  .hm-btn,
+  .hm-btn__glyph,
+  .hm-skeleton__line {
+    transition: none;
+    animation: none;
+  }
+  .hm-dialog__content,
+  .hm-dialog__overlay,
+  .hm-tooltip,
+  .hm-popover {
+    animation: none;
+  }
+  .hm-btn:hover .hm-btn__glyph {
+    transform: none;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   16 · FORCED COLOURS — borders survive, fills vanish
+   -------------------------------------------------------------------------- */
+@media (forced-colors: active) {
+  .hm-btn,
+  .hm-card,
+  .hm-input,
+  .hm-textarea,
+  .hm-switch__track,
+  .hm-dialog__content,
+  .hm-popover,
+  .hm-tooltip,
+  .hm-stamp {
+    border: 1px solid CanvasText;
+    background: Canvas;
+    color: CanvasText;
+    box-shadow: none;
+  }
+  .hm-btn--solid,
+  .hm-switch__track[data-state='checked'] {
+    background: Highlight;
+    color: HighlightText;
+  }
+  .hm-stamp__inner {
+    border-color: CanvasText;
+    color: CanvasText;
+  }
+  .hm-skeleton__line {
+    background: Canvas;
+    border-color: CanvasText;
+  }
+  .hm-readout__value[data-live='true'] {
+    color: CanvasText;
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "videos": {
+    "BV1WJjF67Eky": {
+      "w": 1152,
+      "h": 720,
+      "fps": 25,
+      "duration": 35.36,
+      "frames_container": 884,
+      "frames_decoded": 884
+    },
+    "BV1CDjz6bE6o": {
+      "w": 1728,
+      "h": 1080,
+      "fps": 24,
+      "duration": 52.108,
+      "frames_container": 1251,
+      "frames_decoded": 1251
+    },
+    "BV1GKjm6aEfR": {
+      "w": 1728,
+      "h": 1080,
+      "fps": 24,
+      "duration": 39.914,
+      "frames_container": 958,
+      "frames_decoded": 958
+    }
+  },
+  "videoTeardown": {
+    "sheets": 9,
+    "evidence": 84,
+    "keyframes": 152
+  },
+  "gif": {
+    "frames": 154,
+    "contactSheets": 2,
+    "keyframes": 9
+  },
+  "atlas": {
+    "sites": 77,
+    "desktopShots": 77,
+    "fingerprints": 77,
+    "html": 77,
+    "headers": 77,
+    "heroImages": 77
+  },
+  "rea": {
+    "dirs": 11,
+    "complete": 10,
+    "inspectOnly": [
+      "isa-de-burgh"
+    ],
+    "notStarted": [],
+    "allDirs": [
+      "bausola-banch",
+      "dabbit",
+      "duo-case",
+      "everline-studio",
+      "isa-de-burgh",
+      "kern-society",
+      "magma",
+      "possible-monuments",
+      "superlocal-2026",
+      "swash",
+      "voice-tag-gods"
+    ],
+    "note": "check.mjs counts only directories under rea/ (excluding names starting with \"_\"); 11 site dirs = 10 complete + 1 inspect-only."
+  },
+  "assets": {
+    "count": 17,
+    "files": 17,
+    "licenses": {
+      "Public domain": 7,
+      "CC BY 4.0": 2,
+      "CC BY-SA 4.0": 3,
+      "CC BY 2.0": 1,
+      "No restrictions": 1,
+      "CC0": 1,
+      "CC BY 3.0": 1,
+      "CC BY-SA 2.0": 1
+    },
+    "contactSheet": "assets/contact.jpg"
+  }
+}

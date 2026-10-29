@@ -1,0 +1,80 @@
+{
+  "bv": "BV1WJjF67Eky",
+  "fps": 25,
+  "frames": 884,
+  "threshold": 7.4,
+  "meanDiff": 1.82,
+  "diffPeaks": [
+    {
+      "frame": 3,
+      "time": 0.12,
+      "diff": 7.94
+    },
+    {
+      "frame": 68,
+      "time": 2.72,
+      "diff": 10.0
+    },
+    {
+      "frame": 76,
+      "time": 3.04,
+      "diff": 25.39
+    },
+    {
+      "frame": 376,
+      "time": 15.04,
+      "diff": 25.92
+    },
+    {
+      "frame": 427,
+      "time": 17.08,
+      "diff": 7.93
+    },
+    {
+      "frame": 451,
+      "time": 18.04,
+      "diff": 16.12
+    },
+    {
+      "frame": 486,
+      "time": 19.44,
+      "diff": 32.39
+    },
+    {
+      "frame": 509,
+      "time": 20.36,
+      "diff": 8.59
+    },
+    {
+      "frame": 602,
+      "time": 24.08,
+      "diff": 18.91
+    },
+    {
+      "frame": 619,
+      "time": 24.76,
+      "diff": 11.88
+    },
+    {
+      "frame": 642,
+      "time": 25.68,
+      "diff": 12.9
+    },
+    {
+      "frame": 751,
+      "time": 30.04,
+      "diff": 10.22
+    },
+    {
+      "frame": 824,
+      "time": 32.96,
+      "diff": 7.56
+    },
+    {
+      "frame": 866,
+      "time": 34.64,
+      "diff": 8.08
+    }
+  ],
+  "staticSpans": []
+}

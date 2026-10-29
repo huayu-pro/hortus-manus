@@ -1,0 +1,1 @@
+gsap+ScrollTrigger+SplitText+Lenis; e-commerce one-pager

@@ -1,0 +1,1 @@
+gsap+ScrollTrigger+SplitText; 2 canvases; audio-reel art direction

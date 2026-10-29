@@ -1,0 +1,7 @@
+Fonts bundled with HORTUS MANUS are licensed under the SIL Open Font License 1.1.
+- Instrument Serif (c) 2022 The Instrument Serif Project Authors
+- Cormorant Garamond (c) 2015 The Cormorant Project Authors
+- Noto Serif SC / Noto Sans SC (c) 2014-2025 Adobe / Google
+- IBM Plex Mono (c) 2017 IBM Corp.
+- Ma Shan Zheng (c) 2016 Google
+See https://openfontlicense.org/ for the full license text.

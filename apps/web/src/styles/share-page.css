@@ -1,0 +1,141 @@
+/* Standalone client share page (GitHub Pages static mode). */
+.hm-share-page {
+  min-height: 100vh;
+  padding: 28px var(--hm-grid-margin, 96px) 24px;
+  background:
+    radial-gradient(ellipse 60% 45% at 80% 0%, rgba(232, 196, 190, 0.24), transparent 65%),
+    var(--hm-paper, #f6f1e7);
+  color: var(--hm-ink, #1c211a);
+}
+.hm-share-top,
+.hm-share-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--hm-hairline, rgba(28, 33, 26, 0.16));
+}
+.hm-share-brand {
+  font-family: var(--hm-font-display, 'Instrument Serif', serif);
+  letter-spacing: 0.11em;
+  font-size: 20px;
+}
+.hm-share-brand span {
+  font-family: var(--hm-font-cn-display, 'Noto Serif SC', serif);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: var(--hm-ink-soft, #5d6658);
+  margin-left: 8px;
+}
+.hm-share-grid {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  gap: clamp(32px, 7vw, 120px);
+  align-items: center;
+  max-width: 1320px;
+  margin: 0 auto;
+  min-height: calc(100vh - 150px);
+  padding: 48px 0;
+}
+.hm-share-copy h1 {
+  margin: 10px 0 2px;
+  font-family: var(--hm-font-display, 'Instrument Serif', serif);
+  font-size: clamp(58px, 7vw, 112px);
+  font-weight: 400;
+  line-height: 0.92;
+  letter-spacing: -0.03em;
+}
+.hm-share-cn {
+  margin: 4px 0 0;
+  font-family: var(--hm-font-cn-display, 'Noto Serif SC', serif);
+  font-size: clamp(26px, 3vw, 40px);
+  color: var(--hm-peony, #c97f7f);
+}
+.hm-share-latin {
+  margin: 4px 0 0;
+  font-size: clamp(20px, 2vw, 28px);
+  color: var(--hm-ink-soft, #5d6658);
+}
+.hm-share-caption {
+  margin: 26px 0 0;
+  font-family: var(--hm-font-cn-display, 'Noto Serif SC', serif);
+  font-size: 20px;
+  line-height: 1.5;
+}
+.hm-share-meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  margin: 26px 0;
+  border-top: 1px solid var(--hm-hairline);
+}
+.hm-share-meta div {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--hm-hairline);
+}
+.hm-share-meta dt {
+  font-family: var(--hm-font-mono, monospace);
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  color: var(--hm-ink-soft);
+}
+.hm-share-meta dd {
+  margin: 4px 0 0;
+  font-family: var(--hm-font-cn-display, serif);
+  font-size: 15px;
+}
+.hm-share-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+.hm-share-note {
+  margin-top: 28px;
+  font-size: 9px;
+}
+.hm-share-plate {
+  margin: 0;
+  padding: 12px;
+  background: var(--hm-paper-raise, #fbf8f1);
+  border: 1px solid var(--hm-hairline, rgba(28, 33, 26, 0.16));
+  box-shadow: var(--hm-shadow-plate, 0 18px 50px -30px rgba(28, 33, 26, 0.4));
+  transform: rotate(1.2deg);
+}
+.hm-share-plate img,
+.hm-share-plate svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: var(--hm-paper, #f6f1e7);
+}
+.hm-share-plate figcaption {
+  padding-top: 8px;
+  font-size: 8px;
+}
+.hm-share-footer {
+  padding-top: 14px;
+  border-bottom: 0;
+  border-top: 1px solid var(--hm-hairline);
+  font-family: var(--hm-font-mono, monospace);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.hm-share-missing,
+.hm-share-loading {
+  min-height: 80vh;
+  display: grid;
+  place-content: center;
+  gap: 16px;
+  text-align: center;
+}
+.hm-share-missing h1 { margin: 0; font-size: clamp(34px, 5vw, 64px); }
+@media (max-width: 900px) {
+  .hm-share-page { padding: 18px 20px; }
+  .hm-share-grid { grid-template-columns: 1fr; min-height: 0; padding: 28px 0; gap: 24px; }
+  .hm-share-top { flex-direction: column; gap: 6px; }
+  .hm-share-meta { grid-template-columns: 1fr 1fr; }
+  .hm-share-plate { max-width: 420px; margin: 0 auto; }
+}

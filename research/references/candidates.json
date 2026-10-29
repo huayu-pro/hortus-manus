@@ -1,0 +1,1479 @@
+{
+  "generatedAt": "2026-10-29T17:05:00.498Z",
+  "count": 77,
+  "queries": [
+    {
+      "id": "botanical-nature",
+      "args": {
+        "query": "botanical nature",
+        "limit": 10
+      }
+    },
+    {
+      "id": "editorial",
+      "args": {
+        "query": "editorial",
+        "limit": 10
+      }
+    },
+    {
+      "id": "experimental",
+      "args": {
+        "query": "experimental",
+        "limit": 10
+      }
+    },
+    {
+      "id": "3d",
+      "args": {
+        "query": "3D",
+        "limit": 10
+      }
+    },
+    {
+      "id": "typographic",
+      "args": {
+        "query": "typographic",
+        "limit": 10
+      }
+    },
+    {
+      "id": "scroll-effects",
+      "args": {
+        "query": "scroll effects",
+        "limit": 10
+      }
+    },
+    {
+      "id": "minimal",
+      "args": {
+        "query": "minimal",
+        "limit": 10
+      }
+    },
+    {
+      "id": "portfolio",
+      "args": {
+        "query": "portfolio",
+        "limit": 10
+      }
+    },
+    {
+      "id": "art",
+      "args": {
+        "query": "art",
+        "limit": 10
+      }
+    },
+    {
+      "id": "interactive",
+      "args": {
+        "query": "interactive",
+        "limit": 10
+      }
+    },
+    {
+      "id": "garden",
+      "args": {
+        "query": "garden",
+        "limit": 8
+      }
+    },
+    {
+      "id": "tech-three",
+      "args": {
+        "tech": "three.js",
+        "limit": 8
+      }
+    },
+    {
+      "id": "tech-gsap",
+      "args": {
+        "tech": "gsap",
+        "limit": 8
+      }
+    },
+    {
+      "id": "photography",
+      "args": {
+        "query": "photography",
+        "limit": 8
+      }
+    }
+  ],
+  "log": [
+    {
+      "query": "botanical-nature",
+      "images": 10,
+      "texts": 10,
+      "added": 4,
+      "total": 4
+    },
+    {
+      "query": "editorial",
+      "images": 10,
+      "texts": 10,
+      "added": 10,
+      "total": 14
+    },
+    {
+      "query": "experimental",
+      "images": 10,
+      "texts": 10,
+      "added": 10,
+      "total": 24
+    },
+    {
+      "query": "3d",
+      "images": 10,
+      "texts": 10,
+      "added": 10,
+      "total": 34
+    },
+    {
+      "query": "typographic",
+      "images": 10,
+      "texts": 10,
+      "added": 6,
+      "total": 40
+    },
+    {
+      "query": "scroll-effects",
+      "images": 10,
+      "texts": 10,
+      "added": 10,
+      "total": 50
+    },
+    {
+      "query": "minimal",
+      "images": 10,
+      "texts": 10,
+      "added": 3,
+      "total": 53
+    },
+    {
+      "query": "portfolio",
+      "images": 10,
+      "texts": 10,
+      "added": 2,
+      "total": 55
+    },
+    {
+      "query": "art",
+      "images": 10,
+      "texts": 10,
+      "added": 8,
+      "total": 63
+    },
+    {
+      "query": "interactive",
+      "images": 10,
+      "texts": 10,
+      "added": 1,
+      "total": 64
+    },
+    {
+      "query": "garden",
+      "images": 8,
+      "texts": 8,
+      "added": 3,
+      "total": 67
+    },
+    {
+      "query": "tech-three",
+      "images": 8,
+      "texts": 8,
+      "added": 2,
+      "total": 69
+    },
+    {
+      "query": "tech-gsap",
+      "images": 8,
+      "texts": 8,
+      "added": 2,
+      "total": 71
+    },
+    {
+      "query": "photography",
+      "images": 8,
+      "texts": 8,
+      "added": 6,
+      "total": 77
+    }
+  ],
+  "sites": [
+    {
+      "name": "Txt Text Editor",
+      "siteUrl": "https://adrien.website/txt/",
+      "oplUrl": "https://onepagelove.com/txt-text-editor/",
+      "slug": "txt-text-editor",
+      "headline": "Txt is a simple, minimalist text editor built natively for macOS.",
+      "subtext": "",
+      "eyebrow": "",
+      "queries": [
+        "botanical-nature"
+      ],
+      "image": {
+        "savedAs": "txt-text-editor.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Cape Town Dam Levels Today",
+      "siteUrl": "https://capetowndamlevels.co.za/",
+      "oplUrl": "https://onepagelove.com/cape-town-dam-levels-today/",
+      "slug": "cape-town-dam-levels-today",
+      "headline": "Monday looks like the wettest day. (eyebrow: \"THE OUTLOOK\")",
+      "subtext": "Sunday brings some rain, then Monday gets much heavier. The week as a whole looks very wet for the catchments.",
+      "eyebrow": "THE OUTLOOK",
+      "queries": [
+        "botanical-nature"
+      ],
+      "image": {
+        "savedAs": "cape-town-dam-levels-today.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "E. Stewart &amp; Associates",
+      "siteUrl": "https://estewartandassociates.com/",
+      "oplUrl": "https://onepagelove.com/e-stewart-associates/",
+      "slug": "e-stewart-associates",
+      "headline": "Three generations of expertise in fire prevention. (eyebrow: \"FIRE PREVENTION SPECIALISTS\")",
+      "subtext": "Serving the state of California",
+      "eyebrow": "FIRE PREVENTION SPECIALISTS",
+      "queries": [
+        "botanical-nature"
+      ],
+      "image": {
+        "savedAs": "e-stewart-associates.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Park",
+      "siteUrl": "https://www.park.photos/",
+      "oplUrl": "https://onepagelove.com/park/",
+      "slug": "park",
+      "headline": "Discover America's Natural Wonders",
+      "subtext": "From minimal photos of majestic National Parks to serene State Reserves and scenic coastlines, each photo invites you to explore.",
+      "eyebrow": "",
+      "queries": [
+        "botanical-nature"
+      ],
+      "image": {
+        "savedAs": "park.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Felix Haas",
+      "siteUrl": "https://felixhaas.io/",
+      "oplUrl": "https://onepagelove.com/felix-haas/",
+      "slug": "felix-haas",
+      "headline": "A letter from Felix Haas",
+      "subtext": "",
+      "eyebrow": "",
+      "queries": [
+        "editorial",
+        "minimal"
+      ],
+      "image": {
+        "savedAs": "felix-haas.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Resurf",
+      "siteUrl": "https://resurf.so",
+      "oplUrl": "https://onepagelove.com/resurf/",
+      "slug": "resurf",
+      "headline": "A Personal Context Library. (eyebrow: \"#1 Product of the Day\")",
+      "subtext": "Save notes, links, images, and documents in a fully local library. Find what you need and hand off that context to AI.",
+      "eyebrow": "#1 Product of the Day",
+      "queries": [
+        "editorial",
+        "typographic",
+        "minimal"
+      ],
+      "image": {
+        "savedAs": "resurf.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Pairio",
+      "siteUrl": "https://pairio.app",
+      "oplUrl": "https://onepagelove.com/pairio/",
+      "slug": "pairio",
+      "headline": "Video calling with remote control",
+      "subtext": "Use your own mouse and keyboard to control each other's screen. Pairio: one click to call. No link, no invite.",
+      "eyebrow": "",
+      "queries": [
+        "editorial",
+        "minimal"
+      ],
+      "image": {
+        "savedAs": "pairio.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Tim Van Damme (Max Voltar)",
+      "siteUrl": "https://timvandamme.com/",
+      "oplUrl": "https://onepagelove.com/tim-van-damme-max-voltar/",
+      "slug": "tim-van-damme-max-voltar",
+      "headline": "",
+      "subtext": "",
+      "eyebrow": "",
+      "queries": [
+        "editorial",
+        "portfolio"
+      ],
+      "image": {
+        "savedAs": "tim-van-damme-max-voltar.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Applied Imagination",
+      "siteUrl": "https://applied-imagination.gpc.consulting",
+      "oplUrl": "https://onepagelove.com/applied-imagination/",
+      "slug": "applied-imagination",
+      "headline": "Applied Imagination",
+      "subtext": "The breakthrough starts when we stop asking AI to work like us and start reimagining the work itself.",
+      "eyebrow": "",
+      "queries": [
+        "editorial",
+        "typographic",
+        "interactive",
+        "tech-three"
+      ],
+      "image": {
+        "savedAs": "applied-imagination.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Flowjam",
+      "siteUrl": "http://flowjam.com",
+      "oplUrl": "https://onepagelove.com/flowjam-2/",
+      "slug": "flowjam-2",
+      "headline": "We make launch videos for AI startups. That go viral. (eyebrow: \"Loved By 50+ YC Startups\")",
+      "subtext": "Our videos have generated 39 million views and counting. We create software launch videos designed to build hype, increase conversions, and make your product look incredible.",
+      "eyebrow": "Loved By 50+ YC Startups",
+      "queries": [
+        "editorial"
+      ],
+      "image": {
+        "savedAs": "flowjam-2.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Artem Taradash",
+      "siteUrl": "https://taradash.me/",
+      "oplUrl": "https://onepagelove.com/artem-taradash/",
+      "slug": "artem-taradash",
+      "headline": "Everything around us is love. Design is how it takes shape",
+      "subtext": "",
+      "eyebrow": "",
+      "queries": [
+        "editorial"
+      ],
+      "image": {
+        "savedAs": "artem-taradash.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Miso",
+      "siteUrl": "https://miso.com/",
+      "oplUrl": "https://onepagelove.com/miso/",
+      "slug": "miso",
+      "headline": "",
+      "subtext": "",
+      "eyebrow": "",
+      "queries": [
+        "editorial"
+      ],
+      "image": {
+        "savedAs": "miso.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "April Leihuanani Evangelista",
+      "siteUrl": "https://aprilleihuanani.com",
+      "oplUrl": "https://onepagelove.com/april-leihuanani-evangelista/",
+      "slug": "april-leihuanani-evangelista",
+      "headline": "APRIL LEIHUANANI (eyebrow: \"Marketing & Content Creation\")",
+      "subtext": "",
+      "eyebrow": "Marketing & Content Creation",
+      "queries": [
+        "editorial"
+      ],
+      "image": {
+        "savedAs": "april-leihuanani-evangelista.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Britt Taylor",
+      "siteUrl": "https://www.btay.ca",
+      "oplUrl": "https://onepagelove.com/britt-taylor/",
+      "slug": "britt-taylor",
+      "headline": "Remember when stumbling across a new website used to be fun",
+      "subtext": "Before AI could generate a website in minutes and everything started to look... the same?",
+      "eyebrow": "",
+      "queries": [
+        "editorial"
+      ],
+      "image": {
+        "savedAs": "britt-taylor.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Eventually",
+      "siteUrl": "https://geteventually.com",
+      "oplUrl": "https://onepagelove.com/eventually/",
+      "slug": "eventually",
+      "headline": "Bet you have hundreds of 🔖 saved tweets. Use Eventually to actually 🧠 revisit them.",
+      "subtext": "A tiny browser extension that emails you the tweets you meant to come back to, but never did.",
+      "eyebrow": "",
+      "queries": [
+        "experimental",
+        "typographic",
+        "minimal"
+      ],
+      "image": {
+        "savedAs": "eventually.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "ARCHIV",
+      "siteUrl": "https://www.archiv.systems/",
+      "oplUrl": "https://onepagelove.com/archiv/",
+      "slug": "archiv",
+      "headline": "A collection system for organizing and identifying the physical world.",
+      "subtext": "We'll email you when more beta spots open.",
+      "eyebrow": "",
+      "queries": [
+        "experimental"
+      ],
+      "image": {
+        "savedAs": "archiv.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Rows",
+      "siteUrl": "https://rows.gg/",
+      "oplUrl": "https://onepagelove.com/rows/",
+      "slug": "rows",
+      "headline": "Rows is an unapologetically simple way to track anything.",
+      "subtext": "Rows is a shared list for tracking anything you've got going: projects, tasks, reading, a trip, whatever. Simple on purpose, and a genuine pleasure to use.",
+      "eyebrow": "",
+      "queries": [
+        "experimental"
+      ],
+      "image": {
+        "savedAs": "rows.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "SVG Doodles",
+      "siteUrl": "https://svgdoodles.com",
+      "oplUrl": "https://onepagelove.com/svg-doodles/",
+      "slug": "svg-doodles",
+      "headline": "Kobbe (eyebrow: \"Lexington Themes\")",
+      "subtext": "drag to explore · click a doodle",
+      "eyebrow": "Lexington Themes",
+      "queries": [
+        "experimental",
+        "interactive"
+      ],
+      "image": {
+        "savedAs": "svg-doodles.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "bueno.fyi",
+      "siteUrl": "https://bueno.fyi",
+      "oplUrl": "https://onepagelove.com/bueno-fyi/",
+      "slug": "bueno-fyi",
+      "headline": "Search the index...",
+      "subtext": "",
+      "eyebrow": "",
+      "queries": [
+        "experimental"
+      ],
+      "image": {
+        "savedAs": "bueno-fyi.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Nodeck",
+      "siteUrl": "https://www.nodeck.online",
+      "oplUrl": "https://onepagelove.com/nodeck/",
+      "slug": "nodeck",
+      "headline": "",
+      "subtext": "",
+      "eyebrow": "",
+      "queries": [
+        "experimental"
+      ],
+      "image": {
+        "savedAs": "nodeck.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "davesocozy",
+      "siteUrl": "https://davesocozy.com",
+      "oplUrl": "https://onepagelove.com/davesocozy/",
+      "slug": "davesocozy",
+      "headline": "PONG",
+      "subtext": "",
+      "eyebrow": "",
+      "queries": [
+        "experimental"
+      ],
+      "image": {
+        "savedAs": "davesocozy.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Is That Pigeon a Fed?",
+      "siteUrl": "https://readymag.website/u2492934797/isthatpigeonafed/",
+      "oplUrl": "https://onepagelove.com/is-that-pigeon-a-fed/",
+      "slug": "is-that-pigeon-a-fed",
+      "headline": "IS THAT PIGEON A FED?",
+      "subtext": "Got a photo of a pigeon that looks suspiciously employed? Upload it and we'll investigate.",
+      "eyebrow": "",
+      "queries": [
+        "experimental"
+      ],
+      "image": {
+        "savedAs": "is-that-pigeon-a-fed.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Berd",
+      "siteUrl": "https://berd.xyz/",
+      "oplUrl": "https://onepagelove.com/berd/",
+      "slug": "berd",
+      "headline": "",
+      "subtext": "",
+      "eyebrow": "",
+      "queries": [
+        "experimental"
+      ],
+      "image": {
+        "savedAs": "berd.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "estacion venenta",
+      "siteUrl": "https://estacionvenenta.com",
+      "oplUrl": "https://onepagelove.com/estacion-venenta/",
+      "slug": "estacion-venenta",
+      "headline": "",
+      "subtext": "",
+      "eyebrow": "",
+      "queries": [
+        "experimental"
+      ],
+      "image": {
+        "savedAs": "estacion-venenta.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Angelo",
+      "siteUrl": "https://angelo.so/",
+      "oplUrl": "https://onepagelove.com/angelo/",
+      "slug": "angelo",
+      "headline": "",
+      "subtext": "",
+      "eyebrow": "",
+      "queries": [
+        "3d",
+        "portfolio",
+        "interactive"
+      ],
+      "image": {
+        "savedAs": "angelo.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Josh Puckett",
+      "siteUrl": "https://joshpuckett.me/",
+      "oplUrl": "https://onepagelove.com/josh-puckett/",
+      "slug": "josh-puckett",
+      "headline": "@joshpuckett",
+      "subtext": "Co-founder of Iteration, a design practice partnering with select early-stage founders, and Graphical, a tool for creating visual languages. Previously, I co-founded Superstudy, an apprenticeship based studio that helped over a hundred designers kickstart their careers in technology.",
+      "eyebrow": "",
+      "queries": [
+        "3d",
+        "portfolio"
+      ],
+      "image": {
+        "savedAs": "josh-puckett.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Duo Case",
+      "siteUrl": "https://www.duocase.lol",
+      "oplUrl": "https://onepagelove.com/duo-case/",
+      "slug": "duo-case",
+      "headline": "Two phones. One fold. (eyebrow: \"Introducing Duo Case\")",
+      "subtext": "Turn two old iPhones into one new conversation starter. No trade-in. No upgrade. Just a very confident hinge.",
+      "eyebrow": "Introducing Duo Case",
+      "queries": [
+        "3d",
+        "tech-gsap"
+      ],
+      "image": {
+        "savedAs": "duo-case.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Swash",
+      "siteUrl": "https://swashmotion.com/?utm_source=onepagelove&utm_medium=gallery&utm_campaign=launch-2026-09",
+      "oplUrl": "https://onepagelove.com/swash/",
+      "slug": "swash",
+      "headline": "Type that moves",
+      "subtext": "Make kinetic typography in minutes, not hours",
+      "eyebrow": "",
+      "queries": [
+        "3d",
+        "tech-three"
+      ],
+      "image": {
+        "savedAs": "swash.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "HEDROOM™",
+      "siteUrl": "https://www.hedroom.fm/",
+      "oplUrl": "https://onepagelove.com/hedroom/",
+      "slug": "hedroom",
+      "headline": "",
+      "subtext": "",
+      "eyebrow": "",
+      "queries": [
+        "3d",
+        "interactive",
+        "tech-three"
+      ],
+      "image": {
+        "savedAs": "hedroom.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Melike Turgut",
+      "siteUrl": "https://meliketurgut.com/",
+      "oplUrl": "https://onepagelove.com/melike-turgut/",
+      "slug": "melike-turgut",
+      "headline": "me like",
+      "subtext": "I spent the last 15 years designing products people love to click, tap, share, and come back to. Along the way were these 8 chapters.",
+      "eyebrow": "",
+      "queries": [
+        "3d",
+        "minimal",
+        "portfolio",
+        "interactive",
+        "tech-three"
+      ],
+      "image": {
+        "savedAs": "melike-turgut.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "New Material",
+      "siteUrl": "https://newmaterial.ai/",
+      "oplUrl": "https://onepagelove.com/new-material/",
+      "slug": "new-material",
+      "headline": "New Material delivers AI-native health care, by design.",
+      "subtext": "We team up with the world's most ambitious organisations transforming their industries with AI.",
+      "eyebrow": "",
+      "queries": [
+        "3d"
+      ],
+      "image": {
+        "savedAs": "new-material.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Congrue",
+      "siteUrl": "https://www.congrue.ai",
+      "oplUrl": "https://onepagelove.com/congrue/",
+      "slug": "congrue",
+      "headline": "Sell the system, not the SKU.",
+      "subtext": "Congrue reads every bid your reps receive, quotes every product on it, prices it, and enters the order. Rep agencies quote more. Manufacturers get a front office that runs itself.",
+      "eyebrow": "",
+      "queries": [
+        "3d"
+      ],
+      "image": {
+        "savedAs": "congrue.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Grilled Pixels Ecommerce",
+      "siteUrl": "https://www.grilledpixels.com/ecommerce",
+      "oplUrl": "https://onepagelove.com/grilled-pixels-ecommerce/",
+      "slug": "grilled-pixels-ecommerce",
+      "headline": "COMMERCE, ELEVATED",
+      "subtext": "",
+      "eyebrow": "",
+      "queries": [
+        "3d",
+        "tech-three",
+        "tech-gsap"
+      ],
+      "image": {
+        "savedAs": "grilled-pixels-ecommerce.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Flashform",
+      "siteUrl": "https://flshfrm.com",
+      "oplUrl": "https://onepagelove.com/flashform/",
+      "slug": "flashform",
+      "headline": "We're just sending forms and that's all",
+      "subtext": "WE ARE NOT A FORM BUILDER. WE DO NOT SEEK TO SOLVE ALL PROBLEMS. WE JUST SEND FORM DATA TO INSTANT MESSENGERS AND EMAIL IN THE MOST CONVENIENT WAY",
+      "eyebrow": "",
+      "queries": [
+        "3d",
+        "typographic"
+      ],
+      "image": {
+        "savedAs": "flashform.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "mappy",
+      "siteUrl": "https://meetmappy.com",
+      "oplUrl": "https://onepagelove.com/mappy/",
+      "slug": "mappy",
+      "headline": "Hi, I'm Dima. I built mappy for my own messy head.",
+      "subtext": "",
+      "eyebrow": "",
+      "queries": [
+        "typographic",
+        "interactive",
+        "tech-gsap"
+      ],
+      "image": {
+        "savedAs": "mappy.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Monocle",
+      "siteUrl": "https://trymonocle.app/",
+      "oplUrl": "https://onepagelove.com/monocle/",
+      "slug": "monocle",
+      "headline": "",
+      "subtext": "",
+      "eyebrow": "",
+      "queries": [
+        "typographic",
+        "minimal"
+      ],
+      "image": {
+        "savedAs": "monocle.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Stolaze",
+      "siteUrl": "https://stolaze.com/",
+      "oplUrl": "https://onepagelove.com/stolaze/",
+      "slug": "stolaze",
+      "headline": "Studio Stolaze—An initiative by Amaury Eckern",
+      "subtext": "Visual Direction for contemporary culture. Based in FR / BE — Operating globally. Branding / Typography / Artifacts / Motion",
+      "eyebrow": "",
+      "queries": [
+        "typographic",
+        "minimal",
+        "portfolio"
+      ],
+      "image": {
+        "savedAs": "stolaze.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Kern Society",
+      "siteUrl": "https://shockingmike.github.io/kern-society",
+      "oplUrl": "https://onepagelove.com/kern-society/",
+      "slug": "kern-society",
+      "headline": "Variable type for restless brands. Letters with a pulse.",
+      "subtext": "",
+      "eyebrow": "",
+      "queries": [
+        "typographic",
+        "interactive",
+        "tech-gsap"
+      ],
+      "image": {
+        "savedAs": "kern-society.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Bob Moll",
+      "siteUrl": "https://bobmoll.tech",
+      "oplUrl": "https://onepagelove.com/bob-moll/",
+      "slug": "bob-moll",
+      "headline": "BOB MOLL",
+      "subtext": "Minimal no-AI electronic music—slightly influenced by minimal and dub techno from Cologne, Berlin, Detroit.",
+      "eyebrow": "",
+      "queries": [
+        "typographic"
+      ],
+      "image": {
+        "savedAs": "bob-moll.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Deeo Studio",
+      "siteUrl": "https://deeo.studio",
+      "oplUrl": "https://onepagelove.com/deeo-studio-2/",
+      "slug": "deeo-studio-2",
+      "headline": "Creating memorable brand experiences not for attention but for impact.",
+      "subtext": "We are a design studio rooted in deep thinking. We push past the expected, challenge conventions, and provoke curiosity.",
+      "eyebrow": "",
+      "queries": [
+        "typographic"
+      ],
+      "image": {
+        "savedAs": "deeo-studio-2.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Ayush Halder Portfolio",
+      "siteUrl": "https://www.thoughtsofayush.com",
+      "oplUrl": "https://onepagelove.com/ayush-halder-portfolio/",
+      "slug": "ayush-halder-portfolio",
+      "headline": "I'm a Product Designer / Art Director",
+      "subtext": "A product designer who enjoys understanding people as much as designing for them.",
+      "eyebrow": "",
+      "queries": [
+        "scroll-effects"
+      ],
+      "image": {
+        "savedAs": "ayush-halder-portfolio.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Digital Original XR",
+      "siteUrl": "https://digitaloriginal.app/xr",
+      "oplUrl": "https://onepagelove.com/digital-original-xr/",
+      "slug": "digital-original-xr",
+      "headline": "Your art gallery in any space (eyebrow: \"AVAILABLE ON META QUEST 3 & PRO\")",
+      "subtext": "Bring any artwork to gallery scale — physical or digital, in your room or in shared virtual exhibitions.",
+      "eyebrow": "AVAILABLE ON META QUEST 3 & PRO",
+      "queries": [
+        "scroll-effects"
+      ],
+      "image": {
+        "savedAs": "digital-original-xr.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "invoicemon",
+      "siteUrl": "https://invoicemon.com",
+      "oplUrl": "https://onepagelove.com/invoicemon/",
+      "slug": "invoicemon",
+      "headline": "A complete invoicing workflow in your browser",
+      "subtext": "Built for freelancers, agencies, and businesses that send invoices regularly.",
+      "eyebrow": "",
+      "queries": [
+        "scroll-effects"
+      ],
+      "image": {
+        "savedAs": "invoicemon.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Magma",
+      "siteUrl": "https://magma.build",
+      "oplUrl": "https://onepagelove.com/magma/",
+      "slug": "magma",
+      "headline": "Own your intelligence (eyebrow: \"✦ Expert-trained AI Agents Coming Soon!\")",
+      "subtext": "Transforming Operational Know-How into Proprietary AI Infrastructures through Automation, Custom Engineering, Expert-Trained AI Agents & Team Adoption",
+      "eyebrow": "✦ Expert-trained AI Agents Coming Soon!",
+      "queries": [
+        "scroll-effects"
+      ],
+      "image": {
+        "savedAs": "magma.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "The Equator Company",
+      "siteUrl": "https://equatorcompany.com",
+      "oplUrl": "https://onepagelove.com/the-equator-company/",
+      "slug": "the-equator-company",
+      "headline": "The Equator Company",
+      "subtext": "",
+      "eyebrow": "",
+      "queries": [
+        "scroll-effects"
+      ],
+      "image": {
+        "savedAs": "the-equator-company.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Isa de Burgh",
+      "siteUrl": "https://isadeburgh.com",
+      "oplUrl": "https://onepagelove.com/isa-de-burgh/",
+      "slug": "isa-de-burgh",
+      "headline": "ISA DE BURGH",
+      "subtext": "Brand Architecture Creative Content Storytelling Art Direction",
+      "eyebrow": "",
+      "queries": [
+        "scroll-effects"
+      ],
+      "image": {
+        "savedAs": "isa-de-burgh.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Jopecuro",
+      "siteUrl": "https://jopecuro.com",
+      "oplUrl": "https://onepagelove.com/jopecuro/",
+      "slug": "jopecuro",
+      "headline": "Jopecuro,",
+      "subtext": "",
+      "eyebrow": "",
+      "queries": [
+        "scroll-effects"
+      ],
+      "image": {
+        "savedAs": "jopecuro.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Bausola Banch",
+      "siteUrl": "https://banch.bausola.com/",
+      "oplUrl": "https://onepagelove.com/bausola-banch/",
+      "slug": "bausola-banch",
+      "headline": "WHAT'S IN THE FUTURE OF WORKTABLES?",
+      "subtext": "",
+      "eyebrow": "",
+      "queries": [
+        "scroll-effects"
+      ],
+      "image": {
+        "savedAs": "bausola-banch.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Jeff Wall",
+      "siteUrl": "https://www.jeffwall.me/",
+      "oplUrl": "https://onepagelove.com/jeff-wall/",
+      "slug": "jeff-wall",
+      "headline": "Creative Director Performance Marketing",
+      "subtext": "For over 20 years, I've built brands from concept to scale with creative strategies that outperform industry standards. I've led art and marketing teams, producing high-converting direct response campaigns, turning engagement into growth.",
+      "eyebrow": "",
+      "queries": [
+        "scroll-effects"
+      ],
+      "image": {
+        "savedAs": "jeff-wall.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "I & Me Coffee",
+      "siteUrl": "https://www.iandmecoffee.com/",
+      "oplUrl": "https://onepagelove.com/i-me-coffee/",
+      "slug": "i-me-coffee",
+      "headline": "BREW THAT BREAKS THE MOULD",
+      "subtext": "Scroll for Experience",
+      "eyebrow": "",
+      "queries": [
+        "scroll-effects"
+      ],
+      "image": {
+        "savedAs": "i-me-coffee.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Abdullah",
+      "siteUrl": "https://helloabdullah.com",
+      "oplUrl": "https://onepagelove.com/abdullah/",
+      "slug": "abdullah",
+      "headline": "",
+      "subtext": "",
+      "eyebrow": "",
+      "queries": [
+        "minimal",
+        "portfolio"
+      ],
+      "image": {
+        "savedAs": "abdullah.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Aniket",
+      "siteUrl": "https://unfunnyket.com",
+      "oplUrl": "https://onepagelove.com/aniket/",
+      "slug": "aniket",
+      "headline": "Aniket Chaudhary",
+      "subtext": "Desi boy at heart. My first brush with scale was growing sugarcane; then somehow I ended up building software for millions of businesses at Razorpay. Turns out scale transfers. These days, I lead Constantinople's frontend team in India, building AI-native banking systems for the world. I also build Reticket on the side, where fake tickets can't be listed.",
+      "eyebrow": "",
+      "queries": [
+        "minimal",
+        "portfolio",
+        "interactive",
+        "tech-three"
+      ],
+      "image": {
+        "savedAs": "aniket.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Scout Graphics",
+      "siteUrl": "https://scoutgraphics.com",
+      "oplUrl": "https://onepagelove.com/scout-graphics/",
+      "slug": "scout-graphics",
+      "headline": "Scout Graphics & Sign Co. is an independent design studio creating hand-crafted visuals for brands in hospitality, wellness and boutique retail.",
+      "subtext": "Ready to bring your brand to life?",
+      "eyebrow": "",
+      "queries": [
+        "minimal",
+        "portfolio"
+      ],
+      "image": {
+        "savedAs": "scout-graphics.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "ByMayo",
+      "siteUrl": "https://bymayo.co.uk/",
+      "oplUrl": "https://onepagelove.com/bymayo-2/",
+      "slug": "bymayo-2",
+      "headline": "Creative Developer",
+      "subtext": "I'm a developer based in Manchester, UK, and co-founder of MadeByShape. On the side I build small, focused apps and plugins for Craft CMS.",
+      "eyebrow": "",
+      "queries": [
+        "portfolio",
+        "tech-gsap"
+      ],
+      "image": {
+        "savedAs": "bymayo-2.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Sam Peitz",
+      "siteUrl": "https://www.sam-peitz.com/",
+      "oplUrl": "https://onepagelove.com/sam-peitz/",
+      "slug": "sam-peitz",
+      "headline": "hey i'm Sam",
+      "subtext": "making things for humans like myself using technology",
+      "eyebrow": "",
+      "queries": [
+        "portfolio",
+        "interactive"
+      ],
+      "image": {
+        "savedAs": "sam-peitz.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Poetry Camera",
+      "siteUrl": "https://poetry.camera/",
+      "oplUrl": "https://onepagelove.com/poetry-camera/",
+      "slug": "poetry-camera",
+      "headline": "",
+      "subtext": "",
+      "eyebrow": "",
+      "queries": [
+        "art"
+      ],
+      "image": {
+        "savedAs": "poetry-camera.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Superlocal 2026",
+      "siteUrl": "https://www.superlocaldesign.com/",
+      "oplUrl": "https://onepagelove.com/superlocal-2026/",
+      "slug": "superlocal-2026",
+      "headline": "",
+      "subtext": "",
+      "eyebrow": "",
+      "queries": [
+        "art"
+      ],
+      "image": {
+        "savedAs": "superlocal-2026.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Textmode Overlay",
+      "siteUrl": "https://extension.textmode.art",
+      "oplUrl": "https://onepagelove.com/textmode-overlay/",
+      "slug": "textmode-overlay",
+      "headline": "TURN THE WEB INTO TEXTMODE (eyebrow: \"TEXTMODE OVERLAY / FREE + OPEN SOURCE\")",
+      "subtext": "Select a visible canvas or video. Render it live. Export the frame.",
+      "eyebrow": "TEXTMODE OVERLAY / FREE + OPEN SOURCE",
+      "queries": [
+        "art"
+      ],
+      "image": {
+        "savedAs": "textmode-overlay.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Tristan Haquenne X Anthony Bayet",
+      "siteUrl": "https://rain-drops.justabayet.com",
+      "oplUrl": "https://onepagelove.com/tristan-haquenne-x-anthony-bayet/",
+      "slug": "tristan-haquenne-x-anthony-bayet",
+      "headline": "1/7 FISH BALLS",
+      "subtext": "TRISTAN HAQUENNE @PHOTOGRAPHER/DIGITALARTIST",
+      "eyebrow": "",
+      "queries": [
+        "art",
+        "photography"
+      ],
+      "image": {
+        "savedAs": "tristan-haquenne-x-anthony-bayet.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Digital Original™",
+      "siteUrl": "https://digitaloriginal.app/",
+      "oplUrl": "https://onepagelove.com/digital-original/",
+      "slug": "digital-original",
+      "headline": "The New Era of Art is Digital",
+      "subtext": "",
+      "eyebrow": "",
+      "queries": [
+        "art"
+      ],
+      "image": {
+        "savedAs": "digital-original.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Possible Monuments",
+      "siteUrl": "https://possiblemonuments.se/",
+      "oplUrl": "https://onepagelove.com/possible-monuments/",
+      "slug": "possible-monuments",
+      "headline": "POSSIBLE MONUMENTS?",
+      "subtext": "",
+      "eyebrow": "",
+      "queries": [
+        "art"
+      ],
+      "image": {
+        "savedAs": "possible-monuments.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Peggy",
+      "siteUrl": "https://peggy.com/",
+      "oplUrl": "https://onepagelove.com/peggy/",
+      "slug": "peggy",
+      "headline": "A world with art in every home",
+      "subtext": "Peggy is the social marketplace that allows you to discover, buy, and sell art. A place for the art-curious and the art-expert, for the art gallery and artist. A new way forward for the art world.",
+      "eyebrow": "",
+      "queries": [
+        "art"
+      ],
+      "image": {
+        "savedAs": "peggy.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Artist Royalty Movement",
+      "siteUrl": "https://peggy.com/royalties",
+      "oplUrl": "https://onepagelove.com/artist-royalty-movement/",
+      "slug": "artist-royalty-movement",
+      "headline": "We believe artists deserve compensation on every sale of their work, not just the first one.",
+      "subtext": "Why should artists miss out on royalties as authors, musicians, and other creatives thrive with them?",
+      "eyebrow": "",
+      "queries": [
+        "art"
+      ],
+      "image": {
+        "savedAs": "artist-royalty-movement.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Humanoid Index",
+      "siteUrl": "https://humanoid-index.com/",
+      "oplUrl": "https://onepagelove.com/humanoid-index/",
+      "slug": "humanoid-index",
+      "headline": "Lumi",
+      "subtext": "",
+      "eyebrow": "",
+      "queries": [
+        "interactive"
+      ],
+      "image": {
+        "savedAs": "humanoid-index.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Secret Garden Stresa",
+      "siteUrl": "https://secretgardenstresa.com",
+      "oplUrl": "https://onepagelove.com/secret-garden-stresa/",
+      "slug": "secret-garden-stresa",
+      "headline": "SECRET GARDEN (eyebrow: \"BOUTIQUE HOTEL\")",
+      "subtext": "",
+      "eyebrow": "BOUTIQUE HOTEL",
+      "queries": [
+        "garden"
+      ],
+      "image": {
+        "savedAs": "secret-garden-stresa.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Make Garden",
+      "siteUrl": "https://www.makegarden.uk/",
+      "oplUrl": "https://onepagelove.com/make-garden/",
+      "slug": "make-garden",
+      "headline": "Make Garden",
+      "subtext": "A digital garden of messy experiments by Daniela Muntyan, all crafted in Figma Make. Half-baked ideas, shader sprouts, and curious prompts.",
+      "eyebrow": "",
+      "queries": [
+        "garden"
+      ],
+      "image": {
+        "savedAs": "make-garden.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Gardener",
+      "siteUrl": "https://www.gardener.nyc/",
+      "oplUrl": "https://onepagelove.com/gardener/",
+      "slug": "gardener",
+      "headline": "GARDENER",
+      "subtext": "Growing the world wide web",
+      "eyebrow": "",
+      "queries": [
+        "garden"
+      ],
+      "image": {
+        "savedAs": "gardener.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Voice Tag Gods",
+      "siteUrl": "https://voicetaggods.com",
+      "oplUrl": "https://onepagelove.com/voice-tag-gods/",
+      "slug": "voice-tag-gods",
+      "headline": "Mitaya (eyebrow: \"Featured vocalist\")",
+      "subtext": "Mitaya's voice tag work sits alongside a recording career of her own. The Atlanta singer and songwriter has been releasing music sinc…",
+      "eyebrow": "Featured vocalist",
+      "queries": [
+        "tech-three",
+        "tech-gsap"
+      ],
+      "image": {
+        "savedAs": "voice-tag-gods.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Eight Shot",
+      "siteUrl": "https://www.cookedapps.com/eight-shot",
+      "oplUrl": "https://onepagelove.com/eight-shot/",
+      "slug": "eight-shot",
+      "headline": "cooked apps",
+      "subtext": "SMALL, FOCUSED APPS · LONDON, UK · FOR IPHONE · ONE AT A TIME",
+      "eyebrow": "",
+      "queries": [
+        "tech-three"
+      ],
+      "image": {
+        "savedAs": "eight-shot.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Dabbit",
+      "siteUrl": "https://dabbit.app",
+      "oplUrl": "https://onepagelove.com/dabbit/",
+      "slug": "dabbit",
+      "headline": "The color picker your Mac deserved.",
+      "subtext": "Pick any pixel on any screen, exactly. Copy it in the format your code wants. Turn it into a palette, a scale, a whole design system, and send it to Figma without leaving your Mac.",
+      "eyebrow": "",
+      "queries": [
+        "tech-gsap"
+      ],
+      "image": {
+        "savedAs": "dabbit.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Shelf",
+      "siteUrl": "https://www.savetoshelf.com",
+      "oplUrl": "https://onepagelove.com/shelf/",
+      "slug": "shelf",
+      "headline": "Everything you saved finally findable (eyebrow: \"Bookmarks with a Brain\")",
+      "subtext": "Your personal inspiration library that remembers not just what you saved, but why.",
+      "eyebrow": "Bookmarks with a Brain",
+      "queries": [
+        "tech-gsap"
+      ],
+      "image": {
+        "savedAs": "shelf.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Architecture of Socialist-Era Belgrade",
+      "siteUrl": "https://belgrade.klmln.com",
+      "oplUrl": "https://onepagelove.com/belgrade-architecture/",
+      "slug": "belgrade-architecture",
+      "headline": "ARCHITECTURE OF SOCIALIST-ERA BELGRADE",
+      "subtext": "An independent guide to Belgrade's post-war modernist heritage",
+      "eyebrow": "",
+      "queries": [
+        "photography"
+      ],
+      "image": {
+        "savedAs": "belgrade-architecture.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "City of Angels",
+      "siteUrl": "https://cityxofxangels.com",
+      "oplUrl": "https://onepagelove.com/city-of-angels/",
+      "slug": "city-of-angels",
+      "headline": "CITY OF ANGELS",
+      "subtext": "",
+      "eyebrow": "",
+      "queries": [
+        "photography"
+      ],
+      "image": {
+        "savedAs": "city-of-angels.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Lorenzo Bocchi - Shot on iPhone",
+      "siteUrl": "https://shotoniphone.lorenzobocchi.com",
+      "oplUrl": "https://onepagelove.com/lorenzo-bocchi-photography/",
+      "slug": "lorenzo-bocchi-photography",
+      "headline": "Shot on iPhone",
+      "subtext": "",
+      "eyebrow": "",
+      "queries": [
+        "photography"
+      ],
+      "image": {
+        "savedAs": "lorenzo-bocchi-photography.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Gunes Atakan Peksen",
+      "siteUrl": "https://gunespeksen.com",
+      "oplUrl": "https://onepagelove.com/gunes-atakan-peksen/",
+      "slug": "gunes-atakan-peksen",
+      "headline": "",
+      "subtext": "",
+      "eyebrow": "",
+      "queries": [
+        "photography"
+      ],
+      "image": {
+        "savedAs": "gunes-atakan-peksen.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "PROOOOF",
+      "siteUrl": "https://proooof.app",
+      "oplUrl": "https://onepagelove.com/proooof/",
+      "slug": "proooof",
+      "headline": "PROOOOF",
+      "subtext": "Proooof is a iPhone app that adds a strip of EXIF data alongside your photos. Filter by capture details, toggle the data, change the color, save it and share. It's simple and easy to use.",
+      "eyebrow": "",
+      "queries": [
+        "photography"
+      ],
+      "image": {
+        "savedAs": "proooof.jpg",
+        "mime": "image/jpeg"
+      }
+    },
+    {
+      "name": "Everline Studio",
+      "siteUrl": "https://onepagelove.com/go/everline-studio",
+      "oplUrl": "https://onepagelove.com/everline-studio/",
+      "slug": "everline-studio",
+      "headline": "EVERLINE STUDIO|",
+      "subtext": "EVERLINE STUDIO CREATES SOULFUL, EDITORIAL-STYLE PHOTOGRAPHY AND STYLING FOR MODERN WELLNESS, BEAUTY, AND LIFESTYLE BRANDS. ROOTED IN INTENTION, DRIVEN BY DETAIL, AND CAPTURED WITH CARE.",
+      "eyebrow": "",
+      "queries": [
+        "photography"
+      ],
+      "image": {
+        "savedAs": "everline-studio.jpg",
+        "mime": "image/jpeg"
+      }
+    }
+  ]
+}
